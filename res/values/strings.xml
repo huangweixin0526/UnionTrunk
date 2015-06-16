@@ -1,0 +1,18 @@
+
+<resources>
+
+    <string name="app_name">UnionLotto</string>
+    <string name="add_data">添加数据</string>
+    <string name="add_data_date">日期：</string>
+    <string name="period_num">期数：</string>
+    <string name="red_num_one">红球1：</string>
+    <string name="red_num_two">红球2：</string>
+    <string name="red_num_three">红球3：</string>
+    <string name="red_num_four">红球4：</string>
+    <string name="red_num_five">红球5：</string>
+    <string name="red_num_six">红球6：</string>
+    <string name="blue_num">蓝球：</string>
+    <string name="confirm_btn">确定</string>
+    <string name="data_not_null"> 数据不能为空！</string>
+
+</resources>

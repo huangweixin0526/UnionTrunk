@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/size_10dip" >
+
+    <TextView
+        android:id="@+id/add_date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/size_20dip"
+        android:text="@string/add_data_date"
+        android:textSize="@dimen/size_18dip" />
+
+    <EditText
+        android:id="@+id/add_date_et"
+        android:layout_width="@dimen/size_150dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/add_date_tv"
+        android:layout_toRightOf="@id/add_date_tv"
+        android:inputType="number"
+        android:textSize="@dimen/size_18dip" />
+
+    <TextView
+        android:id="@+id/period_num_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/add_date_tv"
+        android:layout_marginTop="@dimen/size_20dip"
+        android:text="@string/period_num"
+        android:textSize="@dimen/size_18dip" />
+
+    <EditText
+        android:id="@+id/period_num_et"
+        android:layout_width="@dimen/size_150dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/period_num_tv"
+        android:layout_toRightOf="@id/period_num_tv"
+        android:inputType="number"
+        android:textSize="@dimen/size_18dip" />
+
+    <TextView
+        android:id="@+id/red_num_one_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/period_num_tv"
+        android:layout_marginTop="@dimen/size_20dip"
+        android:text="@string/red_num_one"
+        android:textSize="@dimen/size_18dip" />
+
+    <EditText
+        android:id="@+id/red_num_one_et"
+        android:layout_width="@dimen/size_150dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/red_num_one_tv"
+        android:layout_toRightOf="@id/red_num_one_tv"
+        android:inputType="number"
+        android:textSize="@dimen/size_18dip" />
+
+    <TextView
+        android:id="@+id/red_num_two_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/red_num_one_tv"
+        android:layout_marginTop="@dimen/size_20dip"
+        android:text="@string/red_num_two"
+        android:textSize="@dimen/size_18dip" />
+
+    <EditText
+        android:id="@+id/red_num_two_et"
+        android:layout_width="@dimen/size_150dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/red_num_two_tv"
+        android:layout_toRightOf="@id/red_num_two_tv"
+        android:inputType="number"
+        android:textSize="@dimen/size_18dip" />
+
+    <TextView
+        android:id="@+id/red_num_three_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/red_num_two_tv"
+        android:layout_marginTop="@dimen/size_20dip"
+        android:text="@string/red_num_three"
+        android:textSize="@dimen/size_18dip" />
+
+    <EditText
+        android:id="@+id/red_num_three_et"
+        android:layout_width="@dimen/size_150dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/red_num_three_tv"
+        android:layout_toRightOf="@id/red_num_three_tv"
+        android:inputType="number"
+        android:textSize="@dimen/size_18dip" />
+
+    <TextView
+        android:id="@+id/red_num_four_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/red_num_three_tv"
+        android:layout_marginTop="@dimen/size_20dip"
+        android:text="@string/red_num_four"
+        android:textSize="@dimen/size_18dip" />
+
+    <EditText
+        android:id="@+id/red_num_four_et"
+        android:layout_width="@dimen/size_150dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/red_num_four_tv"
+        android:layout_toRightOf="@id/red_num_four_tv"
+        android:inputType="number"
+        android:textSize="@dimen/size_18dip" />
+
+    <TextView
+        android:id="@+id/red_num_five_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/red_num_four_tv"
+        android:layout_marginTop="@dimen/size_20dip"
+        android:text="@string/red_num_five"
+        android:textSize="@dimen/size_18dip" />
+
+    <EditText
+        android:id="@+id/red_num_five_et"
+        android:layout_width="@dimen/size_150dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/red_num_five_tv"
+        android:layout_toRightOf="@id/red_num_five_tv"
+        android:inputType="number"
+        android:textSize="@dimen/size_18dip" />
+
+    <TextView
+        android:id="@+id/red_num_six_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/red_num_five_tv"
+        android:layout_marginTop="@dimen/size_20dip"
+        android:text="@string/red_num_six"
+        android:textSize="@dimen/size_18dip" />
+
+    <EditText
+        android:id="@+id/red_num_six_et"
+        android:layout_width="@dimen/size_150dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/red_num_six_tv"
+        android:layout_toRightOf="@id/red_num_six_tv"
+        android:inputType="number"
+        android:textSize="@dimen/size_18dip" />
+
+    <TextView
+        android:id="@+id/blue_num_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/red_num_six_tv"
+        android:layout_marginTop="@dimen/size_20dip"
+        android:text="@string/blue_num"
+        android:textSize="@dimen/size_18dip" />
+
+    <EditText
+        android:id="@+id/blue_num_et"
+        android:layout_width="@dimen/size_150dip"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/blue_num_tv"
+        android:layout_toRightOf="@id/blue_num_tv"
+        android:inputType="number"
+        android:textSize="@dimen/size_18dip" />
+
+    <Button
+        android:id="@+id/click_confirm_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/blue_num_et"
+        android:layout_marginTop="@dimen/size_20dip"
+        android:text="@string/confirm_btn"
+        android:textSize="@dimen/size_20dip" />
+
+</RelativeLayout>
