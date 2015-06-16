@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <dimen name="size_0dip">0dip</dimen>
     <dimen name="size_10dip">10dip</dimen>
     <dimen name="size_18dip">18dip</dimen>
     <dimen name="size_20dip">20dip</dimen>
