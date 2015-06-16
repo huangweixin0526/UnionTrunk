@@ -10,18 +10,22 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.android.weixin.unionlotto.R;
+import com.android.weixin.unionlotto.ui.fragment.BlueNumForecastFragment;
 import com.android.weixin.unionlotto.ui.fragment.DataPreviewFragment;
+import com.android.weixin.unionlotto.ui.fragment.RedNumForecastFragment;
 import com.android.weixin.unionlotto.widgets.indicator.TabPageIndicator;
 
 public class MainActivity extends FragmentActivity {
 
-	private static final String[] CONTENT = new String[] { "Recent", "Artists", "Albums", "Songs", "Playlists", "Genres" };
+	private static final String[] CONTENT = new String[] { "Recent", "Artists",
+			"Albums", "Songs", "Playlists", "Genres" };
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main_layout);
-		FragmentPagerAdapter adapter = new UnionlottoAdapter(getSupportFragmentManager());
+		FragmentPagerAdapter adapter = new UnionlottoAdapter(
+				getSupportFragmentManager());
 
 		ViewPager pager = (ViewPager) findViewById(R.id.pager);
 		pager.setAdapter(adapter);
@@ -56,7 +60,16 @@ public class MainActivity extends FragmentActivity {
 
 		@Override
 		public Fragment getItem(int position) {
-			return new DataPreviewFragment();
+			switch (position) {
+			case 0:
+				return new DataPreviewFragment();
+			case 1:
+				return new RedNumForecastFragment();
+			case 2:
+				return new BlueNumForecastFragment();
+			default:
+				return new DataPreviewFragment();
+			}
 		}
 
 		@Override
