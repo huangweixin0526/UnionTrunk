@@ -1,9 +1,14 @@
 package com.android.weixin.unionlotto.storage;
 
+import java.util.Date;
+
 import com.lidroid.xutils.db.annotation.Column;
 
 public class BlueBallNumInfo extends DBaseDao {
 
+	public static final String COLUMN_LOTTERY_DATE = "lotteryDate";
+	public static final String COLUMN_PERIOD_NUM = "periodNum";
+	public static final String COLUMN_CALCULATE_TYPE = "calculate_type";
 	public static final String COLUMN_BLUE_BALL_NUM_1 = "blue_ball_num_1";
 	public static final String COLUMN_BLUE_BALL_NUM_2 = "blue_ball_num_2";
 	public static final String COLUMN_BLUE_BALL_NUM_3 = "blue_ball_num_3";
@@ -21,6 +26,12 @@ public class BlueBallNumInfo extends DBaseDao {
 	public static final String COLUMN_BLUE_BALL_NUM_15 = "blue_ball_num_15";
 	public static final String COLUMN_BLUE_BALL_NUM_16 = "blue_ball_num_16";
 
+	@Column(column = "period_num")
+	private int periodNum;
+	@Column(column = "lottery_date")
+	private Date lotteryDate;
+	@Column(column="calculate_type")
+	private int calculateType;
 	@Column(column = "blue_ball_num_1")
 	private int blueBallNum1;
 	@Column(column = "blue_ball_num_2")
@@ -53,6 +64,30 @@ public class BlueBallNumInfo extends DBaseDao {
 	private int blueBallNum15;
 	@Column(column = "blue_ball_num_16")
 	private int blueBallNum16;
+
+	public int getPeriodNum() {
+		return periodNum;
+	}
+
+	public void setPeriodNum(int periodNum) {
+		this.periodNum = periodNum;
+	}
+
+	public Date getLotteryDate() {
+		return lotteryDate;
+	}
+
+	public void setLotteryDate(Date lotteryDate) {
+		this.lotteryDate = lotteryDate;
+	}
+
+	public int getCalculateType() {
+		return calculateType;
+	}
+
+	public void setCalculateType(int calculateType) {
+		this.calculateType = calculateType;
+	}
 
 	public int getBlueBallNum1() {
 		return blueBallNum1;
