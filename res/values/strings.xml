@@ -14,58 +14,40 @@
     <string name="confirm_btn">确定</string>
     <string name="data_not_null"> 数据不能为空！</string>
 
-    <!-- 红球数 -->
+    <!-- 数字 -->
+    <string name="num_str_1">1</string>
+    <string name="num_str_2">2</string>
+    <string name="num_str_3">3</string>
+    <string name="num_str_4">4</string>
+    <string name="num_str_5">5</string>
+    <string name="num_str_6">6</string>
+    <string name="num_str_7">7</string>
+    <string name="num_str_8">8</string>
+    <string name="num_str_9">9</string>
+    <string name="num_str_10">10</string>
+    <string name="num_str_11">11</string>
+    <string name="num_str_12">12</string>
+    <string name="num_str_13">13</string>
+    <string name="num_str_14">14</string>
+    <string name="num_str_15">15</string>
+    <string name="num_str_16">16</string>
+    <string name="num_str_17">17</string>
+    <string name="num_str_18">18</string>
+    <string name="num_str_19">19</string>
+    <string name="num_str_20">20</string>
+    <string name="num_str_21">21</string>
+    <string name="num_str_22">22</string>
+    <string name="num_str_23">23</string>
+    <string name="num_str_24">24</string>
+    <string name="num_str_25">25</string>
+    <string name="num_str_26">26</string>
+    <string name="num_str_27">27</string>
+    <string name="num_str_28">28</string>
+    <string name="num_str_29">29</string>
+    <string name="num_str_30">30</string>
+    <string name="num_str_31">31</string>
+    <string name="num_str_32">32</string>
+    <string name="num_str_33">33</string>
 
-    <string name="red_num_str_1">1</string>
-    <string name="red_num_str_2">2</string>
-    <string name="red_num_str_3">3</string>
-    <string name="red_num_str_4">4</string>
-    <string name="red_num_str_5">5</string>
-    <string name="red_num_str_6">6</string>
-    <string name="red_num_str_7">7</string>
-    <string name="red_num_str_8">8</string>
-    <string name="red_num_str_9">9</string>
-    <string name="red_num_str_10">10</string>
-    <string name="red_num_str_11">11</string>
-    <string name="red_num_str_12">12</string>
-    <string name="red_num_str_13">13</string>
-    <string name="red_num_str_14">14</string>
-    <string name="red_num_str_15">15</string>
-    <string name="red_num_str_16">16</string>
-    <string name="red_num_str_17">17</string>
-    <string name="red_num_str_18">18</string>
-    <string name="red_num_str_19">19</string>
-    <string name="red_num_str_20">20</string>
-    <string name="red_num_str_21">21</string>
-    <string name="red_num_str_22">22</string>
-    <string name="red_num_str_23">23</string>
-    <string name="red_num_str_24">24</string>
-    <string name="red_num_str_25">25</string>
-    <string name="red_num_str_26">26</string>
-    <string name="red_num_str_27">27</string>
-    <string name="red_num_str_28">28</string>
-    <string name="red_num_str_29">29</string>
-    <string name="red_num_str_30">30</string>
-    <string name="red_num_str_31">31</string>
-    <string name="red_num_str_32">32</string>
-    <string name="red_num_str_33">33</string>
-
-    <!-- 蓝球数 -->
-    <string name="blue_num_str_1">1</string>
-    <string name="blue_num_str_2">2</string>
-    <string name="blue_num_str_3">3</string>
-    <string name="blue_num_str_4">4</string>
-    <string name="blue_num_str_5">5</string>
-    <string name="blue_num_str_6">6</string>
-    <string name="blue_num_str_7">7</string>
-    <string name="blue_num_str_8">8</string>
-    <string name="blue_num_str_9">9</string>
-    <string name="blue_num_str_10">10</string>
-    <string name="blue_num_str_11">11</string>
-    <string name="blue_num_str_12">12</string>
-    <string name="blue_num_str_13">13</string>
-    <string name="blue_num_str_14">14</string>
-    <string name="blue_num_str_15">15</string>
-    <string name="blue_num_str_16">16</string>
 
 </resources>

@@ -9,7 +9,7 @@
         android:layout_width="@dimen/size_0dip"
         android:layout_height="@dimen/size_20dip"
         android:layout_weight="1"
-        android:text="@string/blue_num_str_1"
+        android:text="@string/num_str_1"
         android:textSize="@dimen/size_18dip" />
 
     <TextView
@@ -17,7 +17,7 @@
         android:layout_width="@dimen/size_0dip"
         android:layout_height="@dimen/size_20dip"
         android:layout_weight="1"
-        android:text="@string/blue_num_str_2"
+        android:text="@string/num_str_2"
         android:textSize="@dimen/size_18dip" />
 
     <TextView
@@ -25,7 +25,7 @@
         android:layout_width="@dimen/size_0dip"
         android:layout_height="@dimen/size_20dip"
         android:layout_weight="1"
-        android:text="@string/blue_num_str_3"
+        android:text="@string/num_str_3"
         android:textSize="@dimen/size_18dip" />
 
     <TextView
@@ -33,7 +33,7 @@
         android:layout_width="@dimen/size_0dip"
         android:layout_height="@dimen/size_20dip"
         android:layout_weight="1"
-        android:text="@string/blue_num_str_4"
+        android:text="@string/num_str_4"
         android:textSize="@dimen/size_18dip" />
 
     <TextView
@@ -41,7 +41,7 @@
         android:layout_width="@dimen/size_0dip"
         android:layout_height="@dimen/size_20dip"
         android:layout_weight="1"
-        android:text="@string/blue_num_str_5"
+        android:text="@string/num_str_5"
         android:textSize="@dimen/size_18dip" />
 
     <TextView
@@ -49,7 +49,7 @@
         android:layout_width="@dimen/size_0dip"
         android:layout_height="@dimen/size_20dip"
         android:layout_weight="1"
-        android:text="@string/blue_num_str_6"
+        android:text="@string/num_str_6"
         android:textSize="@dimen/size_18dip" />
 
     <TextView
@@ -57,7 +57,7 @@
         android:layout_width="@dimen/size_0dip"
         android:layout_height="@dimen/size_20dip"
         android:layout_weight="1"
-        android:text="@string/blue_num_str_7"
+        android:text="@string/num_str_7"
         android:textSize="@dimen/size_18dip" />
 
     <TextView
@@ -65,7 +65,7 @@
         android:layout_width="@dimen/size_0dip"
         android:layout_height="@dimen/size_20dip"
         android:layout_weight="1"
-        android:text="@string/blue_num_str_8"
+        android:text="@string/num_str_8"
         android:textSize="@dimen/size_18dip" />
 
     <TextView
@@ -73,7 +73,7 @@
         android:layout_width="@dimen/size_0dip"
         android:layout_height="@dimen/size_20dip"
         android:layout_weight="1"
-        android:text="@string/blue_num_str_9"
+        android:text="@string/num_str_9"
         android:textSize="@dimen/size_18dip" />
 
     <TextView
@@ -81,7 +81,7 @@
         android:layout_width="@dimen/size_0dip"
         android:layout_height="@dimen/size_20dip"
         android:layout_weight="1"
-        android:text="@string/blue_num_str_10"
+        android:text="@string/num_str_10"
         android:textSize="@dimen/size_18dip" />
 
     <TextView
@@ -89,7 +89,7 @@
         android:layout_width="@dimen/size_0dip"
         android:layout_height="@dimen/size_20dip"
         android:layout_weight="1"
-        android:text="@string/blue_num_str_11"
+        android:text="@string/num_str_11"
         android:textSize="@dimen/size_18dip" />
 
     <TextView
@@ -97,7 +97,7 @@
         android:layout_width="@dimen/size_0dip"
         android:layout_height="@dimen/size_20dip"
         android:layout_weight="1"
-        android:text="@string/blue_num_str_12"
+        android:text="@string/num_str_12"
         android:textSize="@dimen/size_18dip" />
 
     <TextView
@@ -105,7 +105,7 @@
         android:layout_width="@dimen/size_0dip"
         android:layout_height="@dimen/size_20dip"
         android:layout_weight="1"
-        android:text="@string/blue_num_str_13"
+        android:text="@string/num_str_13"
         android:textSize="@dimen/size_18dip" />
 
     <TextView
@@ -113,7 +113,7 @@
         android:layout_width="@dimen/size_0dip"
         android:layout_height="@dimen/size_20dip"
         android:layout_weight="1"
-        android:text="@string/blue_num_str_14"
+        android:text="@string/num_str_14"
         android:textSize="@dimen/size_18dip" />
 
     <TextView
@@ -121,7 +121,7 @@
         android:layout_width="@dimen/size_0dip"
         android:layout_height="@dimen/size_20dip"
         android:layout_weight="1"
-        android:text="@string/blue_num_str_15"
+        android:text="@string/num_str_15"
         android:textSize="@dimen/size_18dip" />
 
     <TextView
@@ -129,7 +129,7 @@
         android:layout_width="@dimen/size_0dip"
         android:layout_height="@dimen/size_20dip"
         android:layout_weight="1"
-        android:text="@string/blue_num_str_16"
+        android:text="@string/num_str_16"
         android:textSize="@dimen/size_18dip" />
 
 </LinearLayout>
