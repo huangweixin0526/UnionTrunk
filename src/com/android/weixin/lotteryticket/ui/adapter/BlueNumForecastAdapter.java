@@ -10,7 +10,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.android.weixin.lotteryticket.R;
-import com.android.weixin.lotteryticket.storage.BlueBallNumInfo;
+import com.android.weixin.lotteryticket.storage.unionlotto.BlueBallNumInfo;
 import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.view.annotation.ViewInject;
 

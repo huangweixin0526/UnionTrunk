@@ -11,8 +11,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.android.weixin.lotteryticket.R;
-import com.android.weixin.lotteryticket.storage.LotteryNumberHelper;
-import com.android.weixin.lotteryticket.storage.LotteryNumbers;
+import com.android.weixin.lotteryticket.storage.unionlotto.LotteryNumberHelper;
+import com.android.weixin.lotteryticket.storage.unionlotto.LotteryNumbers;
 import com.android.weixin.lotteryticket.utils.DateUtil;
 import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.view.annotation.ViewInject;

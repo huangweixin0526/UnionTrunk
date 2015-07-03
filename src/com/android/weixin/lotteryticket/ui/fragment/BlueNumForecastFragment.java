@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 
 import com.android.weixin.lotteryticket.R;
-import com.android.weixin.lotteryticket.storage.BlueBallNumInfo;
+import com.android.weixin.lotteryticket.storage.unionlotto.BlueBallNumInfo;
 import com.android.weixin.lotteryticket.ui.adapter.BlueNumForecastAdapter;
 
 public class BlueNumForecastFragment extends Fragment {

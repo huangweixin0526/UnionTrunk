@@ -1,7 +1,8 @@
-package com.android.weixin.lotteryticket.storage;
+package com.android.weixin.lotteryticket.storage.unionlotto;
 
 import java.util.Date;
 
+import com.android.weixin.lotteryticket.storage.DBaseDao;
 import com.lidroid.xutils.db.annotation.Column;
 
 public class RedBallNumInfo extends DBaseDao {

@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
-import com.android.weixin.lotteryticket.storage.RedBallNumInfo;
+import com.android.weixin.lotteryticket.storage.unionlotto.RedBallNumInfo;
 
 public class RedNumForecastAdapter extends BaseAdapter {
 
