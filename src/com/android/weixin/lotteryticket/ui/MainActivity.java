@@ -11,7 +11,7 @@ import android.view.MenuItem;
 
 import com.android.weixin.lotteryticket.R;
 import com.android.weixin.lotteryticket.ui.fragment.BlueNumForecastFragment;
-import com.android.weixin.lotteryticket.ui.fragment.DataPreviewFragment;
+import com.android.weixin.lotteryticket.ui.fragment.TwoDataPreviewFragment;
 import com.android.weixin.lotteryticket.ui.fragment.RedNumForecastFragment;
 import com.android.weixin.lotteryticket.widgets.indicator.TabPageIndicator;
 
@@ -44,7 +44,7 @@ public class MainActivity extends FragmentActivity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 		case R.id.menu_add_data:
-			AddLottoDataActivity.open(this);
+			AddUnionlottoDataActivity.open(this);
 			break;
 
 		default:
@@ -62,13 +62,13 @@ public class MainActivity extends FragmentActivity {
 		public Fragment getItem(int position) {
 			switch (position) {
 			case 0:
-				return new DataPreviewFragment();
+				return new TwoDataPreviewFragment();
 			case 1:
 				return new RedNumForecastFragment();
 			case 2:
 				return new BlueNumForecastFragment();
 			default:
-				return new DataPreviewFragment();
+				return new TwoDataPreviewFragment();
 			}
 		}
 

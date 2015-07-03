@@ -30,7 +30,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.android.weixin.lotteryticket.ui.AddLottoDataActivity"
+            android:name="com.android.weixin.lotteryticket.ui.AddUnionlottoDataActivity"
             android:label="@string/app_name" >
         </activity>
     </application>

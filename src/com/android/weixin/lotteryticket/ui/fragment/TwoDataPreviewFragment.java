@@ -10,11 +10,11 @@ import android.view.ViewGroup;
 import com.android.weixin.lotteryticket.R;
 import com.lidroid.xutils.ViewUtils;
 
-public class DataPreviewFragment extends Fragment{
+public class TwoDataPreviewFragment extends Fragment{
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-		View view = inflater.inflate(R.layout.data_preview_layout, container,false);
+		View view = inflater.inflate(R.layout.two_data_preview_layout, container,false);
 		ViewUtils.inject(this, view);
 		return view;
 	}

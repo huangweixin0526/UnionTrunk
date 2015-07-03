@@ -18,7 +18,7 @@ import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.view.annotation.ViewInject;
 import com.lidroid.xutils.view.annotation.event.OnClick;
 
-public class AddLottoDataActivity extends Activity {
+public class AddUnionlottoDataActivity extends Activity {
 
 	public static final String DATA_ID = "DATA_ID";
 
@@ -60,7 +60,7 @@ public class AddLottoDataActivity extends Activity {
 	}
 
 	public static void open(Context context, int dataId) {
-		Intent intent = new Intent(context, AddLottoDataActivity.class);
+		Intent intent = new Intent(context, AddUnionlottoDataActivity.class);
 		intent.putExtra(DATA_ID, dataId);
 		context.startActivity(intent);
 	}
@@ -68,7 +68,7 @@ public class AddLottoDataActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.add_data_layout);
+		setContentView(R.layout.unionlotto_add_data_layout);
 		ViewUtils.inject(this);
 		mDataId = getIntent().getIntExtra(DATA_ID, -1);
 		if (mDataId == -1) {
