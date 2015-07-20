@@ -8,7 +8,7 @@ import com.lidroid.xutils.db.annotation.Column;
 import com.lidroid.xutils.db.annotation.Table;
 
 @Table(name = "lottery_numbers")
-public class LotteryNumbers extends DBaseDao {
+public class UnionLotteryNumbers extends DBaseDao {
 
 	public static final String COLUMN_LOTTERY_DATE = "lotteryDate";
 	public static final String COLUMN_PERIOD_NUM = "periodNum";

@@ -10,19 +10,19 @@ import com.lidroid.xutils.DbUtils.DbUpgradeListener;
 import com.lidroid.xutils.db.sqlite.Selector;
 import com.lidroid.xutils.exception.DbException;
 
-public class LotteryNumberHelper {
+public class UnionLotteryNumberHelper {
 
-	private static LotteryNumberHelper mInstance;
+	private static UnionLotteryNumberHelper mInstance;
 	private DbUtils mDbUtils;
 
-	public synchronized static LotteryNumberHelper getInstance() {
+	public synchronized static UnionLotteryNumberHelper getInstance() {
 		if (mInstance == null) {
-			mInstance = new LotteryNumberHelper();
+			mInstance = new UnionLotteryNumberHelper();
 		}
 		return mInstance;
 	}
 
-	private LotteryNumberHelper() {
+	private UnionLotteryNumberHelper() {
 		mDbUtils = DbUtils.create(AndroidApplication.getInstance().getApplicationContext(), APPConfig.DATABASES_PATH, APPConfig.LOTTERY_DATA_DB_NAME,
 				APPConfig.LOTTERY_DATA_DB_VERSION, mDbUpgradeListener);
 		mDbUtils.configDebug(APPConfig.IS_DEBUG);
@@ -36,7 +36,7 @@ public class LotteryNumberHelper {
 		}
 	};
 
-	public void addLotteryData(LotteryNumbers lotteryNumbers) {
+	public void addLotteryData(UnionLotteryNumbers lotteryNumbers) {
 		try {
 			mDbUtils.saveOrUpdate(lotteryNumbers);
 		} catch (DbException e) {
@@ -44,19 +44,19 @@ public class LotteryNumberHelper {
 		}
 	}
 
-	public LotteryNumbers getLotteryDataById(int dataId) {
+	public UnionLotteryNumbers getLotteryDataById(int dataId) {
 		try {
-			return mDbUtils.findById(LotteryNumbers.class, dataId);
+			return mDbUtils.findById(UnionLotteryNumbers.class, dataId);
 		} catch (DbException e) {
 			e.printStackTrace();
 		}
 		return null;
 	}
 
-	public List<LotteryNumbers> getLotteryNumbers() {
-		List<LotteryNumbers> list = new ArrayList<LotteryNumbers>();
+	public List<UnionLotteryNumbers> getLotteryNumbers() {
+		List<UnionLotteryNumbers> list = new ArrayList<UnionLotteryNumbers>();
 		try {
-			list = mDbUtils.findAll(Selector.from(LotteryNumbers.class));
+			list = mDbUtils.findAll(Selector.from(UnionLotteryNumbers.class));
 		} catch (DbException e) {
 			e.printStackTrace();
 		}

@@ -11,8 +11,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.android.weixin.lotteryticket.R;
-import com.android.weixin.lotteryticket.storage.unionlotto.LotteryNumberHelper;
-import com.android.weixin.lotteryticket.storage.unionlotto.LotteryNumbers;
+import com.android.weixin.lotteryticket.storage.unionlotto.UnionLotteryNumberHelper;
+import com.android.weixin.lotteryticket.storage.unionlotto.UnionLotteryNumbers;
 import com.android.weixin.lotteryticket.utils.DateUtil;
 import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.view.annotation.ViewInject;
@@ -53,7 +53,7 @@ public class AddUnionlottoDataActivity extends Activity {
 	private Button mConfirmBtn;
 
 	private int mDataId;
-	private LotteryNumbers mLotteryNumber;
+	private UnionLotteryNumbers mLotteryNumber;
 
 	public static void open(Context context) {
 		open(context, -1);
@@ -74,7 +74,7 @@ public class AddUnionlottoDataActivity extends Activity {
 		if (mDataId == -1) {
 			mAddDateEt.setText(DateUtil.getCurrentDateStr());
 		} else {
-			mLotteryNumber = LotteryNumberHelper.getInstance().getLotteryDataById(mDataId);
+			mLotteryNumber = UnionLotteryNumberHelper.getInstance().getLotteryDataById(mDataId);
 			initViewData();
 		}
 	}
@@ -144,9 +144,9 @@ public class AddUnionlottoDataActivity extends Activity {
 			Toast.makeText(this, getString(R.string.data_not_null), Toast.LENGTH_SHORT).show();
 			return;
 		}
-		LotteryNumbers lotteryNumber = null;
+		UnionLotteryNumbers lotteryNumber = null;
 		if (mDataId == -1) {
-			lotteryNumber = new LotteryNumbers();
+			lotteryNumber = new UnionLotteryNumbers();
 		} else {
 			lotteryNumber = mLotteryNumber;
 		}
@@ -160,6 +160,6 @@ public class AddUnionlottoDataActivity extends Activity {
 		lotteryNumber.setRedNumSix(Integer.parseInt(redNumSix));
 		lotteryNumber.setBlueNum(Integer.parseInt(blueNum));
 
-		LotteryNumberHelper.getInstance().addLotteryData(lotteryNumber);
+		UnionLotteryNumberHelper.getInstance().addLotteryData(lotteryNumber);
 	}
 }

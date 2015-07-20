@@ -2,6 +2,7 @@
 <resources>
 
     <dimen name="size_0dip">0dip</dimen>
+    <dimen name="size_0_5dip">0.5dip</dimen>
     <dimen name="size_10dip">10dip</dimen>
     <dimen name="size_18dip">18dip</dimen>
     <dimen name="size_20dip">20dip</dimen>
