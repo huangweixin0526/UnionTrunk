@@ -4,9 +4,10 @@
     android:layout_height="match_parent" >
 
     <ListView
-        android:id="@+id/winning_data_preivew_lv"
+        android:id="@+id/union_winning_data_preivew_lv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:listSelector="@android:color/transparent" >
     </ListView>
 
 </FrameLayout>

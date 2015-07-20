@@ -1,85 +1,36 @@
 package com.android.weixin.lotteryticket.ui;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import com.android.weixin.lotteryticket.R;
-import com.android.weixin.lotteryticket.ui.fragment.BlueNumForecastFragment;
-import com.android.weixin.lotteryticket.ui.fragment.TwoDataPreviewFragment;
-import com.android.weixin.lotteryticket.ui.fragment.RedNumForecastFragment;
-import com.android.weixin.lotteryticket.widgets.indicator.TabPageIndicator;
+import com.lidroid.xutils.ViewUtils;
+import com.lidroid.xutils.view.annotation.ViewInject;
+import com.lidroid.xutils.view.annotation.event.OnClick;
 
 public class MainActivity extends FragmentActivity {
 
-	private static final String[] CONTENT = new String[] { "Recent", "Artists",
-			"Albums", "Songs", "Playlists", "Genres" };
+	@ViewInject(R.id.union_lotto_btn)
+	private Button mUnionBtn;
+	@ViewInject(R.id.big_lotto_btn)
+	private Button mBigBtn;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main_layout);
-		FragmentPagerAdapter adapter = new UnionlottoAdapter(
-				getSupportFragmentManager());
-
-		ViewPager pager = (ViewPager) findViewById(R.id.pager);
-		pager.setAdapter(adapter);
-
-		TabPageIndicator indicator = (TabPageIndicator) findViewById(R.id.indicator);
-		indicator.setViewPager(pager);
+		ViewUtils.inject(this);
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		getMenuInflater().inflate(R.menu.union_lotto_menu_lay, menu);
-		return super.onCreateOptionsMenu(menu);
+	@OnClick(R.id.union_lotto_btn)
+	public void unionOnClick(View view) {
+		UnionLottoActivity.open(this);
 	}
 
-	@Override
-	public boolean onOptionsItemSelected(MenuItem item) {
-		switch (item.getItemId()) {
-		case R.id.menu_add_data:
-			AddUnionlottoDataActivity.open(this);
-			break;
-
-		default:
-			break;
-		}
-		return super.onOptionsItemSelected(item);
-	}
-
-	class UnionlottoAdapter extends FragmentPagerAdapter {
-		public UnionlottoAdapter(FragmentManager fm) {
-			super(fm);
-		}
-
-		@Override
-		public Fragment getItem(int position) {
-			switch (position) {
-			case 0:
-				return new TwoDataPreviewFragment();
-			case 1:
-				return new RedNumForecastFragment();
-			case 2:
-				return new BlueNumForecastFragment();
-			default:
-				return new TwoDataPreviewFragment();
-			}
-		}
-
-		@Override
-		public CharSequence getPageTitle(int position) {
-			return CONTENT[position % CONTENT.length].toUpperCase();
-		}
-
-		@Override
-		public int getCount() {
-			return CONTENT.length;
-		}
+	@OnClick(R.id.big_lotto_btn)
+	public void bigOnClick(View view) {
+		BigLottoActivity.open(this);
 	}
 }

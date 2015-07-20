@@ -13,6 +13,8 @@
     <string name="blue_num">蓝球：</string>
     <string name="confirm_btn">确定</string>
     <string name="data_not_null"> 数据不能为空！</string>
+    <string name="union_lotto_str">1</string>
+    <string name="big_lotto_str">2</string>
 
     <!-- 数字 -->
     <string name="num_str_1">1</string>
