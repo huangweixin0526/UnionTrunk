@@ -1,5 +1,6 @@
 package com.android.weixin.lotteryticket.ui;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,6 +17,8 @@ import com.android.weixin.lotteryticket.ui.fragment.BlueNumForecastFragment;
 import com.android.weixin.lotteryticket.ui.fragment.RedNumForecastFragment;
 import com.android.weixin.lotteryticket.ui.fragment.TwoDataPreviewFragment;
 import com.android.weixin.lotteryticket.widgets.indicator.TabPageIndicator;
+import com.lidroid.xutils.ViewUtils;
+import com.lidroid.xutils.view.annotation.ViewInject;
 
 public class UnionLottoActivity extends FragmentActivity {
 
@@ -26,17 +29,22 @@ public class UnionLottoActivity extends FragmentActivity {
 		context.startActivity(intent);
 	}
 
+	@ViewInject(R.id.union_lotto_pager)
+	private ViewPager mPager;
+	@ViewInject(R.id.union_lotto_indicator)
+	private TabPageIndicator mIndicator;
+
+	private FragmentPagerAdapter mFragmentAdapter;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.union_lotto_layout);
-		FragmentPagerAdapter adapter = new UnionlottoAdapter(getSupportFragmentManager());
+		ViewUtils.inject(this);
 
-		ViewPager pager = (ViewPager) findViewById(R.id.union_lotto_pager);
-		pager.setAdapter(adapter);
-
-		TabPageIndicator indicator = (TabPageIndicator) findViewById(R.id.union_lotto_indicator);
-		indicator.setViewPager(pager);
+		mFragmentAdapter = new UnionlottoAdapter(getSupportFragmentManager());
+		mPager.setAdapter(mFragmentAdapter);
+		mIndicator.setViewPager(mPager);
 	}
 
 	@Override
@@ -49,12 +57,20 @@ public class UnionLottoActivity extends FragmentActivity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 		case R.id.menu_add_data:
-			AddUnionlottoDataActivity.open(this);
+			AddUnionlottoDataActivity.openResult(this);			 
 			break;
 		default:
 			break;
 		}
 		return super.onOptionsItemSelected(item);
+	}
+
+	@Override
+	protected void onActivityResult(int arg0, int arg1, Intent arg2) {
+		super.onActivityResult(arg0, arg1, arg2);
+		if (arg0 == AddUnionlottoDataActivity.UNION_REQUEST_CODE && arg1 == Activity.RESULT_OK) {
+			((TwoDataPreviewFragment)mFragmentAdapter.instantiateItem(mPager, 0)).refreshData();
+		}
 	}
 
 	class UnionlottoAdapter extends FragmentPagerAdapter {

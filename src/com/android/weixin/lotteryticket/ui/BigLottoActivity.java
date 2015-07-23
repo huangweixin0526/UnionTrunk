@@ -50,7 +50,6 @@ public class BigLottoActivity extends FragmentActivity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 		case R.id.menu_add_data:
-			AddUnionlottoDataActivity.open(this);
 			break;
 
 		default:

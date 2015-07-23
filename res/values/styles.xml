@@ -20,13 +20,13 @@
     <style name="hor_line_divider">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/size_0_5dip</item>
-        <item name="android:background">@drawable/line_divider</item>
+        <item name="android:background">@drawable/bg_hor_line</item>
     </style>
 
     <style name="ver_line_divider">
         <item name="android:layout_width">@dimen/size_0_5dip</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:background">@drawable/line_divider</item>
+        <item name="android:background">@drawable/bg_ver_line</item>
     </style>
 
 </resources>

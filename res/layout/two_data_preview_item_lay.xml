@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/two_period_num_tv"
+        android:layout_width="@dimen/size_0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/two_lottery_date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/two_red_num_one_tv"
+        android:layout_width="@dimen/size_0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/two_red_num_two_tv"
+        android:layout_width="@dimen/size_0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/two_red_num_three_tv"
+        android:layout_width="@dimen/size_0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/two_red_num_four_tv"
+        android:layout_width="@dimen/size_0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/two_red_num_five_tv"
+        android:layout_width="@dimen/size_0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/two_red_num_six_tv"
+        android:layout_width="@dimen/size_0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/two_blue_num_tv"
+        android:layout_width="@dimen/size_0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+</LinearLayout>

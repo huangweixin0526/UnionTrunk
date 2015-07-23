@@ -20,6 +20,7 @@ import com.lidroid.xutils.view.annotation.event.OnClick;
 
 public class AddUnionlottoDataActivity extends Activity {
 
+	public static final int UNION_REQUEST_CODE = 121;
 	public static final String DATA_ID = "DATA_ID";
 
 	@ViewInject(R.id.add_date_et)
@@ -55,14 +56,14 @@ public class AddUnionlottoDataActivity extends Activity {
 	private int mDataId;
 	private UnionLotteryNumbers mLotteryNumber;
 
-	public static void open(Context context) {
-		open(context, -1);
+	public static void openResult(Activity context) {
+		openResult(context, -1);
 	}
 
-	public static void open(Context context, int dataId) {
+	public static void openResult(Activity context, int dataId) {
 		Intent intent = new Intent(context, AddUnionlottoDataActivity.class);
 		intent.putExtra(DATA_ID, dataId);
-		context.startActivity(intent);
+		context.startActivityForResult(intent, UNION_REQUEST_CODE);
 	}
 
 	@Override
@@ -77,6 +78,7 @@ public class AddUnionlottoDataActivity extends Activity {
 			mLotteryNumber = UnionLotteryNumberHelper.getInstance().getLotteryDataById(mDataId);
 			initViewData();
 		}
+		setResult(Activity.RESULT_CANCELED);
 	}
 
 	private void initViewData() {
@@ -161,5 +163,20 @@ public class AddUnionlottoDataActivity extends Activity {
 		lotteryNumber.setBlueNum(Integer.parseInt(blueNum));
 
 		UnionLotteryNumberHelper.getInstance().addLotteryData(lotteryNumber);
+
+		clearViewData();
+		Toast.makeText(this, getString(R.string.add_data_succeed), Toast.LENGTH_SHORT).show();
+		setResult(Activity.RESULT_OK);
+	}
+
+	private void clearViewData() {
+		mPeriodNumEt.setText("");
+		mRedNumOneEt.setText("");
+		mRedNumTwoEt.setText("");
+		mRedNumThreeEt.setText("");
+		mRedNumFourEt.setText("");
+		mRedNumFiveEt.setText("");
+		mRedNumSixEt.setText("");
+		mBlueNumEt.setText("");
 	}
 }
