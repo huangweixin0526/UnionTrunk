@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    android:useLevel="false" >
+
+    <solid android:color="@color/red" />
+
+    <padding
+        android:bottom="1dp"
+        android:left="2dp"
+        android:right="2dp"
+        android:top="1dp" />
+
+    <solid android:color="@color/red" />
+
+    <stroke
+        android:width="1dp"
+        android:color="@android:color/white" />
+
+    <size
+        android:height="15dp"
+        android:width="15dp" />
+
+</shape>
+<!--
+"rectangle"     矩阵，这也是默认的shape
+
+"oval"     　　　椭圆
+
+"line"    　　　　一条水平的直线。这种shape必须使用 <stroke> 元素来定义这条线的宽度
+
+"ring"     　　　圆环
+-->
+
+
+<!--
+android:useLevel
+
+    Boolean类型。如果用在 LevelListDrawable里，那么就是true。如果通常不出现则为false。
+-->
