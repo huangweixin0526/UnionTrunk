@@ -36,6 +36,8 @@ public class UnionLotteryNumberHelper {
 		}
 	};
 
+	/******************************************************************/
+
 	public void addLotteryData(UnionLotteryNumbers lotteryNumbers) {
 		try {
 			mDbUtils.saveOrUpdate(lotteryNumbers);
@@ -62,4 +64,64 @@ public class UnionLotteryNumberHelper {
 		}
 		return list;
 	}
+
+	/******************************************************************/
+
+	public void addRedBallData(RedBallNumInfo redBallNumInfo) {
+		try {
+			mDbUtils.saveOrUpdate(redBallNumInfo);
+		} catch (DbException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public RedBallNumInfo getRedBallDataById(int dataId) {
+		try {
+			return mDbUtils.findById(RedBallNumInfo.class, dataId);
+		} catch (DbException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	public List<RedBallNumInfo> getRedBallNumbers() {
+		List<RedBallNumInfo> list = new ArrayList<RedBallNumInfo>();
+		try {
+			list = mDbUtils.findAll(Selector.from(RedBallNumInfo.class));
+		} catch (DbException e) {
+			e.printStackTrace();
+		}
+		return list;
+	}
+
+	/***************************************************************/
+
+	public void addBlueBallData(BlueBallNumInfo blueBallNumInfo) {
+		try {
+			mDbUtils.saveOrUpdate(blueBallNumInfo);
+		} catch (DbException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public BlueBallNumInfo getBlueBallDataById(int dataId) {
+		try {
+			return mDbUtils.findById(BlueBallNumInfo.class, dataId);
+		} catch (DbException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	public List<BlueBallNumInfo> getBlueBallNumbers() {
+		List<BlueBallNumInfo> list = new ArrayList<BlueBallNumInfo>();
+		try {
+			list = mDbUtils.findAll(Selector.from(BlueBallNumInfo.class));
+		} catch (DbException e) {
+			e.printStackTrace();
+		}
+		return list;
+	}
+
+	/********************************************************************/
 }

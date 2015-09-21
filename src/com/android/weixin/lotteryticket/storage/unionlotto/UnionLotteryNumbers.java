@@ -1,13 +1,12 @@
 package com.android.weixin.lotteryticket.storage.unionlotto;
 
-
 import java.util.Date;
 
 import com.android.weixin.lotteryticket.storage.DBaseDao;
 import com.lidroid.xutils.db.annotation.Column;
 import com.lidroid.xutils.db.annotation.Table;
 
-@Table(name = "lottery_numbers")
+@Table(name = "union_lottery_numbers")
 public class UnionLotteryNumbers extends DBaseDao {
 
 	public static final String COLUMN_LOTTERY_DATE = "lotteryDate";

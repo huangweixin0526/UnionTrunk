@@ -7,8 +7,10 @@
         android:id="@+id/union_winning_data_preivew_lv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:cacheColorHint="@color/transparent"
         android:divider="@drawable/line_divider"
-        android:listSelector="@android:color/transparent" >
+        android:listSelector="@color/transparent" >
     </ListView>
 
 </FrameLayout>

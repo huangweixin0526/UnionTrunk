@@ -66,7 +66,7 @@ public class TwoDataPreviewAdapter extends BaseAdapter {
 		UnionLotteryNumbers lotteryItem = getItem(position);
 		if (lotteryItem != null) {
 			dataHoloder.mPeriodNum.setText(String.valueOf(lotteryItem.getPeriodNum()));
-			dataHoloder.mLotteryDate.setText(DateUtil.getConvertDateToStr(lotteryItem.getLotteryDate()));
+			dataHoloder.mLotteryDate.setText(DateUtil.getDateFormateTime(lotteryItem.getLotteryDate()));
 			dataHoloder.mRedNumOne.setText(String.valueOf(lotteryItem.getRedNumOne()));
 			dataHoloder.mRedNumTwo.setText(String.valueOf(lotteryItem.getRedNumTwo()));
 			dataHoloder.mRedNumThree.setText(String.valueOf(lotteryItem.getRedNumThree()));

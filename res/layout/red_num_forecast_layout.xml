@@ -3,6 +3,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    
+
+    <com.android.weixin.lotteryticket.widgets.HVListView
+        android:id="@+id/red_num_forecast_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@drawable/line_divider"
+        android:listSelector="@color/transparent" />
 
 </LinearLayout>

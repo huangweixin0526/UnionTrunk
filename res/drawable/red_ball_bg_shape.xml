@@ -6,10 +6,10 @@
     <solid android:color="@color/red" />
 
     <padding
-        android:bottom="1dp"
+        android:bottom="2dp"
         android:left="2dp"
         android:right="2dp"
-        android:top="1dp" />
+        android:top="2dp" />
 
     <solid android:color="@color/red" />
 
@@ -22,6 +22,7 @@
         android:width="15dp" />
 
 </shape>
+
 <!--
 "rectangle"     矩阵，这也是默认的shape
 
@@ -29,12 +30,12 @@
 
 "line"    　　　　一条水平的直线。这种shape必须使用 <stroke> 元素来定义这条线的宽度
 
-"ring"     　　　圆环
+"ring"     　　　圆环
 -->
 
 
 <!--
 android:useLevel
 
-    Boolean类型。如果用在 LevelListDrawable里，那么就是true。如果通常不出现则为false。
+    Boolean类型。如果用在 LevelListDrawable里，那么就是true。如果通常不出现则为false。
 -->

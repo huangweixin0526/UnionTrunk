@@ -4,7 +4,9 @@ import java.util.Date;
 
 import com.android.weixin.lotteryticket.storage.DBaseDao;
 import com.lidroid.xutils.db.annotation.Column;
+import com.lidroid.xutils.db.annotation.Table;
 
+@Table(name = "union_red_ball_num")
 public class RedBallNumInfo extends DBaseDao {
 
 	public static final String COLUMN_LOTTERY_DATE = "lotteryDate";
@@ -48,7 +50,7 @@ public class RedBallNumInfo extends DBaseDao {
 	private int periodNum;
 	@Column(column = "lottery_date")
 	private Date lotteryDate;
-	@Column(column="calculate_type")
+	@Column(column = "calculate_type")
 	private int calculateType;
 	@Column(column = "red_ball_num_1")
 	private int redBallNum1;
