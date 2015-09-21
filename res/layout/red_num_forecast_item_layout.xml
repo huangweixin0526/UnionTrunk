@@ -3,6 +3,318 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    
+
+    <TextView
+        android:id="@+id/union_forecast_period_num_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_forecast_lottery_date_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_1_tv"
+        android:layout_width="@dimen/size_20dip"
+        android:layout_height="@dimen/size_20dip"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_2_tv"
+        android:layout_width="@dimen/size_20dip"
+        android:layout_height="@dimen/size_20dip"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_3_tv"
+        android:layout_width="@dimen/size_20dip"
+        android:layout_height="@dimen/size_20dip"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_4_tv"
+        android:layout_width="@dimen/size_20dip"
+        android:layout_height="@dimen/size_20dip"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_5_tv"
+        android:layout_width="@dimen/size_20dip"
+        android:layout_height="@dimen/size_20dip"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_6_tv"
+        android:layout_width="@dimen/size_20dip"
+        android:layout_height="@dimen/size_20dip"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_7_tv"
+        android:layout_width="@dimen/size_20dip"
+        android:layout_height="@dimen/size_20dip"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_8_tv"
+        android:layout_width="@dimen/size_20dip"
+        android:layout_height="@dimen/size_20dip"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_9_tv"
+        android:layout_width="@dimen/size_20dip"
+        android:layout_height="@dimen/size_20dip"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_10_tv"
+        android:layout_width="@dimen/size_20dip"
+        android:layout_height="@dimen/size_20dip"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_11_tv"
+        android:layout_width="@dimen/size_20dip"
+        android:layout_height="@dimen/size_20dip"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_12_tv"
+        android:layout_width="@dimen/size_20dip"
+        android:layout_height="@dimen/size_20dip"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_13_tv"
+        android:layout_width="@dimen/size_20dip"
+        android:layout_height="@dimen/size_20dip"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_14_tv"
+        android:layout_width="@dimen/size_20dip"
+        android:layout_height="@dimen/size_20dip"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_15_tv"
+        android:layout_width="@dimen/size_20dip"
+        android:layout_height="@dimen/size_20dip"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_16_tv"
+        android:layout_width="@dimen/size_20dip"
+        android:layout_height="@dimen/size_20dip"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_17_tv"
+        android:layout_width="@dimen/size_20dip"
+        android:layout_height="@dimen/size_20dip"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_18_tv"
+        android:layout_width="@dimen/size_20dip"
+        android:layout_height="@dimen/size_20dip"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_19_tv"
+        android:layout_width="@dimen/size_20dip"
+        android:layout_height="@dimen/size_20dip"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_20_tv"
+        android:layout_width="@dimen/size_20dip"
+        android:layout_height="@dimen/size_20dip"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_21_tv"
+        android:layout_width="@dimen/size_20dip"
+        android:layout_height="@dimen/size_20dip"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_22_tv"
+        android:layout_width="@dimen/size_20dip"
+        android:layout_height="@dimen/size_20dip"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_23_tv"
+        android:layout_width="@dimen/size_20dip"
+        android:layout_height="@dimen/size_20dip"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_24_tv"
+        android:layout_width="@dimen/size_20dip"
+        android:layout_height="@dimen/size_20dip"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_25_tv"
+        android:layout_width="@dimen/size_20dip"
+        android:layout_height="@dimen/size_20dip"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_26_tv"
+        android:layout_width="@dimen/size_20dip"
+        android:layout_height="@dimen/size_20dip"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_27_tv"
+        android:layout_width="@dimen/size_20dip"
+        android:layout_height="@dimen/size_20dip"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_28_tv"
+        android:layout_width="@dimen/size_20dip"
+        android:layout_height="@dimen/size_20dip"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_29_tv"
+        android:layout_width="@dimen/size_20dip"
+        android:layout_height="@dimen/size_20dip"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_30_tv"
+        android:layout_width="@dimen/size_20dip"
+        android:layout_height="@dimen/size_20dip"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_31_tv"
+        android:layout_width="@dimen/size_20dip"
+        android:layout_height="@dimen/size_20dip"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_32_tv"
+        android:layout_width="@dimen/size_20dip"
+        android:layout_height="@dimen/size_20dip"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_33_tv"
+        android:layout_width="@dimen/size_20dip"
+        android:layout_height="@dimen/size_20dip"
+        android:gravity="center"
+        android:textSize="@dimen/size_18dip" />
 
 </LinearLayout>
