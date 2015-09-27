@@ -2,6 +2,8 @@ package com.android.weixin.lotteryticket.storage.unionlotto;
 
 import java.util.Date;
 
+import android.graphics.drawable.Drawable;
+
 import com.android.weixin.lotteryticket.storage.DBaseDao;
 import com.lidroid.xutils.db.annotation.Column;
 import com.lidroid.xutils.db.annotation.Table;
@@ -118,6 +120,72 @@ public class RedBallNumInfo extends DBaseDao {
 	private int redBallNum32;
 	@Column(column = "red_ball_num_33")
 	private int redBallNum33;
+
+	private Drawable bgRedBallNum1;
+
+	private Drawable bgRedBallNum2;
+
+	private Drawable bgRedBallNum3;
+
+	private Drawable bgRedBallNum4;
+
+	private Drawable bgRedBallNum5;
+
+	private Drawable bgRedBallNum6;
+
+	private Drawable bgRedBallNum7;
+
+	private Drawable bgRedBallNum8;
+
+	private Drawable bgRedBallNum9;
+
+	private Drawable bgRedBallNum10;
+
+	private Drawable bgRedBallNum11;
+
+	private Drawable bgRedBallNum12;
+
+	private Drawable bgRedBallNum13;
+
+	private Drawable bgRedBallNum14;
+
+	private Drawable bgRedBallNum15;
+
+	private Drawable bgRedBallNum16;
+
+	private Drawable bgRedBallNum17;
+
+	private Drawable bgRedBallNum18;
+
+	private Drawable bgRedBallNum19;
+
+	private Drawable bgRedBallNum20;
+
+	private Drawable bgRedBallNum21;
+
+	private Drawable bgRedBallNum22;
+
+	private Drawable bgRedBallNum23;
+
+	private Drawable bgRedBallNum24;
+
+	private Drawable bgRedBallNum25;
+
+	private Drawable bgRedBallNum26;
+
+	private Drawable bgRedBallNum27;
+
+	private Drawable bgRedBallNum28;
+
+	private Drawable bgRedBallNum29;
+
+	private Drawable bgRedBallNum30;
+
+	private Drawable bgRedBallNum31;
+
+	private Drawable bgRedBallNum32;
+
+	private Drawable bgRedBallNum33;
 
 	public int getPeriodNum() {
 		return periodNum;
@@ -405,5 +473,269 @@ public class RedBallNumInfo extends DBaseDao {
 
 	public void setRedBallNum33(int redBallNum33) {
 		this.redBallNum33 = redBallNum33;
+	}
+
+	public Drawable getBgRedBallNum1() {
+		return bgRedBallNum1;
+	}
+
+	public void setBgRedBallNum1(Drawable bgRedBallNum1) {
+		this.bgRedBallNum1 = bgRedBallNum1;
+	}
+
+	public Drawable getBgRedBallNum2() {
+		return bgRedBallNum2;
+	}
+
+	public void setBgRedBallNum2(Drawable bgRedBallNum2) {
+		this.bgRedBallNum2 = bgRedBallNum2;
+	}
+
+	public Drawable getBgRedBallNum3() {
+		return bgRedBallNum3;
+	}
+
+	public void setBgRedBallNum3(Drawable bgRedBallNum3) {
+		this.bgRedBallNum3 = bgRedBallNum3;
+	}
+
+	public Drawable getBgRedBallNum4() {
+		return bgRedBallNum4;
+	}
+
+	public void setBgRedBallNum4(Drawable bgRedBallNum4) {
+		this.bgRedBallNum4 = bgRedBallNum4;
+	}
+
+	public Drawable getBgRedBallNum5() {
+		return bgRedBallNum5;
+	}
+
+	public void setBgRedBallNum5(Drawable bgRedBallNum5) {
+		this.bgRedBallNum5 = bgRedBallNum5;
+	}
+
+	public Drawable getBgRedBallNum6() {
+		return bgRedBallNum6;
+	}
+
+	public void setBgRedBallNum6(Drawable bgRedBallNum6) {
+		this.bgRedBallNum6 = bgRedBallNum6;
+	}
+
+	public Drawable getBgRedBallNum7() {
+		return bgRedBallNum7;
+	}
+
+	public void setBgRedBallNum7(Drawable bgRedBallNum7) {
+		this.bgRedBallNum7 = bgRedBallNum7;
+	}
+
+	public Drawable getBgRedBallNum8() {
+		return bgRedBallNum8;
+	}
+
+	public void setBgRedBallNum8(Drawable bgRedBallNum8) {
+		this.bgRedBallNum8 = bgRedBallNum8;
+	}
+
+	public Drawable getBgRedBallNum9() {
+		return bgRedBallNum9;
+	}
+
+	public void setBgRedBallNum9(Drawable bgRedBallNum9) {
+		this.bgRedBallNum9 = bgRedBallNum9;
+	}
+
+	public Drawable getBgRedBallNum10() {
+		return bgRedBallNum10;
+	}
+
+	public void setBgRedBallNum10(Drawable bgRedBallNum10) {
+		this.bgRedBallNum10 = bgRedBallNum10;
+	}
+
+	public Drawable getBgRedBallNum11() {
+		return bgRedBallNum11;
+	}
+
+	public void setBgRedBallNum11(Drawable bgRedBallNum11) {
+		this.bgRedBallNum11 = bgRedBallNum11;
+	}
+
+	public Drawable getBgRedBallNum12() {
+		return bgRedBallNum12;
+	}
+
+	public void setBgRedBallNum12(Drawable bgRedBallNum12) {
+		this.bgRedBallNum12 = bgRedBallNum12;
+	}
+
+	public Drawable getBgRedBallNum13() {
+		return bgRedBallNum13;
+	}
+
+	public void setBgRedBallNum13(Drawable bgRedBallNum13) {
+		this.bgRedBallNum13 = bgRedBallNum13;
+	}
+
+	public Drawable getBgRedBallNum14() {
+		return bgRedBallNum14;
+	}
+
+	public void setBgRedBallNum14(Drawable bgRedBallNum14) {
+		this.bgRedBallNum14 = bgRedBallNum14;
+	}
+
+	public Drawable getBgRedBallNum15() {
+		return bgRedBallNum15;
+	}
+
+	public void setBgRedBallNum15(Drawable bgRedBallNum15) {
+		this.bgRedBallNum15 = bgRedBallNum15;
+	}
+
+	public Drawable getBgRedBallNum16() {
+		return bgRedBallNum16;
+	}
+
+	public void setBgRedBallNum16(Drawable bgRedBallNum16) {
+		this.bgRedBallNum16 = bgRedBallNum16;
+	}
+
+	public Drawable getBgRedBallNum17() {
+		return bgRedBallNum17;
+	}
+
+	public void setBgRedBallNum17(Drawable bgRedBallNum17) {
+		this.bgRedBallNum17 = bgRedBallNum17;
+	}
+
+	public Drawable getBgRedBallNum18() {
+		return bgRedBallNum18;
+	}
+
+	public void setBgRedBallNum18(Drawable bgRedBallNum18) {
+		this.bgRedBallNum18 = bgRedBallNum18;
+	}
+
+	public Drawable getBgRedBallNum19() {
+		return bgRedBallNum19;
+	}
+
+	public void setBgRedBallNum19(Drawable bgRedBallNum19) {
+		this.bgRedBallNum19 = bgRedBallNum19;
+	}
+
+	public Drawable getBgRedBallNum20() {
+		return bgRedBallNum20;
+	}
+
+	public void setBgRedBallNum20(Drawable bgRedBallNum20) {
+		this.bgRedBallNum20 = bgRedBallNum20;
+	}
+
+	public Drawable getBgRedBallNum21() {
+		return bgRedBallNum21;
+	}
+
+	public void setBgRedBallNum21(Drawable bgRedBallNum21) {
+		this.bgRedBallNum21 = bgRedBallNum21;
+	}
+
+	public Drawable getBgRedBallNum22() {
+		return bgRedBallNum22;
+	}
+
+	public void setBgRedBallNum22(Drawable bgRedBallNum22) {
+		this.bgRedBallNum22 = bgRedBallNum22;
+	}
+
+	public Drawable getBgRedBallNum23() {
+		return bgRedBallNum23;
+	}
+
+	public void setBgRedBallNum23(Drawable bgRedBallNum23) {
+		this.bgRedBallNum23 = bgRedBallNum23;
+	}
+
+	public Drawable getBgRedBallNum24() {
+		return bgRedBallNum24;
+	}
+
+	public void setBgRedBallNum24(Drawable bgRedBallNum24) {
+		this.bgRedBallNum24 = bgRedBallNum24;
+	}
+
+	public Drawable getBgRedBallNum25() {
+		return bgRedBallNum25;
+	}
+
+	public void setBgRedBallNum25(Drawable bgRedBallNum25) {
+		this.bgRedBallNum25 = bgRedBallNum25;
+	}
+
+	public Drawable getBgRedBallNum26() {
+		return bgRedBallNum26;
+	}
+
+	public void setBgRedBallNum26(Drawable bgRedBallNum26) {
+		this.bgRedBallNum26 = bgRedBallNum26;
+	}
+
+	public Drawable getBgRedBallNum27() {
+		return bgRedBallNum27;
+	}
+
+	public void setBgRedBallNum27(Drawable bgRedBallNum27) {
+		this.bgRedBallNum27 = bgRedBallNum27;
+	}
+
+	public Drawable getBgRedBallNum28() {
+		return bgRedBallNum28;
+	}
+
+	public void setBgRedBallNum28(Drawable bgRedBallNum28) {
+		this.bgRedBallNum28 = bgRedBallNum28;
+	}
+
+	public Drawable getBgRedBallNum29() {
+		return bgRedBallNum29;
+	}
+
+	public void setBgRedBallNum29(Drawable bgRedBallNum29) {
+		this.bgRedBallNum29 = bgRedBallNum29;
+	}
+
+	public Drawable getBgRedBallNum30() {
+		return bgRedBallNum30;
+	}
+
+	public void setBgRedBallNum30(Drawable bgRedBallNum30) {
+		this.bgRedBallNum30 = bgRedBallNum30;
+	}
+
+	public Drawable getBgRedBallNum31() {
+		return bgRedBallNum31;
+	}
+
+	public void setBgRedBallNum31(Drawable bgRedBallNum31) {
+		this.bgRedBallNum31 = bgRedBallNum31;
+	}
+
+	public Drawable getBgRedBallNum32() {
+		return bgRedBallNum32;
+	}
+
+	public void setBgRedBallNum32(Drawable bgRedBallNum32) {
+		this.bgRedBallNum32 = bgRedBallNum32;
+	}
+
+	public Drawable getBgRedBallNum33() {
+		return bgRedBallNum33;
+	}
+
+	public void setBgRedBallNum33(Drawable bgRedBallNum33) {
+		this.bgRedBallNum33 = bgRedBallNum33;
 	}
 }
