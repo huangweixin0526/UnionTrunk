@@ -67,6 +67,8 @@ public class DateUtil {
 	}
 
 	public static String getDateFormateTime(Date date) {
+		if(date == null)
+			return "";
 		Calendar calendar = Calendar.getInstance();
 		calendar.setTime(new Date());
 		int nowYear = calendar.get(Calendar.YEAR);

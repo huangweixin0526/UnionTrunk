@@ -22,6 +22,8 @@ public class MatrixOperation {
 	 */
 	public List<RedBallNumInfo> initDataArray3_3(List<UnionLotteryNumbers> unionLotteryData) {
 		List<RedBallNumInfo> matrixData_Items = new ArrayList<RedBallNumInfo>();
+		if (unionLotteryData == null || unionLotteryData.size() == 0)
+			return matrixData_Items;
 		int winningCount = unionLotteryData.size();
 		if (winningCount <= 1)
 			return matrixData_Items;
@@ -59,6 +61,8 @@ public class MatrixOperation {
 	 */
 	public List<RedBallNumInfo> initDataArray2_2(List<UnionLotteryNumbers> unionLotteryData) {
 		List<RedBallNumInfo> matrixData_Items2_2 = new ArrayList<RedBallNumInfo>();
+		if (unionLotteryData == null || unionLotteryData.size() == 0)
+			return matrixData_Items2_2;
 		int winningCount = unionLotteryData.size();
 		if (winningCount <= 1)
 			return matrixData_Items2_2;
