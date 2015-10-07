@@ -3,6 +3,7 @@ package com.android.weixin.lotteryticket.ui.adapter;
 import java.util.List;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.android.weixin.lotteryticket.R;
+import com.android.weixin.lotteryticket.permanent.CalculateTypeConfig;
 import com.android.weixin.lotteryticket.storage.unionlotto.RedBallNumInfo;
 import com.android.weixin.lotteryticket.storage.unionlotto.UnionLotteryNumbers;
 import com.android.weixin.lotteryticket.utils.DateUtil;
@@ -19,6 +21,8 @@ import com.lidroid.xutils.view.annotation.ViewInject;
 public class RedNumForecastAdapter extends BaseAdapter {
 
 	private Context mContext;
+	private Drawable mWinningBg;
+	private Drawable mMatrixWinningBg;
 	private List<RedBallNumInfo> mForecastDataSource;
 	private List<UnionLotteryNumbers> mUnionLotteryData;
 
@@ -26,6 +30,12 @@ public class RedNumForecastAdapter extends BaseAdapter {
 		this.mContext = context;
 		this.mForecastDataSource = forecastDataSource;
 		this.mUnionLotteryData = unionLotteryData;
+		this.initVar();
+	}
+
+	private void initVar() {
+		this.mWinningBg = this.mContext.getResources().getDrawable(R.drawable.red_ball_bg_shape);
+		this.mMatrixWinningBg = this.mContext.getResources().getDrawable(R.drawable.red_ball_bg_shape);
 	}
 
 	@Override
@@ -72,169 +82,179 @@ public class RedNumForecastAdapter extends BaseAdapter {
 			viewHoloder.mUnionLotteryDate.setText(DateUtil.getDateFormateTime(redBallNumInfo.getLotteryDate()));
 			if (redBallNumInfo.getRedBallNum1() > 0) {
 				viewHoloder.mUnionRedNum1.setText(String.valueOf(redBallNumInfo.getRedBallNum1()));
-				viewHoloder.mUnionRedNum1.setBackground(redBallNumInfo.getBgRedBallNum1());
+				viewHoloder.mUnionRedNum1.setBackground(getNumberBg(redBallNumInfo.getRedBallNum1Type()));
 			}
 
 			if (redBallNumInfo.getRedBallNum2() > 0) {
 				viewHoloder.mUnionRedNum2.setText(String.valueOf(redBallNumInfo.getRedBallNum2()));
-				viewHoloder.mUnionRedNum2.setBackground(redBallNumInfo.getBgRedBallNum2());
+				viewHoloder.mUnionRedNum2.setBackground(getNumberBg(redBallNumInfo.getRedBallNum2Type()));
 			}
 
 			if (redBallNumInfo.getRedBallNum3() > 0) {
 				viewHoloder.mUnionRedNum3.setText(String.valueOf(redBallNumInfo.getRedBallNum3()));
-				viewHoloder.mUnionRedNum3.setBackground(redBallNumInfo.getBgRedBallNum3());
+				viewHoloder.mUnionRedNum3.setBackground(getNumberBg(redBallNumInfo.getRedBallNum3Type()));
 			}
 
 			if (redBallNumInfo.getRedBallNum4() > 0) {
 				viewHoloder.mUnionRedNum4.setText(String.valueOf(redBallNumInfo.getRedBallNum4()));
-				viewHoloder.mUnionRedNum4.setBackground(redBallNumInfo.getBgRedBallNum4());
+				viewHoloder.mUnionRedNum4.setBackground(getNumberBg(redBallNumInfo.getRedBallNum4Type()));
 			}
 
 			if (redBallNumInfo.getRedBallNum5() > 0) {
 				viewHoloder.mUnionRedNum5.setText(String.valueOf(redBallNumInfo.getRedBallNum5()));
-				viewHoloder.mUnionRedNum5.setBackground(redBallNumInfo.getBgRedBallNum5());
+				viewHoloder.mUnionRedNum5.setBackground(getNumberBg(redBallNumInfo.getRedBallNum5Type()));
 			}
 
 			if (redBallNumInfo.getRedBallNum6() > 0) {
 				viewHoloder.mUnionRedNum6.setText(String.valueOf(redBallNumInfo.getRedBallNum6()));
-				viewHoloder.mUnionRedNum6.setBackground(redBallNumInfo.getBgRedBallNum6());
+				viewHoloder.mUnionRedNum6.setBackground(getNumberBg(redBallNumInfo.getRedBallNum6Type()));
 			}
 
 			if (redBallNumInfo.getRedBallNum7() > 0) {
 				viewHoloder.mUnionRedNum7.setText(String.valueOf(redBallNumInfo.getRedBallNum7()));
-				viewHoloder.mUnionRedNum7.setBackground(redBallNumInfo.getBgRedBallNum7());
+				viewHoloder.mUnionRedNum7.setBackground(getNumberBg(redBallNumInfo.getRedBallNum7Type()));
 			}
 
 			if (redBallNumInfo.getRedBallNum8() > 0) {
 				viewHoloder.mUnionRedNum8.setText(String.valueOf(redBallNumInfo.getRedBallNum8()));
-				viewHoloder.mUnionRedNum8.setBackground(redBallNumInfo.getBgRedBallNum8());
+				viewHoloder.mUnionRedNum8.setBackground(getNumberBg(redBallNumInfo.getRedBallNum8Type()));
 			}
 
 			if (redBallNumInfo.getRedBallNum9() > 0) {
 				viewHoloder.mUnionRedNum9.setText(String.valueOf(redBallNumInfo.getRedBallNum9()));
-				viewHoloder.mUnionRedNum9.setBackground(redBallNumInfo.getBgRedBallNum9());
+				viewHoloder.mUnionRedNum9.setBackground(getNumberBg(redBallNumInfo.getRedBallNum9Type()));
 			}
 
 			if (redBallNumInfo.getRedBallNum10() > 0) {
 				viewHoloder.mUnionRedNum10.setText(String.valueOf(redBallNumInfo.getRedBallNum10()));
-				viewHoloder.mUnionRedNum10.setBackground(redBallNumInfo.getBgRedBallNum10());
+				viewHoloder.mUnionRedNum10.setBackground(getNumberBg(redBallNumInfo.getRedBallNum10Type()));
 			}
 
 			if (redBallNumInfo.getRedBallNum11() > 0) {
 				viewHoloder.mUnionRedNum11.setText(String.valueOf(redBallNumInfo.getRedBallNum11()));
-				viewHoloder.mUnionRedNum11.setBackground(redBallNumInfo.getBgRedBallNum11());
+				viewHoloder.mUnionRedNum11.setBackground(getNumberBg(redBallNumInfo.getRedBallNum11Type()));
 			}
 
 			if (redBallNumInfo.getRedBallNum12() > 0) {
 				viewHoloder.mUnionRedNum12.setText(String.valueOf(redBallNumInfo.getRedBallNum12()));
-				viewHoloder.mUnionRedNum12.setBackground(redBallNumInfo.getBgRedBallNum12());
+				viewHoloder.mUnionRedNum12.setBackground(getNumberBg(redBallNumInfo.getRedBallNum12Type()));
 			}
 
 			if (redBallNumInfo.getRedBallNum13() > 0) {
 				viewHoloder.mUnionRedNum13.setText(String.valueOf(redBallNumInfo.getRedBallNum13()));
-				viewHoloder.mUnionRedNum13.setBackground(redBallNumInfo.getBgRedBallNum13());
+				viewHoloder.mUnionRedNum13.setBackground(getNumberBg(redBallNumInfo.getRedBallNum13Type()));
 			}
 
 			if (redBallNumInfo.getRedBallNum14() > 0) {
 				viewHoloder.mUnionRedNum14.setText(String.valueOf(redBallNumInfo.getRedBallNum14()));
-				viewHoloder.mUnionRedNum14.setBackground(redBallNumInfo.getBgRedBallNum14());
+				viewHoloder.mUnionRedNum14.setBackground(getNumberBg(redBallNumInfo.getRedBallNum14Type()));
 			}
 
 			if (redBallNumInfo.getRedBallNum15() > 0) {
 				viewHoloder.mUnionRedNum15.setText(String.valueOf(redBallNumInfo.getRedBallNum15()));
-				viewHoloder.mUnionRedNum15.setBackground(redBallNumInfo.getBgRedBallNum15());
+				viewHoloder.mUnionRedNum15.setBackground(getNumberBg(redBallNumInfo.getRedBallNum15Type()));
 			}
 
 			if (redBallNumInfo.getRedBallNum16() > 0) {
 				viewHoloder.mUnionRedNum16.setText(String.valueOf(redBallNumInfo.getRedBallNum16()));
-				viewHoloder.mUnionRedNum16.setBackground(redBallNumInfo.getBgRedBallNum16());
+				viewHoloder.mUnionRedNum16.setBackground(getNumberBg(redBallNumInfo.getRedBallNum16Type()));
 			}
 
 			if (redBallNumInfo.getRedBallNum17() > 0) {
 				viewHoloder.mUnionRedNum17.setText(String.valueOf(redBallNumInfo.getRedBallNum17()));
-				viewHoloder.mUnionRedNum17.setBackground(redBallNumInfo.getBgRedBallNum17());
+				viewHoloder.mUnionRedNum17.setBackground(getNumberBg(redBallNumInfo.getRedBallNum17Type()));
 			}
 
 			if (redBallNumInfo.getRedBallNum18() > 0) {
 				viewHoloder.mUnionRedNum18.setText(String.valueOf(redBallNumInfo.getRedBallNum18()));
-				viewHoloder.mUnionRedNum18.setBackground(redBallNumInfo.getBgRedBallNum18());
+				viewHoloder.mUnionRedNum18.setBackground(getNumberBg(redBallNumInfo.getRedBallNum18Type()));
 			}
 
 			if (redBallNumInfo.getRedBallNum19() > 0) {
 				viewHoloder.mUnionRedNum19.setText(String.valueOf(redBallNumInfo.getRedBallNum19()));
-				viewHoloder.mUnionRedNum19.setBackground(redBallNumInfo.getBgRedBallNum19());
+				viewHoloder.mUnionRedNum19.setBackground(getNumberBg(redBallNumInfo.getRedBallNum19Type()));
 			}
 
 			if (redBallNumInfo.getRedBallNum20() > 0) {
 				viewHoloder.mUnionRedNum20.setText(String.valueOf(redBallNumInfo.getRedBallNum20()));
-				viewHoloder.mUnionRedNum20.setBackground(redBallNumInfo.getBgRedBallNum20());
+				viewHoloder.mUnionRedNum20.setBackground(getNumberBg(redBallNumInfo.getRedBallNum20Type()));
 			}
 
 			if (redBallNumInfo.getRedBallNum21() > 0) {
 				viewHoloder.mUnionRedNum21.setText(String.valueOf(redBallNumInfo.getRedBallNum21()));
-				viewHoloder.mUnionRedNum21.setBackground(redBallNumInfo.getBgRedBallNum21());
+				viewHoloder.mUnionRedNum21.setBackground(getNumberBg(redBallNumInfo.getRedBallNum21Type()));
 			}
 
 			if (redBallNumInfo.getRedBallNum22() > 0) {
 				viewHoloder.mUnionRedNum22.setText(String.valueOf(redBallNumInfo.getRedBallNum22()));
-				viewHoloder.mUnionRedNum22.setBackground(redBallNumInfo.getBgRedBallNum22());
+				viewHoloder.mUnionRedNum22.setBackground(getNumberBg(redBallNumInfo.getRedBallNum22Type()));
 			}
 
 			if (redBallNumInfo.getRedBallNum23() > 0) {
 				viewHoloder.mUnionRedNum23.setText(String.valueOf(redBallNumInfo.getRedBallNum23()));
-				viewHoloder.mUnionRedNum23.setBackground(redBallNumInfo.getBgRedBallNum23());
+				viewHoloder.mUnionRedNum23.setBackground(getNumberBg(redBallNumInfo.getRedBallNum23Type()));
 			}
 
 			if (redBallNumInfo.getRedBallNum24() > 0) {
 				viewHoloder.mUnionRedNum24.setText(String.valueOf(redBallNumInfo.getRedBallNum24()));
-				viewHoloder.mUnionRedNum24.setBackground(redBallNumInfo.getBgRedBallNum24());
+				viewHoloder.mUnionRedNum24.setBackground(getNumberBg(redBallNumInfo.getRedBallNum24Type()));
 			}
 
 			if (redBallNumInfo.getRedBallNum25() > 0) {
 				viewHoloder.mUnionRedNum25.setText(String.valueOf(redBallNumInfo.getRedBallNum25()));
-				viewHoloder.mUnionRedNum25.setBackground(redBallNumInfo.getBgRedBallNum25());
+				viewHoloder.mUnionRedNum25.setBackground(getNumberBg(redBallNumInfo.getRedBallNum25Type()));
 			}
 
 			if (redBallNumInfo.getRedBallNum26() > 0) {
 				viewHoloder.mUnionRedNum26.setText(String.valueOf(redBallNumInfo.getRedBallNum26()));
-				viewHoloder.mUnionRedNum26.setBackground(redBallNumInfo.getBgRedBallNum26());
+				viewHoloder.mUnionRedNum26.setBackground(getNumberBg(redBallNumInfo.getRedBallNum26Type()));
 			}
 
 			if (redBallNumInfo.getRedBallNum27() > 0) {
 				viewHoloder.mUnionRedNum27.setText(String.valueOf(redBallNumInfo.getRedBallNum27()));
-				viewHoloder.mUnionRedNum27.setBackground(redBallNumInfo.getBgRedBallNum27());
+				viewHoloder.mUnionRedNum27.setBackground(getNumberBg(redBallNumInfo.getRedBallNum27Type()));
 			}
 
 			if (redBallNumInfo.getRedBallNum28() > 0) {
 				viewHoloder.mUnionRedNum28.setText(String.valueOf(redBallNumInfo.getRedBallNum28()));
-				viewHoloder.mUnionRedNum28.setBackground(redBallNumInfo.getBgRedBallNum28());
+				viewHoloder.mUnionRedNum28.setBackground(getNumberBg(redBallNumInfo.getRedBallNum28Type()));
 			}
 
 			if (redBallNumInfo.getRedBallNum29() > 0) {
 				viewHoloder.mUnionRedNum29.setText(String.valueOf(redBallNumInfo.getRedBallNum29()));
-				viewHoloder.mUnionRedNum29.setBackground(redBallNumInfo.getBgRedBallNum29());
+				viewHoloder.mUnionRedNum29.setBackground(getNumberBg(redBallNumInfo.getRedBallNum29Type()));
 			}
 
 			if (redBallNumInfo.getRedBallNum30() > 0) {
 				viewHoloder.mUnionRedNum30.setText(String.valueOf(redBallNumInfo.getRedBallNum30()));
-				viewHoloder.mUnionRedNum30.setBackground(redBallNumInfo.getBgRedBallNum30());
+				viewHoloder.mUnionRedNum30.setBackground(getNumberBg(redBallNumInfo.getRedBallNum30Type()));
 			}
 
 			if (redBallNumInfo.getRedBallNum31() > 0) {
 				viewHoloder.mUnionRedNum31.setText(String.valueOf(redBallNumInfo.getRedBallNum31()));
-				viewHoloder.mUnionRedNum31.setBackground(redBallNumInfo.getBgRedBallNum31());
+				viewHoloder.mUnionRedNum31.setBackground(getNumberBg(redBallNumInfo.getRedBallNum31Type()));
 			}
 
 			if (redBallNumInfo.getRedBallNum32() > 0) {
 				viewHoloder.mUnionRedNum32.setText(String.valueOf(redBallNumInfo.getRedBallNum32()));
-				viewHoloder.mUnionRedNum32.setBackground(redBallNumInfo.getBgRedBallNum32());
+				viewHoloder.mUnionRedNum32.setBackground(getNumberBg(redBallNumInfo.getRedBallNum32Type()));
 			}
 
 			if (redBallNumInfo.getRedBallNum33() > 0) {
 				viewHoloder.mUnionRedNum33.setText(String.valueOf(redBallNumInfo.getRedBallNum33()));
-				viewHoloder.mUnionRedNum33.setBackground(redBallNumInfo.getBgRedBallNum33());
+				viewHoloder.mUnionRedNum33.setBackground(getNumberBg(redBallNumInfo.getRedBallNum33Type()));
 			}
 		}
+	}
+
+	private Drawable getNumberBg(int calculateType) {
+		if (calculateType == CalculateTypeConfig.CALCULATE_TYPE_MATRIX_WINNING) {
+			return this.mMatrixWinningBg;
+		}
+		if (calculateType == CalculateTypeConfig.CALCULATE_TYPE_WINNING) {
+			return this.mWinningBg;
+		}
+		return null;
 	}
 
 	private class ViewHoloder {

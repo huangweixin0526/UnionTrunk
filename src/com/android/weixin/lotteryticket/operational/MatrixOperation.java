@@ -3,6 +3,7 @@ package com.android.weixin.lotteryticket.operational;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.android.weixin.lotteryticket.permanent.CalculateTypeConfig;
 import com.android.weixin.lotteryticket.storage.unionlotto.RedBallNumInfo;
 import com.android.weixin.lotteryticket.storage.unionlotto.UnionLotteryNumbers;
 import com.android.weixin.lotteryticket.utils.NumberUtil;
@@ -38,7 +39,7 @@ public class MatrixOperation {
 
 			int[][] dataArray3_2 = convertToArray3_2(unionLotteryData.get(i));
 			int[][] dataArray2_3 = convertToArray2_3(unionLotteryData.get(i + 1));
-			int[][] dataResult = MatrixOperation(dataArray3_2, dataArray2_3);
+			int[][] dataResult = matrixOperation3_3(dataArray3_2, dataArray2_3);
 
 			RedBallNumInfo dataModel = null;
 			if (i + 2 < winningCount) {
@@ -77,7 +78,7 @@ public class MatrixOperation {
 
 			int[][] dataArray3_2 = convertToArray3_2(unionLotteryData.get(i));
 			int[][] dataArray2_3 = convertToArray2_3(unionLotteryData.get(i + 1));
-			int[][] dataResult = MatrixOperation2_2(dataArray2_3, dataArray3_2);
+			int[][] dataResult = matrixOperation2_2(dataArray2_3, dataArray3_2);
 
 			RedBallNumInfo dataModel = null;
 			if (i + 2 < winningCount) {
@@ -114,7 +115,7 @@ public class MatrixOperation {
 	// / <param name="array3_2"></param>
 	// / <param name="dataArray2_3"></param>
 	// / <returns></returns>
-	private int[][] MatrixOperation(int[][] array3_2, int[][] dataArray2_3) {
+	private int[][] matrixOperation3_3(int[][] array3_2, int[][] dataArray2_3) {
 		int[][] resultArray = new int[][] { new int[3], new int[3], new int[3] };
 
 		for (int row1 = 0, col1 = 0; row1 < array3_2.length; row1++) {
@@ -126,7 +127,7 @@ public class MatrixOperation {
 		return resultArray;
 	}
 
-	private int[][] MatrixOperation2_2(int[][] dataArray2_3, int[][] array3_2) {
+	private int[][] matrixOperation2_2(int[][] dataArray2_3, int[][] array3_2) {
 		int[][] resultArray = new int[][] { new int[2], new int[2] };
 
 		for (int row1 = 0, col1 = 0; row1 < dataArray2_3.length; row1++) {
@@ -142,22 +143,27 @@ public class MatrixOperation {
 	private void initDataModel(int[][] dataResult, RedBallNumInfo dataModel) {
 		for (int i = 0; i < dataResult.length; i++) {
 			for (int j = 0; j < dataResult[i].length; j++) {
-				NumberUtil.initRedNumberModel(dataResult[i][j], dataModel, true);
+				NumberUtil.initRedNumberModel(dataResult[i][j], dataModel, CalculateTypeConfig.CALCULATE_TYPE_MATRIX);
 			}
 		}
 
 	}
 
+	/**
+	 * 初始化中奖数据
+	 * @param unionLotteryNumber
+	 * @return
+	 */
 	private RedBallNumInfo initDataModel(UnionLotteryNumbers unionLotteryNumber) {
 		RedBallNumInfo redBallNumInfo = new RedBallNumInfo();
 		redBallNumInfo.setLotteryDate(unionLotteryNumber.getLotteryDate());
 		redBallNumInfo.setPeriodNum(unionLotteryNumber.getPeriodNum());
-		NumberUtil.initRedNumberModel(unionLotteryNumber.getRedNumOne(), redBallNumInfo, false);
-		NumberUtil.initRedNumberModel(unionLotteryNumber.getRedNumTwo(), redBallNumInfo, false);
-		NumberUtil.initRedNumberModel(unionLotteryNumber.getRedNumThree(), redBallNumInfo, false);
-		NumberUtil.initRedNumberModel(unionLotteryNumber.getRedNumFour(), redBallNumInfo, false);
-		NumberUtil.initRedNumberModel(unionLotteryNumber.getRedNumFive(), redBallNumInfo, false);
-		NumberUtil.initRedNumberModel(unionLotteryNumber.getRedNumSix(), redBallNumInfo, false);
+		NumberUtil.initRedNumberModel(unionLotteryNumber.getRedNumOne(), redBallNumInfo, CalculateTypeConfig.CALCULATE_TYPE_WINNING);
+		NumberUtil.initRedNumberModel(unionLotteryNumber.getRedNumTwo(), redBallNumInfo, CalculateTypeConfig.CALCULATE_TYPE_WINNING);
+		NumberUtil.initRedNumberModel(unionLotteryNumber.getRedNumThree(), redBallNumInfo, CalculateTypeConfig.CALCULATE_TYPE_WINNING);
+		NumberUtil.initRedNumberModel(unionLotteryNumber.getRedNumFour(), redBallNumInfo, CalculateTypeConfig.CALCULATE_TYPE_WINNING);
+		NumberUtil.initRedNumberModel(unionLotteryNumber.getRedNumFive(), redBallNumInfo, CalculateTypeConfig.CALCULATE_TYPE_WINNING);
+		NumberUtil.initRedNumberModel(unionLotteryNumber.getRedNumSix(), redBallNumInfo, CalculateTypeConfig.CALCULATE_TYPE_WINNING);
 		return redBallNumInfo;
 	}
 
