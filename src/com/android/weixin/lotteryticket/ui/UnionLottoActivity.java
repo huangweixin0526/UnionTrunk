@@ -8,7 +8,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -16,6 +15,7 @@ import com.android.weixin.lotteryticket.R;
 import com.android.weixin.lotteryticket.ui.fragment.BlueNumForecastFragment;
 import com.android.weixin.lotteryticket.ui.fragment.RedNumForecastFragment;
 import com.android.weixin.lotteryticket.ui.fragment.TwoDataPreviewFragment;
+import com.android.weixin.lotteryticket.widgets.CustomViewPager;
 import com.android.weixin.lotteryticket.widgets.indicator.TabPageIndicator;
 import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.view.annotation.ViewInject;
@@ -30,7 +30,7 @@ public class UnionLottoActivity extends FragmentActivity {
 	}
 
 	@ViewInject(R.id.union_lotto_pager)
-	private ViewPager mPager;
+	private CustomViewPager mPager;
 	@ViewInject(R.id.union_lotto_indicator)
 	private TabPageIndicator mIndicator;
 

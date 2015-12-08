@@ -16,6 +16,8 @@
     <string name="union_lotto_str">1</string>
     <string name="big_lotto_str">2</string>
     <string name="add_data_succeed">添加成功！</string>
+    <string name="period_num_tip">期号</string>
+    <string name="lottery_date_tip">日期</string>
 
     <!-- 数字 -->
     <string name="num_str_1">1</string>

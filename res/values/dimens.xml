@@ -8,6 +8,7 @@
     <dimen name="size_20dip">20dip</dimen>
     <dimen name="size_30dip">30dip</dimen>
     <dimen name="size_50dip">50dip</dimen>
+     <dimen name="size_100dip">100dip</dimen>
     <dimen name="size_150dip">150dip</dimen>
 
 </resources>
