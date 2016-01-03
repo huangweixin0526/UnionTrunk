@@ -1,135 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:orientation="horizontal" >
+
+    <View style="@style/ver_line_divider" />
 
     <TextView
         android:id="@+id/blue_num_1_tv"
-        android:layout_width="@dimen/size_0dip"
-        android:layout_height="@dimen/size_20dip"
-        android:layout_weight="1"
-        android:text="@string/num_str_1"
-        android:textSize="@dimen/size_18dip" />
+        style="@style/blue_num_forecast"
+        android:text="@string/num_str_1" />
+
+    <View style="@style/ver_line_divider" />
 
     <TextView
         android:id="@+id/blue_num_2_tv"
-        android:layout_width="@dimen/size_0dip"
-        android:layout_height="@dimen/size_20dip"
-        android:layout_weight="1"
-        android:text="@string/num_str_2"
-        android:textSize="@dimen/size_18dip" />
+        style="@style/blue_num_forecast"
+        android:text="@string/num_str_2" />
+
+    <View style="@style/ver_line_divider" />
 
     <TextView
         android:id="@+id/blue_num_3_tv"
-        android:layout_width="@dimen/size_0dip"
-        android:layout_height="@dimen/size_20dip"
-        android:layout_weight="1"
-        android:text="@string/num_str_3"
-        android:textSize="@dimen/size_18dip" />
+        style="@style/blue_num_forecast"
+        android:text="@string/num_str_3" />
+
+    <View style="@style/ver_line_divider" />
 
     <TextView
         android:id="@+id/blue_num_4_tv"
-        android:layout_width="@dimen/size_0dip"
-        android:layout_height="@dimen/size_20dip"
-        android:layout_weight="1"
-        android:text="@string/num_str_4"
-        android:textSize="@dimen/size_18dip" />
+        style="@style/blue_num_forecast"
+        android:text="@string/num_str_4" />
+
+    <View style="@style/ver_line_divider" />
 
     <TextView
         android:id="@+id/blue_num_5_tv"
-        android:layout_width="@dimen/size_0dip"
-        android:layout_height="@dimen/size_20dip"
-        android:layout_weight="1"
-        android:text="@string/num_str_5"
-        android:textSize="@dimen/size_18dip" />
+        style="@style/blue_num_forecast"
+        android:text="@string/num_str_5" />
+
+    <View style="@style/ver_line_divider" />
 
     <TextView
         android:id="@+id/blue_num_6_tv"
-        android:layout_width="@dimen/size_0dip"
-        android:layout_height="@dimen/size_20dip"
-        android:layout_weight="1"
-        android:text="@string/num_str_6"
-        android:textSize="@dimen/size_18dip" />
+        style="@style/blue_num_forecast"
+        android:text="@string/num_str_6" />
+
+    <View style="@style/ver_line_divider" />
 
     <TextView
         android:id="@+id/blue_num_7_tv"
-        android:layout_width="@dimen/size_0dip"
-        android:layout_height="@dimen/size_20dip"
-        android:layout_weight="1"
-        android:text="@string/num_str_7"
-        android:textSize="@dimen/size_18dip" />
+        style="@style/blue_num_forecast"
+        android:text="@string/num_str_7" />
+
+    <View style="@style/ver_line_divider" />
 
     <TextView
         android:id="@+id/blue_num_8_tv"
-        android:layout_width="@dimen/size_0dip"
-        android:layout_height="@dimen/size_20dip"
-        android:layout_weight="1"
-        android:text="@string/num_str_8"
-        android:textSize="@dimen/size_18dip" />
+        style="@style/blue_num_forecast"
+        android:text="@string/num_str_8" />
+
+    <View style="@style/ver_line_divider" />
 
     <TextView
         android:id="@+id/blue_num_9_tv"
-        android:layout_width="@dimen/size_0dip"
-        android:layout_height="@dimen/size_20dip"
-        android:layout_weight="1"
-        android:text="@string/num_str_9"
-        android:textSize="@dimen/size_18dip" />
+        style="@style/blue_num_forecast"
+        android:text="@string/num_str_9" />
+
+    <View style="@style/ver_line_divider" />
 
     <TextView
         android:id="@+id/blue_num_10_tv"
-        android:layout_width="@dimen/size_0dip"
-        android:layout_height="@dimen/size_20dip"
-        android:layout_weight="1"
-        android:text="@string/num_str_10"
-        android:textSize="@dimen/size_18dip" />
+        style="@style/blue_num_forecast"
+        android:text="@string/num_str_10" />
+
+    <View style="@style/ver_line_divider" />
 
     <TextView
         android:id="@+id/blue_num_11_tv"
-        android:layout_width="@dimen/size_0dip"
-        android:layout_height="@dimen/size_20dip"
-        android:layout_weight="1"
-        android:text="@string/num_str_11"
-        android:textSize="@dimen/size_18dip" />
+        style="@style/blue_num_forecast"
+        android:text="@string/num_str_11" />
+
+    <View style="@style/ver_line_divider" />
 
     <TextView
         android:id="@+id/blue_num_12_tv"
-        android:layout_width="@dimen/size_0dip"
-        android:layout_height="@dimen/size_20dip"
-        android:layout_weight="1"
-        android:text="@string/num_str_12"
-        android:textSize="@dimen/size_18dip" />
+        style="@style/blue_num_forecast"
+        android:text="@string/num_str_12" />
+
+    <View style="@style/ver_line_divider" />
 
     <TextView
         android:id="@+id/blue_num_13_tv"
-        android:layout_width="@dimen/size_0dip"
-        android:layout_height="@dimen/size_20dip"
-        android:layout_weight="1"
-        android:text="@string/num_str_13"
-        android:textSize="@dimen/size_18dip" />
+        style="@style/blue_num_forecast"
+        android:text="@string/num_str_13" />
+
+    <View style="@style/ver_line_divider" />
 
     <TextView
         android:id="@+id/blue_num_14_tv"
-        android:layout_width="@dimen/size_0dip"
-        android:layout_height="@dimen/size_20dip"
-        android:layout_weight="1"
-        android:text="@string/num_str_14"
-        android:textSize="@dimen/size_18dip" />
+        style="@style/blue_num_forecast"
+        android:text="@string/num_str_14" />
+
+    <View style="@style/ver_line_divider" />
 
     <TextView
         android:id="@+id/blue_num_15_tv"
-        android:layout_width="@dimen/size_0dip"
-        android:layout_height="@dimen/size_20dip"
-        android:layout_weight="1"
-        android:text="@string/num_str_15"
-        android:textSize="@dimen/size_18dip" />
+        style="@style/blue_num_forecast"
+        android:text="@string/num_str_15" />
+
+    <View style="@style/ver_line_divider" />
 
     <TextView
         android:id="@+id/blue_num_16_tv"
-        android:layout_width="@dimen/size_0dip"
-        android:layout_height="@dimen/size_20dip"
-        android:layout_weight="1"
-        android:text="@string/num_str_16"
-        android:textSize="@dimen/size_18dip" />
+        style="@style/blue_num_forecast"
+        android:text="@string/num_str_16" />
 
 </LinearLayout>

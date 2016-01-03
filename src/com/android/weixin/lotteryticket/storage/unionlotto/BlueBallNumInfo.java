@@ -68,6 +68,23 @@ public class BlueBallNumInfo extends DBaseDao {
 	@Column(column = "blue_ball_num_16")
 	private int blueBallNum16;
 
+	private int blueBallNum1Type;
+	private int blueBallNum2Type;
+	private int blueBallNum3Type;
+	private int blueBallNum4Type;
+	private int blueBallNum5Type;
+	private int blueBallNum6Type;
+	private int blueBallNum7Type;
+	private int blueBallNum8Type;
+	private int blueBallNum9Type;
+	private int blueBallNum10Type;
+	private int blueBallNum11Type;
+	private int blueBallNum12Type;
+	private int blueBallNum13Type;
+	private int blueBallNum14Type;
+	private int blueBallNum15Type;
+	private int blueBallNum16Type;
+
 	public int getPeriodNum() {
 		return periodNum;
 	}
@@ -218,5 +235,133 @@ public class BlueBallNumInfo extends DBaseDao {
 
 	public void setBlueBallNum16(int blueBallNum16) {
 		this.blueBallNum16 = blueBallNum16;
+	}
+
+	public int getBlueBallNum1Type() {
+		return blueBallNum1Type;
+	}
+
+	public void setBlueBallNum1Type(int blueBallNum1Type) {
+		this.blueBallNum1Type = blueBallNum1Type;
+	}
+
+	public int getBlueBallNum2Type() {
+		return blueBallNum2Type;
+	}
+
+	public void setBlueBallNum2Type(int blueBallNum2Type) {
+		this.blueBallNum2Type = blueBallNum2Type;
+	}
+
+	public int getBlueBallNum3Type() {
+		return blueBallNum3Type;
+	}
+
+	public void setBlueBallNum3Type(int blueBallNum3Type) {
+		this.blueBallNum3Type = blueBallNum3Type;
+	}
+
+	public int getBlueBallNum4Type() {
+		return blueBallNum4Type;
+	}
+
+	public void setBlueBallNum4Type(int blueBallNum4Type) {
+		this.blueBallNum4Type = blueBallNum4Type;
+	}
+
+	public int getBlueBallNum5Type() {
+		return blueBallNum5Type;
+	}
+
+	public void setBlueBallNum5Type(int blueBallNum5Type) {
+		this.blueBallNum5Type = blueBallNum5Type;
+	}
+
+	public int getBlueBallNum6Type() {
+		return blueBallNum6Type;
+	}
+
+	public void setBlueBallNum6Type(int blueBallNum6Type) {
+		this.blueBallNum6Type = blueBallNum6Type;
+	}
+
+	public int getBlueBallNum7Type() {
+		return blueBallNum7Type;
+	}
+
+	public void setBlueBallNum7Type(int blueBallNum7Type) {
+		this.blueBallNum7Type = blueBallNum7Type;
+	}
+
+	public int getBlueBallNum8Type() {
+		return blueBallNum8Type;
+	}
+
+	public void setBlueBallNum8Type(int blueBallNum8Type) {
+		this.blueBallNum8Type = blueBallNum8Type;
+	}
+
+	public int getBlueBallNum9Type() {
+		return blueBallNum9Type;
+	}
+
+	public void setBlueBallNum9Type(int blueBallNum9Type) {
+		this.blueBallNum9Type = blueBallNum9Type;
+	}
+
+	public int getBlueBallNum10Type() {
+		return blueBallNum10Type;
+	}
+
+	public void setBlueBallNum10Type(int blueBallNum10Type) {
+		this.blueBallNum10Type = blueBallNum10Type;
+	}
+
+	public int getBlueBallNum11Type() {
+		return blueBallNum11Type;
+	}
+
+	public void setBlueBallNum11Type(int blueBallNum11Type) {
+		this.blueBallNum11Type = blueBallNum11Type;
+	}
+
+	public int getBlueBallNum12Type() {
+		return blueBallNum12Type;
+	}
+
+	public void setBlueBallNum12Type(int blueBallNum12Type) {
+		this.blueBallNum12Type = blueBallNum12Type;
+	}
+
+	public int getBlueBallNum13Type() {
+		return blueBallNum13Type;
+	}
+
+	public void setBlueBallNum13Type(int blueBallNum13Type) {
+		this.blueBallNum13Type = blueBallNum13Type;
+	}
+
+	public int getBlueBallNum14Type() {
+		return blueBallNum14Type;
+	}
+
+	public void setBlueBallNum14Type(int blueBallNum14Type) {
+		this.blueBallNum14Type = blueBallNum14Type;
+	}
+
+	public int getBlueBallNum15Type() {
+		return blueBallNum15Type;
+	}
+
+	public void setBlueBallNum15Type(int blueBallNum15Type) {
+		this.blueBallNum15Type = blueBallNum15Type;
+	}
+
+	public int getBlueBallNum16Type() {
+		return blueBallNum16Type;
+	}
+
+	public void setBlueBallNum16Type(int blueBallNum16Type) {
+		this.blueBallNum16Type = blueBallNum16Type;
 	}
 }

@@ -53,8 +53,8 @@ public class RedNumForecastFragment extends Fragment {
 		super.onViewCreated(view, savedInstanceState);
 		ViewUtils.inject(this, view);
 		mUnionLotteryData = getLotteryData();
-		mDataSource = mMatrixOperation.initDataArray3_3(mUnionLotteryData);
-		mRedNumForecastAdapter = new RedNumForecastAdapter(getActivity(), mDataSource, mUnionLotteryData);
+		mDataSource = mMatrixOperation.initRedDataArray3_3(mUnionLotteryData);
+		//mRedNumForecastAdapter = new RedNumForecastAdapter(getActivity(), mDataSource, mUnionLotteryData);
 		// 设置列头
 		// mRedNumForecast.mListHead = (LinearLayout)
 		// view.findViewById(R.id.head);

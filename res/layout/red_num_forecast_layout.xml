@@ -14,13 +14,13 @@
             android:layout_height="match_parent"
             android:orientation="vertical" >
 
-            <include
+           <!--  <include
                 android:id="@+id/red_num_head_lay"
-                layout="@layout/red_num_forecast_item_layout" />
+                layout="@layout/red_num_forecast_item_layout" /> -->
 
             <ListView
                 android:id="@+id/red_num_forecast_lv"
-                android:layout_width="1000dp"
+                android:layout_width="1500dp"
                 android:layout_height="match_parent"
                 android:background="@color/transparent"
                 android:cacheColorHint="@color/transparent"

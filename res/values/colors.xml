@@ -3,7 +3,9 @@
 
     <color name="white">#FFFFFF</color>
     <color name="red">#f00</color>
+    <color name="blue">#ff00ddff</color>
     <color name="black">#000</color>
     <color name="transparent">#00000000</color>
+    <color name="gray">#c0c0c0</color>
 
 </resources>

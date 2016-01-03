@@ -1,6 +1,7 @@
 package com.android.weixin.lotteryticket.utils;
 
 import com.android.weixin.lotteryticket.permanent.CalculateTypeConfig;
+import com.android.weixin.lotteryticket.storage.unionlotto.BlueBallNumInfo;
 import com.android.weixin.lotteryticket.storage.unionlotto.RedBallNumInfo;
 
 public class NumberUtil {
@@ -142,6 +143,79 @@ public class NumberUtil {
 		case 33:
 			dataModel.setRedBallNum33(33);
 			dataModel.setRedBallNum33Type(getCalculateType(dataModel.getRedBallNum33Type(), calculateType));
+			break;
+		}
+	}
+
+	public static void initBlueNumberModel(int blueNumber, BlueBallNumInfo dataModel, int calculateType) {
+		switch (blueNumber) {
+		case 0:
+			dataModel.setBlueBallNum16(16);
+			dataModel.setBlueBallNum16Type(getCalculateType(dataModel.getBlueBallNum16Type(), calculateType));
+			break;
+		case 1:
+			dataModel.setBlueBallNum1(1);
+			dataModel.setBlueBallNum1Type(getCalculateType(dataModel.getBlueBallNum1Type(), calculateType));
+			break;
+		case 2:
+			dataModel.setBlueBallNum2(2);
+			dataModel.setBlueBallNum2Type(getCalculateType(dataModel.getBlueBallNum2Type(), calculateType));
+			break;
+		case 3:
+			dataModel.setBlueBallNum3(3);
+			dataModel.setBlueBallNum3Type(getCalculateType(dataModel.getBlueBallNum3Type(), calculateType));
+			break;
+		case 4:
+			dataModel.setBlueBallNum4(4);
+			dataModel.setBlueBallNum4Type(getCalculateType(dataModel.getBlueBallNum4Type(), calculateType));
+			break;
+		case 5:
+			dataModel.setBlueBallNum5(5);
+			dataModel.setBlueBallNum5Type(getCalculateType(dataModel.getBlueBallNum5Type(), calculateType));
+			break;
+		case 6:
+			dataModel.setBlueBallNum6(6);
+			dataModel.setBlueBallNum6Type(getCalculateType(dataModel.getBlueBallNum6Type(), calculateType));
+			break;
+		case 7:
+			dataModel.setBlueBallNum7(7);
+			dataModel.setBlueBallNum7Type(getCalculateType(dataModel.getBlueBallNum7Type(), calculateType));
+			break;
+		case 8:
+			dataModel.setBlueBallNum8(8);
+			dataModel.setBlueBallNum8Type(getCalculateType(dataModel.getBlueBallNum8Type(), calculateType));
+			break;
+		case 9:
+			dataModel.setBlueBallNum9(9);
+			dataModel.setBlueBallNum9Type(getCalculateType(dataModel.getBlueBallNum9Type(), calculateType));
+			break;
+		case 10:
+			dataModel.setBlueBallNum10(10);
+			dataModel.setBlueBallNum10Type(getCalculateType(dataModel.getBlueBallNum10Type(), calculateType));
+			break;
+		case 11:
+			dataModel.setBlueBallNum11(11);
+			dataModel.setBlueBallNum11Type(getCalculateType(dataModel.getBlueBallNum11Type(), calculateType));
+			break;
+		case 12:
+			dataModel.setBlueBallNum12(12);
+			dataModel.setBlueBallNum12Type(getCalculateType(dataModel.getBlueBallNum12Type(), calculateType));
+			break;
+		case 13:
+			dataModel.setBlueBallNum13(13);
+			dataModel.setBlueBallNum13Type(getCalculateType(dataModel.getBlueBallNum13Type(), calculateType));
+			break;
+		case 14:
+			dataModel.setBlueBallNum14(14);
+			dataModel.setBlueBallNum14Type(getCalculateType(dataModel.getBlueBallNum14Type(), calculateType));
+			break;
+		case 15:
+			dataModel.setBlueBallNum15(15);
+			dataModel.setBlueBallNum15Type(getCalculateType(dataModel.getBlueBallNum15Type(), calculateType));
+			break;
+		case 16:
+			dataModel.setBlueBallNum16(16);
+			dataModel.setBlueBallNum16Type(getCalculateType(dataModel.getBlueBallNum16Type(), calculateType));
 			break;
 		}
 	}

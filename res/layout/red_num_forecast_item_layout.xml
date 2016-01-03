@@ -4,359 +4,235 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal" >
 
+    <View style="@style/ver_line_divider" />
+
     <TextView
-        android:id="@+id/union_forecast_period_num_tv"
-        android:layout_width="@dimen/size_100dip"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/period_num_tip"
-        android:textSize="@dimen/size_18dip" />
-
-    <LinearLayout
-        android:id="@+id/head"
-        android:layout_width="1200.0dip"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal" >
-
-        <View style="@style/ver_line_divider" />
-
-        <TextView
-            android:id="@+id/union_forecast_lottery_date_tv"
-            android:layout_width="@dimen/size_100dip"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/lottery_date_tip"
-            android:textSize="@dimen/size_18dip" />
-
-        <View style="@style/ver_line_divider" />
-
-        <TextView
-            android:id="@+id/union_red_num_1_tv"
-            android:layout_width="@dimen/size_50dip"
-            android:layout_height="@dimen/size_50dip"
-            android:gravity="center"
-            android:text="@string/num_str_1"
-            android:textSize="@dimen/size_18dip" />
-
-        <View style="@style/ver_line_divider" />
-
-        <TextView
-            android:id="@+id/union_red_num_2_tv"
-            android:layout_width="@dimen/size_50dip"
-            android:layout_height="@dimen/size_50dip"
-            android:gravity="center"
-            android:text="@string/num_str_2"
-            android:textSize="@dimen/size_18dip" />
-
-        <View style="@style/ver_line_divider" />
-
-        <TextView
-            android:id="@+id/union_red_num_3_tv"
-            android:layout_width="@dimen/size_20dip"
-            android:layout_height="@dimen/size_20dip"
-            android:gravity="center"
-            android:text="@string/num_str_3"
-            android:textSize="@dimen/size_18dip" />
-
-        <View style="@style/ver_line_divider" />
-
-        <TextView
-            android:id="@+id/union_red_num_4_tv"
-            android:layout_width="@dimen/size_20dip"
-            android:layout_height="@dimen/size_20dip"
-            android:gravity="center"
-            android:text="@string/num_str_4"
-            android:textSize="@dimen/size_18dip" />
-
-        <View style="@style/ver_line_divider" />
-
-        <TextView
-            android:id="@+id/union_red_num_5_tv"
-            android:layout_width="@dimen/size_20dip"
-            android:layout_height="@dimen/size_20dip"
-            android:gravity="center"
-            android:text="@string/num_str_5"
-            android:textSize="@dimen/size_18dip" />
-
-        <View style="@style/ver_line_divider" />
-
-        <TextView
-            android:id="@+id/union_red_num_6_tv"
-            android:layout_width="@dimen/size_20dip"
-            android:layout_height="@dimen/size_20dip"
-            android:gravity="center"
-            android:text="@string/num_str_6"
-            android:textSize="@dimen/size_18dip" />
-
-        <View style="@style/ver_line_divider" />
-
-        <TextView
-            android:id="@+id/union_red_num_7_tv"
-            android:layout_width="@dimen/size_20dip"
-            android:layout_height="@dimen/size_20dip"
-            android:gravity="center"
-            android:text="@string/num_str_7"
-            android:textSize="@dimen/size_18dip" />
-
-        <View style="@style/ver_line_divider" />
-
-        <TextView
-            android:id="@+id/union_red_num_8_tv"
-            android:layout_width="@dimen/size_20dip"
-            android:layout_height="@dimen/size_20dip"
-            android:gravity="center"
-            android:text="@string/num_str_8"
-            android:textSize="@dimen/size_18dip" />
-
-        <View style="@style/ver_line_divider" />
-
-        <TextView
-            android:id="@+id/union_red_num_9_tv"
-            android:layout_width="@dimen/size_20dip"
-            android:layout_height="@dimen/size_20dip"
-            android:gravity="center"
-            android:text="@string/num_str_9"
-            android:textSize="@dimen/size_18dip" />
-
-        <View style="@style/ver_line_divider" />
-
-        <TextView
-            android:id="@+id/union_red_num_10_tv"
-            android:layout_width="@dimen/size_20dip"
-            android:layout_height="@dimen/size_20dip"
-            android:gravity="center"
-            android:text="@string/num_str_10"
-            android:textSize="@dimen/size_18dip" />
-
-        <View style="@style/ver_line_divider" />
-
-        <TextView
-            android:id="@+id/union_red_num_11_tv"
-            android:layout_width="@dimen/size_20dip"
-            android:layout_height="@dimen/size_20dip"
-            android:gravity="center"
-            android:text="@string/num_str_11"
-            android:textSize="@dimen/size_18dip" />
-
-        <View style="@style/ver_line_divider" />
-
-        <TextView
-            android:id="@+id/union_red_num_12_tv"
-            android:layout_width="@dimen/size_20dip"
-            android:layout_height="@dimen/size_20dip"
-            android:gravity="center"
-            android:text="@string/num_str_12"
-            android:textSize="@dimen/size_18dip" />
-
-        <View style="@style/ver_line_divider" />
-
-        <TextView
-            android:id="@+id/union_red_num_13_tv"
-            android:layout_width="@dimen/size_20dip"
-            android:layout_height="@dimen/size_20dip"
-            android:gravity="center"
-            android:text="@string/num_str_13"
-            android:textSize="@dimen/size_18dip" />
-
-        <View style="@style/ver_line_divider" />
-
-        <TextView
-            android:id="@+id/union_red_num_14_tv"
-            android:layout_width="@dimen/size_20dip"
-            android:layout_height="@dimen/size_20dip"
-            android:gravity="center"
-            android:text="@string/num_str_14"
-            android:textSize="@dimen/size_18dip" />
-
-        <View style="@style/ver_line_divider" />
-
-        <TextView
-            android:id="@+id/union_red_num_15_tv"
-            android:layout_width="@dimen/size_20dip"
-            android:layout_height="@dimen/size_20dip"
-            android:gravity="center"
-            android:text="@string/num_str_15"
-            android:textSize="@dimen/size_18dip" />
-
-        <View style="@style/ver_line_divider" />
-
-        <TextView
-            android:id="@+id/union_red_num_16_tv"
-            android:layout_width="@dimen/size_20dip"
-            android:layout_height="@dimen/size_20dip"
-            android:gravity="center"
-            android:text="@string/num_str_16"
-            android:textSize="@dimen/size_18dip" />
-
-        <View style="@style/ver_line_divider" />
-
-        <TextView
-            android:id="@+id/union_red_num_17_tv"
-            android:layout_width="@dimen/size_20dip"
-            android:layout_height="@dimen/size_20dip"
-            android:gravity="center"
-            android:text="@string/num_str_17"
-            android:textSize="@dimen/size_18dip" />
-
-        <View style="@style/ver_line_divider" />
-
-        <TextView
-            android:id="@+id/union_red_num_18_tv"
-            android:layout_width="@dimen/size_20dip"
-            android:layout_height="@dimen/size_20dip"
-            android:gravity="center"
-            android:text="@string/num_str_18"
-            android:textSize="@dimen/size_18dip" />
-
-        <View style="@style/ver_line_divider" />
-
-        <TextView
-            android:id="@+id/union_red_num_19_tv"
-            android:layout_width="@dimen/size_20dip"
-            android:layout_height="@dimen/size_20dip"
-            android:gravity="center"
-            android:text="@string/num_str_19"
-            android:textSize="@dimen/size_18dip" />
-
-        <View style="@style/ver_line_divider" />
-
-        <TextView
-            android:id="@+id/union_red_num_20_tv"
-            android:layout_width="@dimen/size_20dip"
-            android:layout_height="@dimen/size_20dip"
-            android:gravity="center"
-            android:text="@string/num_str_20"
-            android:textSize="@dimen/size_18dip" />
-
-        <View style="@style/ver_line_divider" />
-
-        <TextView
-            android:id="@+id/union_red_num_21_tv"
-            android:layout_width="@dimen/size_20dip"
-            android:layout_height="@dimen/size_20dip"
-            android:gravity="center"
-            android:text="@string/num_str_21"
-            android:textSize="@dimen/size_18dip" />
-
-        <View style="@style/ver_line_divider" />
-
-        <TextView
-            android:id="@+id/union_red_num_22_tv"
-            android:layout_width="@dimen/size_20dip"
-            android:layout_height="@dimen/size_20dip"
-            android:gravity="center"
-            android:text="@string/num_str_22"
-            android:textSize="@dimen/size_18dip" />
-
-        <View style="@style/ver_line_divider" />
-
-        <TextView
-            android:id="@+id/union_red_num_23_tv"
-            android:layout_width="@dimen/size_20dip"
-            android:layout_height="@dimen/size_20dip"
-            android:gravity="center"
-            android:text="@string/num_str_23"
-            android:textSize="@dimen/size_18dip" />
-
-        <View style="@style/ver_line_divider" />
-
-        <TextView
-            android:id="@+id/union_red_num_24_tv"
-            android:layout_width="@dimen/size_20dip"
-            android:layout_height="@dimen/size_20dip"
-            android:gravity="center"
-            android:text="@string/num_str_24"
-            android:textSize="@dimen/size_18dip" />
-
-        <View style="@style/ver_line_divider" />
-
-        <TextView
-            android:id="@+id/union_red_num_25_tv"
-            android:layout_width="@dimen/size_20dip"
-            android:layout_height="@dimen/size_20dip"
-            android:gravity="center"
-            android:text="@string/num_str_25"
-            android:textSize="@dimen/size_18dip" />
-
-        <View style="@style/ver_line_divider" />
-
-        <TextView
-            android:id="@+id/union_red_num_26_tv"
-            android:layout_width="@dimen/size_20dip"
-            android:layout_height="@dimen/size_20dip"
-            android:gravity="center"
-            android:text="@string/num_str_26"
-            android:textSize="@dimen/size_18dip" />
-
-        <View style="@style/ver_line_divider" />
-
-        <TextView
-            android:id="@+id/union_red_num_27_tv"
-            android:layout_width="@dimen/size_20dip"
-            android:layout_height="@dimen/size_20dip"
-            android:gravity="center"
-            android:text="@string/num_str_27"
-            android:textSize="@dimen/size_18dip" />
-
-        <View style="@style/ver_line_divider" />
-
-        <TextView
-            android:id="@+id/union_red_num_28_tv"
-            android:layout_width="@dimen/size_20dip"
-            android:layout_height="@dimen/size_20dip"
-            android:gravity="center"
-            android:text="@string/num_str_28"
-            android:textSize="@dimen/size_18dip" />
-
-        <View style="@style/ver_line_divider" />
-
-        <TextView
-            android:id="@+id/union_red_num_29_tv"
-            android:layout_width="@dimen/size_20dip"
-            android:layout_height="@dimen/size_20dip"
-            android:gravity="center"
-            android:text="@string/num_str_29"
-            android:textSize="@dimen/size_18dip" />
-
-        <View style="@style/ver_line_divider" />
-
-        <TextView
-            android:id="@+id/union_red_num_30_tv"
-            android:layout_width="@dimen/size_20dip"
-            android:layout_height="@dimen/size_20dip"
-            android:gravity="center"
-            android:text="@string/num_str_30"
-            android:textSize="@dimen/size_18dip" />
-
-        <View style="@style/ver_line_divider" />
-
-        <TextView
-            android:id="@+id/union_red_num_31_tv"
-            android:layout_width="@dimen/size_20dip"
-            android:layout_height="@dimen/size_20dip"
-            android:gravity="center"
-            android:text="@string/num_str_31"
-            android:textSize="@dimen/size_18dip" />
-
-        <View style="@style/ver_line_divider" />
-
-        <TextView
-            android:id="@+id/union_red_num_32_tv"
-            android:layout_width="@dimen/size_20dip"
-            android:layout_height="@dimen/size_20dip"
-            android:gravity="center"
-            android:text="@string/num_str_32"
-            android:textSize="@dimen/size_18dip" />
-
-        <View style="@style/ver_line_divider" />
-
-        <TextView
-            android:id="@+id/union_red_num_33_tv"
-            android:layout_width="@dimen/size_20dip"
-            android:layout_height="@dimen/size_20dip"
-            android:gravity="center"
-            android:text="@string/num_str_33"
-            android:textSize="@dimen/size_18dip" />
-    </LinearLayout>
+        android:id="@+id/union_red_num_1_tv"
+        style="@style/red_num_forecast"
+        android:text="@string/num_str_1" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_2_tv"
+        style="@style/red_num_forecast"
+        android:text="@string/num_str_2" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_3_tv"
+        style="@style/red_num_forecast"
+        android:text="@string/num_str_3" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_4_tv"
+        style="@style/red_num_forecast"
+        android:text="@string/num_str_4" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_5_tv"
+        style="@style/red_num_forecast"
+        android:text="@string/num_str_5" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_6_tv"
+        style="@style/red_num_forecast"
+        android:text="@string/num_str_6" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_7_tv"
+        style="@style/red_num_forecast"
+        android:text="@string/num_str_7" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_8_tv"
+        style="@style/red_num_forecast"
+        android:text="@string/num_str_8" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_9_tv"
+        style="@style/red_num_forecast"
+        android:text="@string/num_str_9" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_10_tv"
+        style="@style/red_num_forecast"
+        android:text="@string/num_str_10" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_11_tv"
+        style="@style/red_num_forecast"
+        android:text="@string/num_str_11" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_12_tv"
+        style="@style/red_num_forecast"
+        android:text="@string/num_str_12" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_13_tv"
+        style="@style/red_num_forecast"
+        android:text="@string/num_str_13" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_14_tv"
+        style="@style/red_num_forecast"
+        android:text="@string/num_str_14" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_15_tv"
+        style="@style/red_num_forecast"
+        android:text="@string/num_str_15" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_16_tv"
+        style="@style/red_num_forecast"
+        android:text="@string/num_str_16" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_17_tv"
+        style="@style/red_num_forecast"
+        android:text="@string/num_str_17" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_18_tv"
+        style="@style/red_num_forecast"
+        android:text="@string/num_str_18" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_19_tv"
+        style="@style/red_num_forecast"
+        android:text="@string/num_str_19" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_20_tv"
+        style="@style/red_num_forecast"
+        android:text="@string/num_str_20" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_21_tv"
+        style="@style/red_num_forecast"
+        android:text="@string/num_str_21" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_22_tv"
+        style="@style/red_num_forecast"
+        android:text="@string/num_str_22" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_23_tv"
+        style="@style/red_num_forecast"
+        android:text="@string/num_str_23" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_24_tv"
+        style="@style/red_num_forecast"
+        android:text="@string/num_str_24" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_25_tv"
+        style="@style/red_num_forecast"
+        android:text="@string/num_str_25" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_26_tv"
+        style="@style/red_num_forecast"
+        android:text="@string/num_str_26" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_27_tv"
+        style="@style/red_num_forecast"
+        android:text="@string/num_str_27" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_28_tv"
+        style="@style/red_num_forecast"
+        android:text="@string/num_str_28" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_29_tv"
+        style="@style/red_num_forecast"
+        android:text="@string/num_str_29" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_30_tv"
+        style="@style/red_num_forecast"
+        android:text="@string/num_str_30" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_31_tv"
+        style="@style/red_num_forecast"
+        android:text="@string/num_str_31" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_32_tv"
+        style="@style/red_num_forecast"
+        android:text="@string/num_str_32" />
+
+    <View style="@style/ver_line_divider" />
+
+    <TextView
+        android:id="@+id/union_red_num_33_tv"
+        style="@style/red_num_forecast"
+        android:text="@string/num_str_33" />
 
 </LinearLayout>
