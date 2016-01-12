@@ -2,16 +2,13 @@ package com.android.weixin.lotteryticket.storage.unionlotto;
 
 import java.util.Date;
 
-import android.graphics.drawable.Drawable;
-
 import com.android.weixin.lotteryticket.storage.DBaseDao;
 import com.lidroid.xutils.db.annotation.Column;
 import com.lidroid.xutils.db.annotation.Table;
-import com.lidroid.xutils.db.annotation.Transient;
 
 @Table(name = "union_red_ball_num")
 public class RedBallNumInfo extends DBaseDao {
-	
+
 	public static final String COLUMN_LOTTERY_DATE = "lotteryDate";
 	public static final String COLUMN_PERIOD_NUM = "periodNum";
 	public static final String COLUMN_CALCULATE_TYPE = "calculate_type";
@@ -183,11 +180,10 @@ public class RedBallNumInfo extends DBaseDao {
 	private int redBallNum30Type;
 
 	private int redBallNum31Type;
-	
-	private int redBallNum32Type;
-	
-	private int redBallNum33Type;
 
+	private int redBallNum32Type;
+
+	private int redBallNum33Type;
 
 	public int getPeriodNum() {
 		return periodNum;
@@ -739,5 +735,113 @@ public class RedBallNumInfo extends DBaseDao {
 
 	public void setRedBallNum33Type(int redBallNum33Type) {
 		this.redBallNum33Type = redBallNum33Type;
+	}
+
+	@Override
+	public String toString() {
+		StringBuffer sb = new StringBuffer();
+		sb.append(periodNum + " ");
+		// sb.append(lotteryDate + " ");
+		sb.append(calculateType + "   ");
+		if (redBallNum1 > 0) {
+			sb.append(redBallNum1 + " ");
+		}
+		if (redBallNum2 > 0) {
+			sb.append(redBallNum2 + " ");
+		}
+		if (redBallNum3 > 0) {
+			sb.append(redBallNum3 + " ");
+		}
+		if (redBallNum4 > 0) {
+			sb.append(redBallNum4 + " ");
+		}
+		if (redBallNum5 > 0) {
+			sb.append(redBallNum5 + " ");
+		}
+		if (redBallNum6 > 0) {
+			sb.append(redBallNum6 + " ");
+		}
+		if (redBallNum7 > 0) {
+			sb.append(redBallNum7 + " ");
+		}
+		if (redBallNum8 > 0) {
+			sb.append(redBallNum8 + " ");
+		}
+		if (redBallNum9 > 0) {
+			sb.append(redBallNum9 + " ");
+		}
+		if (redBallNum10 > 0) {
+			sb.append(redBallNum10 + " ");
+		}
+		if (redBallNum11 > 0) {
+			sb.append(redBallNum11 + " ");
+		}
+		if (redBallNum12 > 0) {
+			sb.append(redBallNum12 + " ");
+		}
+		if (redBallNum13 > 0) {
+			sb.append(redBallNum13 + " ");
+		}
+		if (redBallNum14 > 0) {
+			sb.append(redBallNum14 + " ");
+		}
+		if (redBallNum15 > 0) {
+			sb.append(redBallNum15 + " ");
+		}
+		if (redBallNum16 > 0) {
+			sb.append(redBallNum16 + " ");
+		}
+		if (redBallNum17 > 0) {
+			sb.append(redBallNum17 + " ");
+		}
+		if (redBallNum18 > 0) {
+			sb.append(redBallNum18 + " ");
+		}
+		if (redBallNum19 > 0) {
+			sb.append(redBallNum19 + " ");
+		}
+		if (redBallNum20 > 0) {
+			sb.append(redBallNum20 + " ");
+		}
+		if (redBallNum21 > 0) {
+			sb.append(redBallNum21 + " ");
+		}
+		if (redBallNum22 > 0) {
+			sb.append(redBallNum22 + " ");
+		}
+		if (redBallNum23 > 0) {
+			sb.append(redBallNum23 + " ");
+		}
+		if (redBallNum24 > 0) {
+			sb.append(redBallNum24 + " ");
+		}
+		if (redBallNum25 > 0) {
+			sb.append(redBallNum25 + " ");
+		}
+		if (redBallNum26 > 0) {
+			sb.append(redBallNum26 + " ");
+		}
+		if (redBallNum27 > 0) {
+			sb.append(redBallNum27 + " ");
+		}
+		if (redBallNum28 > 0) {
+			sb.append(redBallNum28 + " ");
+		}
+		if (redBallNum29 > 0) {
+			sb.append(redBallNum29 + " ");
+		}
+		if (redBallNum30 > 0) {
+			sb.append(redBallNum30 + " ");
+		}
+		if (redBallNum31 > 0) {
+			sb.append(redBallNum31 + " ");
+		}
+		if (redBallNum32 > 0) {
+			sb.append(redBallNum32 + " ");
+		}
+		if (redBallNum33 > 0) {
+			sb.append(redBallNum33 + " ");
+		}
+		return sb.toString();
 	}
 }

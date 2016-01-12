@@ -8,6 +8,7 @@ import com.android.weixin.lotteryticket.storage.unionlotto.BlueBallNumInfo;
 import com.android.weixin.lotteryticket.storage.unionlotto.RedBallNumInfo;
 import com.android.weixin.lotteryticket.storage.unionlotto.UnionLotteryNumbers;
 import com.android.weixin.lotteryticket.utils.NumberUtil;
+import com.socks.library.KLog;
 
 /**
  * 矩阵
@@ -50,7 +51,7 @@ public class MatrixOperation {
 			}
 
 			initRedDataModel(dataResult, dataModel);
-
+			KLog.v("--->", dataModel.toString());
 			matrixData_Items.add(dataModel);
 		}
 		return matrixData_Items;
@@ -89,7 +90,7 @@ public class MatrixOperation {
 			}
 
 			initRedDataModel(dataResult, dataModel);
-
+			KLog.v("--->", dataModel.toString());
 			matrixData_Items2_2.add(dataModel);
 		}
 		return matrixData_Items2_2;
@@ -125,7 +126,7 @@ public class MatrixOperation {
 			}
 
 			initBlueDataModel(dataResult, dataModel);
-
+			KLog.v("--->", dataModel.toString());
 			matrixData_Items.add(dataModel);
 		}
 

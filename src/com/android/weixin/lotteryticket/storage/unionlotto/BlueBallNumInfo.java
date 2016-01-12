@@ -364,4 +364,61 @@ public class BlueBallNumInfo extends DBaseDao {
 	public void setBlueBallNum16Type(int blueBallNum16Type) {
 		this.blueBallNum16Type = blueBallNum16Type;
 	}
+
+	@Override
+	public String toString() {
+		StringBuffer sb = new StringBuffer();
+		sb.append(periodNum + " ");
+		// sb.append(lotteryDate + " ");
+		sb.append(calculateType + "   ");
+		if (blueBallNum1 > 0) {
+			sb.append(blueBallNum1 + " ");
+		}
+		if (blueBallNum2 > 0) {
+			sb.append(blueBallNum2 + " ");
+		}
+		if (blueBallNum3 > 0) {
+			sb.append(blueBallNum3 + " ");
+		}
+		if (blueBallNum4 > 0) {
+			sb.append(blueBallNum4 + " ");
+		}
+		if (blueBallNum5 > 0) {
+			sb.append(blueBallNum5 + " ");
+		}
+		if (blueBallNum6 > 0) {
+			sb.append(blueBallNum6 + " ");
+		}
+		if (blueBallNum7 > 0) {
+			sb.append(blueBallNum7 + " ");
+		}
+		if (blueBallNum8 > 0) {
+			sb.append(blueBallNum8 + " ");
+		}
+		if (blueBallNum9 > 0) {
+			sb.append(blueBallNum9 + " ");
+		}
+		if (blueBallNum10 > 0) {
+			sb.append(blueBallNum10 + " ");
+		}
+		if (blueBallNum11 > 0) {
+			sb.append(blueBallNum11 + " ");
+		}
+		if (blueBallNum12 > 0) {
+			sb.append(blueBallNum12 + " ");
+		}
+		if (blueBallNum13 > 0) {
+			sb.append(blueBallNum13 + " ");
+		}
+		if (blueBallNum14 > 0) {
+			sb.append(blueBallNum14 + " ");
+		}
+		if (blueBallNum15 > 0) {
+			sb.append(blueBallNum15 + " ");
+		}
+		if (blueBallNum16 > 0) {
+			sb.append(blueBallNum16 + " ");
+		}
+		return sb.toString();
+	}
 }

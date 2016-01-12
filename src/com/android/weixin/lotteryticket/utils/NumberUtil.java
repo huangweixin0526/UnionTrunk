@@ -8,7 +8,7 @@ import com.socks.library.KLog;
 public class NumberUtil {
 
 	public static void initRedNumberModel(int redNumber, RedBallNumInfo dataModel, int calculateType) {
-		KLog.v("red ball number：" + redNumber + " calculate type：" + calculateType);
+		//KLog.v("--->","red ball number：" + redNumber + " calculate type：" + calculateType);
 		switch (redNumber) {
 		case 0:
 			dataModel.setRedBallNum33(33);
@@ -150,7 +150,7 @@ public class NumberUtil {
 	}
 
 	public static void initBlueNumberModel(int blueNumber, BlueBallNumInfo dataModel, int calculateType) {
-		KLog.v("blue ball number：" + blueNumber + " calculate type：" + calculateType);
+		//KLog.v("--->","blue ball number：" + blueNumber + " calculate type：" + calculateType);
 		switch (blueNumber) {
 		case 0:
 			dataModel.setBlueBallNum16(16);
