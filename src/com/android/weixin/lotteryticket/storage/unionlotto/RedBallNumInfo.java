@@ -744,103 +744,103 @@ public class RedBallNumInfo extends DBaseDao {
 		// sb.append(lotteryDate + " ");
 		sb.append(calculateType + "   ");
 		if (redBallNum1 > 0) {
-			sb.append(redBallNum1 + " ");
+			sb.append(String.format("%1$s(%2$s) ", redBallNum1, redBallNum1Type));
 		}
 		if (redBallNum2 > 0) {
-			sb.append(redBallNum2 + " ");
+			sb.append(String.format("%1$s(%2$s) ", redBallNum2, redBallNum2Type));
 		}
 		if (redBallNum3 > 0) {
-			sb.append(redBallNum3 + " ");
+			sb.append(String.format("%1$s(%2$s) ", redBallNum3, redBallNum3Type));
 		}
 		if (redBallNum4 > 0) {
-			sb.append(redBallNum4 + " ");
+			sb.append(String.format("%1$s(%2$s) ", redBallNum4, redBallNum4Type));
 		}
 		if (redBallNum5 > 0) {
-			sb.append(redBallNum5 + " ");
+			sb.append(String.format("%1$s(%2$s) ", redBallNum5, redBallNum5Type));
 		}
 		if (redBallNum6 > 0) {
-			sb.append(redBallNum6 + " ");
+			sb.append(String.format("%1$s(%2$s) ", redBallNum6, redBallNum6Type));
 		}
 		if (redBallNum7 > 0) {
-			sb.append(redBallNum7 + " ");
+			sb.append(String.format("%1$s(%2$s) ", redBallNum7, redBallNum7Type));
 		}
 		if (redBallNum8 > 0) {
-			sb.append(redBallNum8 + " ");
+			sb.append(String.format("%1$s(%2$s) ", redBallNum8, redBallNum8Type));
 		}
 		if (redBallNum9 > 0) {
-			sb.append(redBallNum9 + " ");
+			sb.append(String.format("%1$s(%2$s) ", redBallNum9, redBallNum9Type));
 		}
 		if (redBallNum10 > 0) {
-			sb.append(redBallNum10 + " ");
+			sb.append(String.format("%1$s(%2$s) ", redBallNum10, redBallNum10Type));
 		}
 		if (redBallNum11 > 0) {
-			sb.append(redBallNum11 + " ");
+			sb.append(String.format("%1$s(%2$s) ", redBallNum11, redBallNum11Type));
 		}
 		if (redBallNum12 > 0) {
-			sb.append(redBallNum12 + " ");
+			sb.append(String.format("%1$s(%2$s) ", redBallNum12, redBallNum12Type));
 		}
 		if (redBallNum13 > 0) {
-			sb.append(redBallNum13 + " ");
+			sb.append(String.format("%1$s(%2$s) ", redBallNum13, redBallNum13Type));
 		}
 		if (redBallNum14 > 0) {
-			sb.append(redBallNum14 + " ");
+			sb.append(String.format("%1$s(%2$s) ", redBallNum14, redBallNum14Type));
 		}
 		if (redBallNum15 > 0) {
-			sb.append(redBallNum15 + " ");
+			sb.append(String.format("%1$s(%2$s) ", redBallNum15, redBallNum15Type));
 		}
 		if (redBallNum16 > 0) {
-			sb.append(redBallNum16 + " ");
+			sb.append(String.format("%1$s(%2$s) ", redBallNum16, redBallNum16Type));
 		}
 		if (redBallNum17 > 0) {
-			sb.append(redBallNum17 + " ");
+			sb.append(String.format("%1$s(%2$s) ", redBallNum17, redBallNum17Type));
 		}
 		if (redBallNum18 > 0) {
-			sb.append(redBallNum18 + " ");
+			sb.append(String.format("%1$s(%2$s) ", redBallNum18, redBallNum18Type));
 		}
 		if (redBallNum19 > 0) {
-			sb.append(redBallNum19 + " ");
+			sb.append(String.format("%1$s(%2$s) ", redBallNum19, redBallNum19Type));
 		}
 		if (redBallNum20 > 0) {
-			sb.append(redBallNum20 + " ");
+			sb.append(String.format("%1$s(%2$s) ", redBallNum20, redBallNum20Type));
 		}
 		if (redBallNum21 > 0) {
-			sb.append(redBallNum21 + " ");
+			sb.append(String.format("%1$s(%2$s) ", redBallNum21, redBallNum21Type));
 		}
 		if (redBallNum22 > 0) {
-			sb.append(redBallNum22 + " ");
+			sb.append(String.format("%1$s(%2$s) ", redBallNum22, redBallNum22Type));
 		}
 		if (redBallNum23 > 0) {
-			sb.append(redBallNum23 + " ");
+			sb.append(String.format("%1$s(%2$s) ", redBallNum23, redBallNum23Type));
 		}
 		if (redBallNum24 > 0) {
-			sb.append(redBallNum24 + " ");
+			sb.append(String.format("%1$s(%2$s) ", redBallNum24, redBallNum24Type));
 		}
 		if (redBallNum25 > 0) {
-			sb.append(redBallNum25 + " ");
+			sb.append(String.format("%1$s(%2$s) ", redBallNum25, redBallNum25Type));
 		}
 		if (redBallNum26 > 0) {
-			sb.append(redBallNum26 + " ");
+			sb.append(String.format("%1$s(%2$s) ", redBallNum26, redBallNum26Type));
 		}
 		if (redBallNum27 > 0) {
-			sb.append(redBallNum27 + " ");
+			sb.append(String.format("%1$s(%2$s) ", redBallNum27, redBallNum27Type));
 		}
 		if (redBallNum28 > 0) {
-			sb.append(redBallNum28 + " ");
+			sb.append(String.format("%1$s(%2$s) ", redBallNum28, redBallNum28Type));
 		}
 		if (redBallNum29 > 0) {
-			sb.append(redBallNum29 + " ");
+			sb.append(String.format("%1$s(%2$s) ", redBallNum29, redBallNum29Type));
 		}
 		if (redBallNum30 > 0) {
-			sb.append(redBallNum30 + " ");
+			sb.append(String.format("%1$s(%2$s) ", redBallNum30, redBallNum30Type));
 		}
 		if (redBallNum31 > 0) {
-			sb.append(redBallNum31 + " ");
+			sb.append(String.format("%1$s(%2$s) ", redBallNum31, redBallNum31Type));
 		}
 		if (redBallNum32 > 0) {
-			sb.append(redBallNum32 + " ");
+			sb.append(String.format("%1$s(%2$s) ", redBallNum32, redBallNum32Type));
 		}
 		if (redBallNum33 > 0) {
-			sb.append(redBallNum33 + " ");
+			sb.append(String.format("%1$s(%2$s) ", redBallNum33, redBallNum33Type));
 		}
 		return sb.toString();
 	}

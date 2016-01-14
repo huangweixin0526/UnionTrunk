@@ -372,52 +372,52 @@ public class BlueBallNumInfo extends DBaseDao {
 		// sb.append(lotteryDate + " ");
 		sb.append(calculateType + "   ");
 		if (blueBallNum1 > 0) {
-			sb.append(blueBallNum1 + " ");
+			sb.append(String.format("%1$s(%2$s) ", blueBallNum1, blueBallNum1Type));
 		}
 		if (blueBallNum2 > 0) {
-			sb.append(blueBallNum2 + " ");
+			sb.append(String.format("%1$s(%2$s) ", blueBallNum2, blueBallNum2Type));
 		}
 		if (blueBallNum3 > 0) {
-			sb.append(blueBallNum3 + " ");
+			sb.append(String.format("%1$s(%2$s) ", blueBallNum3, blueBallNum3Type));
 		}
 		if (blueBallNum4 > 0) {
-			sb.append(blueBallNum4 + " ");
+			sb.append(String.format("%1$s(%2$s) ", blueBallNum4, blueBallNum4Type));
 		}
 		if (blueBallNum5 > 0) {
-			sb.append(blueBallNum5 + " ");
+			sb.append(String.format("%1$s(%2$s) ", blueBallNum5, blueBallNum5Type));
 		}
 		if (blueBallNum6 > 0) {
-			sb.append(blueBallNum6 + " ");
+			sb.append(String.format("%1$s(%2$s) ", blueBallNum6, blueBallNum6Type));
 		}
 		if (blueBallNum7 > 0) {
-			sb.append(blueBallNum7 + " ");
+			sb.append(String.format("%1$s(%2$s) ", blueBallNum7, blueBallNum7Type));
 		}
 		if (blueBallNum8 > 0) {
-			sb.append(blueBallNum8 + " ");
+			sb.append(String.format("%1$s(%2$s) ", blueBallNum8, blueBallNum8Type));
 		}
 		if (blueBallNum9 > 0) {
-			sb.append(blueBallNum9 + " ");
+			sb.append(String.format("%1$s(%2$s) ", blueBallNum9, blueBallNum9Type));
 		}
 		if (blueBallNum10 > 0) {
-			sb.append(blueBallNum10 + " ");
+			sb.append(String.format("%1$s(%2$s) ", blueBallNum10, blueBallNum10Type));
 		}
 		if (blueBallNum11 > 0) {
-			sb.append(blueBallNum11 + " ");
+			sb.append(String.format("%1$s(%2$s) ", blueBallNum11, blueBallNum11Type));
 		}
 		if (blueBallNum12 > 0) {
-			sb.append(blueBallNum12 + " ");
+			sb.append(String.format("%1$s(%2$s) ", blueBallNum12, blueBallNum12Type));
 		}
 		if (blueBallNum13 > 0) {
-			sb.append(blueBallNum13 + " ");
+			sb.append(String.format("%1$s(%2$s) ", blueBallNum13, blueBallNum13Type));
 		}
 		if (blueBallNum14 > 0) {
-			sb.append(blueBallNum14 + " ");
+			sb.append(String.format("%1$s(%2$s) ", blueBallNum14, blueBallNum14Type));
 		}
 		if (blueBallNum15 > 0) {
-			sb.append(blueBallNum15 + " ");
+			sb.append(String.format("%1$s(%2$s) ", blueBallNum15, blueBallNum15Type));
 		}
 		if (blueBallNum16 > 0) {
-			sb.append(blueBallNum16 + " ");
+			sb.append(String.format("%1$s(%2$s) ", blueBallNum16, blueBallNum16Type));
 		}
 		return sb.toString();
 	}
