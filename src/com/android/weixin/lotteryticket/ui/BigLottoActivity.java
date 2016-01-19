@@ -2,6 +2,7 @@ package com.android.weixin.lotteryticket.ui;
 
 import com.android.weixin.lotteryticket.R;
 import com.android.weixin.lotteryticket.ui.fragment.TwoDataPreviewFragment;
+import com.android.weixin.lotteryticket.ui.fragment.TwoDataStatisticsFragment;
 import com.android.weixin.lotteryticket.widgets.indicator.TabPageIndicator;
 
 import android.content.Context;
@@ -64,7 +65,9 @@ public class BigLottoActivity extends FragmentActivity {
 		public Fragment getItem(int position) {
 			switch (position) {
 			case 0:
-				return new TwoDataPreviewFragment();		
+				return new TwoDataPreviewFragment();
+			case 1:
+				return new TwoDataStatisticsFragment();
 			default:
 				return new TwoDataPreviewFragment();
 			}

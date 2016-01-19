@@ -2,10 +2,12 @@ package com.android.weixin.lotteryticket.ui;
 
 import com.android.weixin.lotteryticket.R;
 import com.android.weixin.lotteryticket.ui.fragment.TwoDataPreviewFragment;
+import com.android.weixin.lotteryticket.ui.fragment.TwoDataStatisticsFragment;
 import com.android.weixin.lotteryticket.widgets.CustomViewPager;
 import com.android.weixin.lotteryticket.widgets.indicator.TabPageIndicator;
 import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.view.annotation.ViewInject;
+import com.socks.library.KLog;
 
 import android.app.Activity;
 import android.content.Context;
@@ -15,12 +17,13 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class UnionLottoActivity extends FragmentActivity {
+public class UnionLottoActivity extends FragmentActivity implements OnPageChangeListener {
 
-	private static final String[] CONTENT = new String[] { "Recent", "Artists", "Albums", "Songs", "Playlists", "Genres" };
+	private static final String[] CONTENT = new String[] { "Recent", "Artists" };
 
 	public static void open(Context context) {
 		Intent intent = new Intent(context, UnionLottoActivity.class);
@@ -43,6 +46,7 @@ public class UnionLottoActivity extends FragmentActivity {
 		mFragmentAdapter = new UnionlottoAdapter(getSupportFragmentManager());
 		mPager.setAdapter(mFragmentAdapter);
 		mIndicator.setViewPager(mPager);
+		mIndicator.setOnPageChangeListener(this);
 	}
 
 	@Override
@@ -55,7 +59,7 @@ public class UnionLottoActivity extends FragmentActivity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 		case R.id.menu_add_data:
-			AddUnionlottoDataActivity.openResult(this);			 
+			AddUnionlottoDataActivity.openResult(this);
 			break;
 		default:
 			break;
@@ -67,8 +71,23 @@ public class UnionLottoActivity extends FragmentActivity {
 	protected void onActivityResult(int arg0, int arg1, Intent arg2) {
 		super.onActivityResult(arg0, arg1, arg2);
 		if (arg0 == AddUnionlottoDataActivity.UNION_REQUEST_CODE && arg1 == Activity.RESULT_OK) {
-			((TwoDataPreviewFragment)mFragmentAdapter.instantiateItem(mPager, 0)).refreshData();
+			((TwoDataPreviewFragment) mFragmentAdapter.instantiateItem(mPager, 0)).refreshData();
 		}
+	}
+	
+	@Override
+	public void onPageScrollStateChanged(int arg0) {
+		
+	}
+
+	@Override
+	public void onPageScrolled(int arg0, float arg1, int arg2) {
+		
+	}
+
+	@Override
+	public void onPageSelected(int arg0) {
+		KLog.v("--->","page selected index：" + arg0);
 	}
 
 	class UnionlottoAdapter extends FragmentPagerAdapter {
@@ -80,7 +99,9 @@ public class UnionLottoActivity extends FragmentActivity {
 		public Fragment getItem(int position) {
 			switch (position) {
 			case 0:
-				return new TwoDataPreviewFragment();			
+				return new TwoDataPreviewFragment();
+			case 1:
+				return new TwoDataStatisticsFragment();
 			default:
 				return new TwoDataPreviewFragment();
 			}
@@ -95,5 +116,5 @@ public class UnionLottoActivity extends FragmentActivity {
 		public int getCount() {
 			return CONTENT.length;
 		}
-	}
+	}	
 }

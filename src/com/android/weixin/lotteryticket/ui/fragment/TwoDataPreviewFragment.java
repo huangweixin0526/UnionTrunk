@@ -53,10 +53,7 @@ public class TwoDataPreviewFragment extends Fragment {
 		List<RedBallNumInfo> matrixRedLists = mMatrixOperation.initRedDataArray3_3(unionLotteryData);
 		List<BlueBallNumInfo> matrixBlueLists = mMatrixOperation.initBlueDataArray3_3(unionLotteryData);
 		mDataSource = getUnionLotteryInfo(unionLotteryData, matrixRedLists, matrixBlueLists);
-		mRedNumForecastAdapter = new TwoDataPreviewAdapter(getActivity(), mDataSource);
-		// 设置列头
-		// mRedNumForecast.mListHead = (LinearLayout)
-		// view.findViewById(R.id.head);
+		mRedNumForecastAdapter = new TwoDataPreviewAdapter(getActivity(), mDataSource);		
 		mUnionWinning.setAdapter(mRedNumForecastAdapter);
 	}
 
