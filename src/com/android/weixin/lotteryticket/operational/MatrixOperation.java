@@ -50,6 +50,7 @@ public class MatrixOperation {
 				dataModel = new RedBallNumInfo();
 			}
 
+			KLog.i("--->", String.format("[%1$s,%2$s,%3$s] [%4$s,%5$s,%6$s] [%7$s,%8$s,%9$s]", dataResult[0][0], dataResult[0][1], dataResult[0][2],dataResult[1][0], dataResult[1][1], dataResult[1][2],dataResult[2][0], dataResult[2][1], dataResult[2][2]));
 			initRedDataModel(dataResult, dataModel);
 			KLog.v("--->", dataModel.toString());
 			matrixData_Items.add(dataModel);
@@ -89,6 +90,7 @@ public class MatrixOperation {
 				dataModel = new RedBallNumInfo();
 			}
 
+			KLog.i("--->", String.format("[%1$s,%2$s] [%3$s,%4$s]", dataResult[0][0],dataResult[0][1],dataResult[1][0],dataResult[1][1]));
 			initRedDataModel(dataResult, dataModel);
 			KLog.v("--->", dataModel.toString());
 			matrixData_Items2_2.add(dataModel);
@@ -114,8 +116,7 @@ public class MatrixOperation {
 			}
 
 			int[][] dataArray3_2 = convertToArray3_2(unionLotteryData.get(i), unionLotteryData.get(i).getBlueNum());
-			int[][] dataArray2_3 = convertToArray2_3(unionLotteryData.get(i + 1),
-					unionLotteryData.get(i + 1).getBlueNum());
+			int[][] dataArray2_3 = convertToArray2_3(unionLotteryData.get(i + 1), unionLotteryData.get(i + 1).getBlueNum());
 			int[][] dataResult = matrixOperation3_3(dataArray3_2, dataArray2_3, 16);
 
 			BlueBallNumInfo dataModel = null;
@@ -125,6 +126,7 @@ public class MatrixOperation {
 				dataModel = new BlueBallNumInfo();
 			}
 
+			KLog.i("--->", String.format("[%1$s,%2$s,%3$s] [%4$s,%5$s,%6$s] [%7$s,%8$s,%9$s]", dataResult[0][0], dataResult[0][1], dataResult[0][2],dataResult[1][0], dataResult[1][1], dataResult[1][2],dataResult[2][0], dataResult[2][1], dataResult[2][2]));			
 			initBlueDataModel(dataResult, dataModel);
 			KLog.v("--->", dataModel.toString());
 			matrixData_Items.add(dataModel);
@@ -135,21 +137,18 @@ public class MatrixOperation {
 
 	private int[][] convertToArray3_2(UnionLotteryNumbers unionLotteryNumber, int baseNum) {
 		int[][] dataArray = new int[3][];
-		dataArray[0] = new int[] { unionLotteryNumber.getRedNumOne() * baseNum,
-				unionLotteryNumber.getRedNumTwo() * baseNum };
-		dataArray[1] = new int[] { unionLotteryNumber.getRedNumThree() * baseNum,
-				unionLotteryNumber.getRedNumFour() * baseNum };
-		dataArray[2] = new int[] { unionLotteryNumber.getRedNumFive() * baseNum,
-				unionLotteryNumber.getRedNumSix() * baseNum };
+		dataArray[0] = new int[] { unionLotteryNumber.getRedNumOne() * baseNum, unionLotteryNumber.getRedNumTwo() * baseNum };
+		dataArray[1] = new int[] { unionLotteryNumber.getRedNumThree() * baseNum, unionLotteryNumber.getRedNumFour() * baseNum };
+		dataArray[2] = new int[] { unionLotteryNumber.getRedNumFive() * baseNum, unionLotteryNumber.getRedNumSix() * baseNum };
 		return dataArray;
 	}
 
 	private int[][] convertToArray2_3(UnionLotteryNumbers unionLotteryNumber, int baseNum) {
 		int[][] dataArray = new int[2][];
-		dataArray[0] = new int[] { unionLotteryNumber.getRedNumOne() * baseNum,
-				unionLotteryNumber.getRedNumTwo() * baseNum, unionLotteryNumber.getRedNumThree() * baseNum };
-		dataArray[1] = new int[] { unionLotteryNumber.getRedNumFour() * baseNum,
-				unionLotteryNumber.getRedNumFive() * baseNum, unionLotteryNumber.getRedNumSix() * baseNum };
+		dataArray[0] = new int[] { unionLotteryNumber.getRedNumOne() * baseNum, unionLotteryNumber.getRedNumTwo() * baseNum,
+				unionLotteryNumber.getRedNumThree() * baseNum };
+		dataArray[1] = new int[] { unionLotteryNumber.getRedNumFour() * baseNum, unionLotteryNumber.getRedNumFive() * baseNum,
+				unionLotteryNumber.getRedNumSix() * baseNum };
 		return dataArray;
 	}
 
@@ -164,8 +163,7 @@ public class MatrixOperation {
 
 		for (int row1 = 0, col1 = 0; row1 < array3_2.length; row1++) {
 			for (int row2 = 0, co2 = 0; co2 < dataArray2_3[row2].length; co2++) {
-				resultArray[row1][co2] = (dataArray2_3[row2][co2] * array3_2[row1][col1]
-						+ dataArray2_3[row2 + 1][co2] * array3_2[row1][col1 + 1]) % baseNum;
+				resultArray[row1][co2] = (dataArray2_3[row2][co2] * array3_2[row1][col1] + dataArray2_3[row2 + 1][co2] * array3_2[row1][col1 + 1]) % baseNum;
 			}
 		}
 
@@ -177,8 +175,7 @@ public class MatrixOperation {
 
 		for (int row1 = 0, col1 = 0; row1 < dataArray2_3.length; row1++) {
 			for (int row2 = 0, co2 = 0; co2 < array3_2[row2].length; co2++) {
-				resultArray[row1][co2] = (array3_2[row2][co2] * dataArray2_3[row1][col1]
-						+ array3_2[row2 + 1][co2] * dataArray2_3[row1][col1 + 1]
+				resultArray[row1][co2] = (array3_2[row2][co2] * dataArray2_3[row1][col1] + array3_2[row2 + 1][co2] * dataArray2_3[row1][col1 + 1]
 						+ array3_2[row2 + 2][co2] * dataArray2_3[row1][col1 + 2]) % baseNum;
 			}
 		}
@@ -204,18 +201,12 @@ public class MatrixOperation {
 		RedBallNumInfo redBallNumInfo = new RedBallNumInfo();
 		redBallNumInfo.setLotteryDate(unionLotteryNumber.getLotteryDate());
 		redBallNumInfo.setPeriodNum(unionLotteryNumber.getPeriodNum());
-		NumberUtil.initRedNumberModel(unionLotteryNumber.getRedNumOne(), redBallNumInfo,
-				CalculateTypeConfig.CALCULATE_TYPE_WINNING);
-		NumberUtil.initRedNumberModel(unionLotteryNumber.getRedNumTwo(), redBallNumInfo,
-				CalculateTypeConfig.CALCULATE_TYPE_WINNING);
-		NumberUtil.initRedNumberModel(unionLotteryNumber.getRedNumThree(), redBallNumInfo,
-				CalculateTypeConfig.CALCULATE_TYPE_WINNING);
-		NumberUtil.initRedNumberModel(unionLotteryNumber.getRedNumFour(), redBallNumInfo,
-				CalculateTypeConfig.CALCULATE_TYPE_WINNING);
-		NumberUtil.initRedNumberModel(unionLotteryNumber.getRedNumFive(), redBallNumInfo,
-				CalculateTypeConfig.CALCULATE_TYPE_WINNING);
-		NumberUtil.initRedNumberModel(unionLotteryNumber.getRedNumSix(), redBallNumInfo,
-				CalculateTypeConfig.CALCULATE_TYPE_WINNING);
+		NumberUtil.initRedNumberModel(unionLotteryNumber.getRedNumOne(), redBallNumInfo, CalculateTypeConfig.CALCULATE_TYPE_WINNING);
+		NumberUtil.initRedNumberModel(unionLotteryNumber.getRedNumTwo(), redBallNumInfo, CalculateTypeConfig.CALCULATE_TYPE_WINNING);
+		NumberUtil.initRedNumberModel(unionLotteryNumber.getRedNumThree(), redBallNumInfo, CalculateTypeConfig.CALCULATE_TYPE_WINNING);
+		NumberUtil.initRedNumberModel(unionLotteryNumber.getRedNumFour(), redBallNumInfo, CalculateTypeConfig.CALCULATE_TYPE_WINNING);
+		NumberUtil.initRedNumberModel(unionLotteryNumber.getRedNumFive(), redBallNumInfo, CalculateTypeConfig.CALCULATE_TYPE_WINNING);
+		NumberUtil.initRedNumberModel(unionLotteryNumber.getRedNumSix(), redBallNumInfo, CalculateTypeConfig.CALCULATE_TYPE_WINNING);
 		return redBallNumInfo;
 	}
 
@@ -237,8 +228,7 @@ public class MatrixOperation {
 		BlueBallNumInfo blueBallNumInfo = new BlueBallNumInfo();
 		blueBallNumInfo.setLotteryDate(unionLotteryNumber.getLotteryDate());
 		blueBallNumInfo.setPeriodNum(unionLotteryNumber.getPeriodNum());
-		NumberUtil.initBlueNumberModel(unionLotteryNumber.getBlueNum(), blueBallNumInfo,
-				CalculateTypeConfig.CALCULATE_TYPE_WINNING);
+		NumberUtil.initBlueNumberModel(unionLotteryNumber.getBlueNum(), blueBallNumInfo, CalculateTypeConfig.CALCULATE_TYPE_WINNING);
 		return blueBallNumInfo;
 	}
 }

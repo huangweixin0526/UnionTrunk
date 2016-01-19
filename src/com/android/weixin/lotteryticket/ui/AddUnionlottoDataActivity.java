@@ -1,15 +1,5 @@
 package com.android.weixin.lotteryticket.ui;
 
-import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
-import android.text.TextUtils;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Toast;
-
 import com.android.weixin.lotteryticket.R;
 import com.android.weixin.lotteryticket.storage.unionlotto.UnionLotteryNumberHelper;
 import com.android.weixin.lotteryticket.storage.unionlotto.UnionLotteryNumbers;
@@ -17,6 +7,15 @@ import com.android.weixin.lotteryticket.utils.DateUtil;
 import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.view.annotation.ViewInject;
 import com.lidroid.xutils.view.annotation.event.OnClick;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.text.TextUtils;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class AddUnionlottoDataActivity extends Activity {
 

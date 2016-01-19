@@ -10,7 +10,7 @@ import com.android.weixin.lotteryticket.storage.unionlotto.RedBallNumInfo;
 import com.android.weixin.lotteryticket.storage.unionlotto.UnionLotteryInfo;
 import com.android.weixin.lotteryticket.storage.unionlotto.UnionLotteryNumberHelper;
 import com.android.weixin.lotteryticket.storage.unionlotto.UnionLotteryNumbers;
-import com.android.weixin.lotteryticket.ui.adapter.RedNumForecastAdapter;
+import com.android.weixin.lotteryticket.ui.adapter.TwoDataPreviewAdapter;
 import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.view.annotation.ViewInject;
 
@@ -30,7 +30,7 @@ public class TwoDataPreviewFragment extends Fragment {
 	private MatrixOperation mMatrixOperation;
 
 	private List<UnionLotteryInfo> mDataSource;
-	private RedNumForecastAdapter mRedNumForecastAdapter;
+	private TwoDataPreviewAdapter mRedNumForecastAdapter;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -53,7 +53,7 @@ public class TwoDataPreviewFragment extends Fragment {
 		List<RedBallNumInfo> matrixRedLists = mMatrixOperation.initRedDataArray3_3(unionLotteryData);
 		List<BlueBallNumInfo> matrixBlueLists = mMatrixOperation.initBlueDataArray3_3(unionLotteryData);
 		mDataSource = getUnionLotteryInfo(unionLotteryData, matrixRedLists, matrixBlueLists);
-		mRedNumForecastAdapter = new RedNumForecastAdapter(getActivity(), mDataSource);
+		mRedNumForecastAdapter = new TwoDataPreviewAdapter(getActivity(), mDataSource);
 		// 设置列头
 		// mRedNumForecast.mListHead = (LinearLayout)
 		// view.findViewById(R.id.head);

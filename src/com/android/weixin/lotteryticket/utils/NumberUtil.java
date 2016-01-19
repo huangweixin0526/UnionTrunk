@@ -3,7 +3,6 @@ package com.android.weixin.lotteryticket.utils;
 import com.android.weixin.lotteryticket.permanent.CalculateTypeConfig;
 import com.android.weixin.lotteryticket.storage.unionlotto.BlueBallNumInfo;
 import com.android.weixin.lotteryticket.storage.unionlotto.RedBallNumInfo;
-import com.socks.library.KLog;
 
 public class NumberUtil {
 

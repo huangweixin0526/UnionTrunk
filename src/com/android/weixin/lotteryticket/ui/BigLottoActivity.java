@@ -1,5 +1,9 @@
 package com.android.weixin.lotteryticket.ui;
 
+import com.android.weixin.lotteryticket.R;
+import com.android.weixin.lotteryticket.ui.fragment.TwoDataPreviewFragment;
+import com.android.weixin.lotteryticket.widgets.indicator.TabPageIndicator;
+
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,13 +14,6 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
-
-import com.android.weixin.lotteryticket.R;
-import com.android.weixin.lotteryticket.ui.UnionLottoActivity.UnionlottoAdapter;
-import com.android.weixin.lotteryticket.ui.fragment.BlueNumForecastFragment;
-import com.android.weixin.lotteryticket.ui.fragment.RedNumForecastFragment;
-import com.android.weixin.lotteryticket.ui.fragment.TwoDataPreviewFragment;
-import com.android.weixin.lotteryticket.widgets.indicator.TabPageIndicator;
 
 public class BigLottoActivity extends FragmentActivity {
 
@@ -67,11 +64,7 @@ public class BigLottoActivity extends FragmentActivity {
 		public Fragment getItem(int position) {
 			switch (position) {
 			case 0:
-				return new TwoDataPreviewFragment();
-			case 1:
-				return new RedNumForecastFragment();
-			case 2:
-				return new BlueNumForecastFragment();
+				return new TwoDataPreviewFragment();		
 			default:
 				return new TwoDataPreviewFragment();
 			}

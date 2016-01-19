@@ -19,6 +19,9 @@ package com.android.weixin.lotteryticket.widgets.indicator;
 import static android.graphics.Paint.ANTI_ALIAS_FLAG;
 import static android.widget.LinearLayout.HORIZONTAL;
 import static android.widget.LinearLayout.VERTICAL;
+
+import com.android.weixin.lotteryticket.R;
+
 import android.content.Context;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
@@ -35,8 +38,6 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewConfiguration;
-
-import com.android.weixin.lotteryticket.R;
 
 /**
  * Draws circles (one for each view). The current view position is filled and
