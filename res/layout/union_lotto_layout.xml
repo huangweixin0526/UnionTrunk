@@ -3,11 +3,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    
+
     <com.android.weixin.lotteryticket.widgets.indicator.TabPageIndicator
         android:id="@+id/union_lotto_indicator"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/size_10dip" />
+
+    <View style="@style/hor_line_divider" />
 
     <com.android.weixin.lotteryticket.widgets.CustomViewPager
         android:id="@+id/union_lotto_pager"

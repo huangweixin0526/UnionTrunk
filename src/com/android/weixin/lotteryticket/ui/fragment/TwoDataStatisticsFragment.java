@@ -1,6 +1,9 @@
 package com.android.weixin.lotteryticket.ui.fragment;
 
+import java.util.List;
+
 import com.android.weixin.lotteryticket.R;
+import com.android.weixin.lotteryticket.storage.unionlotto.UnionLotteryInfo;
 import com.github.mikephil.charting.charts.PieChart;
 import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.view.annotation.ViewInject;
@@ -18,6 +21,8 @@ public class TwoDataStatisticsFragment extends Fragment {
 	@ViewInject(value = R.id.two_red_num_pc)
 	private PieChart two_red_num_pc;
 
+	private List<UnionLotteryInfo> mDataSource;
+
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -34,6 +39,14 @@ public class TwoDataStatisticsFragment extends Fragment {
 		super.onViewCreated(view, savedInstanceState);
 		ViewUtils.inject(this, view);
 		initView();
+	}
+
+	public List<UnionLotteryInfo> getDataSource() {
+		return mDataSource;
+	}
+
+	public void setDataSource(List<UnionLotteryInfo> dataSource) {
+		this.mDataSource = dataSource;
 	}
 
 	private void initView() {
