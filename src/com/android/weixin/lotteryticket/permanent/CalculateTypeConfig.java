@@ -17,9 +17,4 @@ public class CalculateTypeConfig {
 	 */
 	public static final int CALCULATE_TYPE_MATRIX = 2;
 
-	/**
-	 * 预测类型：矩阵算法预测中奖数
-	 */
-	public static final int CALCULATE_TYPE_MATRIX_WINNING = 3;
-
 }

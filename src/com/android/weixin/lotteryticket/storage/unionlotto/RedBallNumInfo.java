@@ -3,8 +3,11 @@ package com.android.weixin.lotteryticket.storage.unionlotto;
 import java.util.Date;
 
 import com.android.weixin.lotteryticket.storage.DBaseDao;
+import com.android.weixin.lotteryticket.utils.NumberUtil;
 import com.lidroid.xutils.db.annotation.Column;
 import com.lidroid.xutils.db.annotation.Table;
+
+import android.util.SparseIntArray;
 
 @Table(name = "union_red_ball_num")
 public class RedBallNumInfo extends DBaseDao {
@@ -119,71 +122,71 @@ public class RedBallNumInfo extends DBaseDao {
 	@Column(column = "red_ball_num_33")
 	private int redBallNum33;
 
-	private int redBallNum1Type;
+	private SparseIntArray redBallNum1Type;
 
-	private int redBallNum2Type;
+	private SparseIntArray redBallNum2Type;
 
-	private int redBallNum3Type;
+	private SparseIntArray redBallNum3Type;
 
-	private int redBallNum4Type;
+	private SparseIntArray redBallNum4Type;
 
-	private int redBallNum5Type;
+	private SparseIntArray redBallNum5Type;
 
-	private int redBallNum6Type;
+	private SparseIntArray redBallNum6Type;
 
-	private int redBallNum7Type;
+	private SparseIntArray redBallNum7Type;
 
-	private int redBallNum8Type;
+	private SparseIntArray redBallNum8Type;
 
-	private int redBallNum9Type;
+	private SparseIntArray redBallNum9Type;
 
-	private int redBallNum10Type;
+	private SparseIntArray redBallNum10Type;
 
-	private int redBallNum11Type;
+	private SparseIntArray redBallNum11Type;
 
-	private int redBallNum12Type;
+	private SparseIntArray redBallNum12Type;
 
-	private int redBallNum13Type;
+	private SparseIntArray redBallNum13Type;
 
-	private int redBallNum14Type;
+	private SparseIntArray redBallNum14Type;
 
-	private int redBallNum15Type;
+	private SparseIntArray redBallNum15Type;
 
-	private int redBallNum16Type;
+	private SparseIntArray redBallNum16Type;
 
-	private int redBallNum17Type;
+	private SparseIntArray redBallNum17Type;
 
-	private int redBallNum18Type;
+	private SparseIntArray redBallNum18Type;
 
-	private int redBallNum19Type;
+	private SparseIntArray redBallNum19Type;
 
-	private int redBallNum20Type;
+	private SparseIntArray redBallNum20Type;
 
-	private int redBallNum21Type;
+	private SparseIntArray redBallNum21Type;
 
-	private int redBallNum22Type;
+	private SparseIntArray redBallNum22Type;
 
-	private int redBallNum23Type;
+	private SparseIntArray redBallNum23Type;
 
-	private int redBallNum24Type;
+	private SparseIntArray redBallNum24Type;
 
-	private int redBallNum25Type;
+	private SparseIntArray redBallNum25Type;
 
-	private int redBallNum26Type;
+	private SparseIntArray redBallNum26Type;
 
-	private int redBallNum27Type;
+	private SparseIntArray redBallNum27Type;
 
-	private int redBallNum28Type;
+	private SparseIntArray redBallNum28Type;
 
-	private int redBallNum29Type;
+	private SparseIntArray redBallNum29Type;
 
-	private int redBallNum30Type;
+	private SparseIntArray redBallNum30Type;
 
-	private int redBallNum31Type;
+	private SparseIntArray redBallNum31Type;
 
-	private int redBallNum32Type;
+	private SparseIntArray redBallNum32Type;
 
-	private int redBallNum33Type;
+	private SparseIntArray redBallNum33Type;
 
 	public int getPeriodNum() {
 		return periodNum;
@@ -473,268 +476,499 @@ public class RedBallNumInfo extends DBaseDao {
 		this.redBallNum33 = redBallNum33;
 	}
 
-	public int getRedBallNum1Type() {
+	public SparseIntArray getRedBallNum1Type() {
 		return redBallNum1Type;
 	}
 
-	public void setRedBallNum1Type(int redBallNum1Type) {
-		this.redBallNum1Type = redBallNum1Type;
+	public boolean isRedBallNum1Type(Integer... types) {
+		return NumberUtil.isBallNumType(redBallNum1Type, types);
 	}
 
-	public int getRedBallNum2Type() {
+	public void setRedBallNum1Type(int redBallNum1Type) {
+		if (this.redBallNum1Type == null) {
+			this.redBallNum1Type = new SparseIntArray();
+		}
+		this.redBallNum1Type.put(redBallNum1Type, redBallNum1Type);
+	}
+
+	public SparseIntArray getRedBallNum2Type() {
 		return redBallNum2Type;
 	}
 
-	public void setRedBallNum2Type(int redBallNum2Type) {
-		this.redBallNum2Type = redBallNum2Type;
+	public boolean isRedBallNum2Type(Integer... types) {
+		return NumberUtil.isBallNumType(redBallNum2Type, types);
 	}
 
-	public int getRedBallNum3Type() {
+	public void setRedBallNum2Type(int redBallNum2Type) {
+		if (this.redBallNum2Type == null) {
+			this.redBallNum2Type = new SparseIntArray();
+		}
+		this.redBallNum2Type.put(redBallNum2Type, redBallNum2Type);
+	}
+
+	public SparseIntArray getRedBallNum3Type() {
 		return redBallNum3Type;
 	}
 
-	public void setRedBallNum3Type(int redBallNum3Type) {
-		this.redBallNum3Type = redBallNum3Type;
+	public boolean isRedBallNum3Type(Integer... types) {
+		return NumberUtil.isBallNumType(redBallNum3Type, types);
 	}
 
-	public int getRedBallNum4Type() {
+	public void setRedBallNum3Type(int redBallNum3Type) {
+		if (this.redBallNum3Type == null) {
+			this.redBallNum3Type = new SparseIntArray();
+		}
+		this.redBallNum3Type.put(redBallNum3Type, redBallNum3Type);
+	}
+
+	public SparseIntArray getRedBallNum4Type() {
 		return redBallNum4Type;
 	}
 
-	public void setRedBallNum4Type(int redBallNum4Type) {
-		this.redBallNum4Type = redBallNum4Type;
+	public boolean isRedBallNum4Type(Integer... types) {
+		return NumberUtil.isBallNumType(redBallNum4Type, types);
 	}
 
-	public int getRedBallNum5Type() {
+	public void setRedBallNum4Type(int redBallNum4Type) {
+		if (this.redBallNum4Type == null) {
+			this.redBallNum4Type = new SparseIntArray();
+		}
+		this.redBallNum4Type.put(redBallNum4Type, redBallNum4Type);
+	}
+
+	public SparseIntArray getRedBallNum5Type() {
 		return redBallNum5Type;
 	}
 
-	public void setRedBallNum5Type(int redBallNum5Type) {
-		this.redBallNum5Type = redBallNum5Type;
+	public boolean isRedBallNum5Type(Integer... types) {
+		return NumberUtil.isBallNumType(redBallNum5Type, types);
 	}
 
-	public int getRedBallNum6Type() {
+	public void setRedBallNum5Type(int redBallNum5Type) {
+		if (this.redBallNum5Type == null) {
+			this.redBallNum5Type = new SparseIntArray();
+		}
+		this.redBallNum5Type.put(redBallNum5Type, redBallNum5Type);
+	}
+
+	public SparseIntArray getRedBallNum6Type() {
 		return redBallNum6Type;
 	}
 
-	public void setRedBallNum6Type(int redBallNum6Type) {
-		this.redBallNum6Type = redBallNum6Type;
+	public boolean isRedBallNum6Type(Integer... types) {
+		return NumberUtil.isBallNumType(redBallNum6Type, types);
 	}
 
-	public int getRedBallNum7Type() {
+	public void setRedBallNum6Type(int redBallNum6Type) {
+		if (this.redBallNum6Type == null) {
+			this.redBallNum6Type = new SparseIntArray();
+		}
+		this.redBallNum6Type.put(redBallNum6Type, redBallNum6Type);
+	}
+
+	public SparseIntArray getRedBallNum7Type() {
 		return redBallNum7Type;
 	}
 
-	public void setRedBallNum7Type(int redBallNum7Type) {
-		this.redBallNum7Type = redBallNum7Type;
+	public boolean isRedBallNum7Type(Integer... types) {
+		return NumberUtil.isBallNumType(redBallNum7Type, types);
 	}
 
-	public int getRedBallNum8Type() {
+	public void setRedBallNum7Type(int redBallNum7Type) {
+		if (this.redBallNum7Type == null) {
+			this.redBallNum7Type = new SparseIntArray();
+		}
+		this.redBallNum7Type.put(redBallNum7Type, redBallNum7Type);
+	}
+
+	public SparseIntArray getRedBallNum8Type() {
 		return redBallNum8Type;
 	}
 
-	public void setRedBallNum8Type(int redBallNum8Type) {
-		this.redBallNum8Type = redBallNum8Type;
+	public boolean isRedBallNum8Type(Integer... types) {
+		return NumberUtil.isBallNumType(redBallNum8Type, types);
 	}
 
-	public int getRedBallNum9Type() {
+	public void setRedBallNum8Type(int redBallNum8Type) {
+		if (this.redBallNum8Type == null) {
+			this.redBallNum8Type = new SparseIntArray();
+		}
+		this.redBallNum8Type.put(redBallNum8Type, redBallNum8Type);
+	}
+
+	public SparseIntArray getRedBallNum9Type() {
 		return redBallNum9Type;
 	}
 
-	public void setRedBallNum9Type(int redBallNum9Type) {
-		this.redBallNum9Type = redBallNum9Type;
+	public boolean isRedBallNum9Type(Integer... types) {
+		return NumberUtil.isBallNumType(redBallNum9Type, types);
 	}
 
-	public int getRedBallNum10Type() {
+	public void setRedBallNum9Type(int redBallNum9Type) {
+		if (this.redBallNum9Type == null) {
+			this.redBallNum9Type = new SparseIntArray();
+		}
+		this.redBallNum9Type.put(redBallNum9Type, redBallNum9Type);
+	}
+
+	public SparseIntArray getRedBallNum10Type() {
 		return redBallNum10Type;
 	}
 
-	public void setRedBallNum10Type(int redBallNum10Type) {
-		this.redBallNum10Type = redBallNum10Type;
+	public boolean isRedBallNum10Type(Integer... types) {
+		return NumberUtil.isBallNumType(redBallNum10Type, types);
 	}
 
-	public int getRedBallNum11Type() {
+	public void setRedBallNum10Type(int redBallNum10Type) {
+		if (this.redBallNum10Type == null) {
+			this.redBallNum10Type = new SparseIntArray();
+		}
+		this.redBallNum10Type.put(redBallNum10Type, redBallNum10Type);
+	}
+
+	public SparseIntArray getRedBallNum11Type() {
 		return redBallNum11Type;
 	}
 
-	public void setRedBallNum11Type(int redBallNum11Type) {
-		this.redBallNum11Type = redBallNum11Type;
+	public boolean isRedBallNum11Type(Integer... types) {
+		return NumberUtil.isBallNumType(redBallNum11Type, types);
 	}
 
-	public int getRedBallNum12Type() {
+	public void setRedBallNum11Type(int redBallNum11Type) {
+		if (this.redBallNum11Type == null) {
+			this.redBallNum11Type = new SparseIntArray();
+		}
+		this.redBallNum11Type.put(redBallNum11Type, redBallNum11Type);
+	}
+
+	public SparseIntArray getRedBallNum12Type() {
 		return redBallNum12Type;
 	}
 
-	public void setRedBallNum12Type(int redBallNum12Type) {
-		this.redBallNum12Type = redBallNum12Type;
+	public boolean isRedBallNum12Type(Integer... types) {
+		return NumberUtil.isBallNumType(redBallNum12Type, types);
 	}
 
-	public int getRedBallNum13Type() {
+	public void setRedBallNum12Type(int redBallNum12Type) {
+		if (this.redBallNum12Type == null) {
+			this.redBallNum12Type = new SparseIntArray();
+		}
+		this.redBallNum12Type.put(redBallNum12Type, redBallNum12Type);
+	}
+
+	public SparseIntArray getRedBallNum13Type() {
 		return redBallNum13Type;
 	}
 
-	public void setRedBallNum13Type(int redBallNum13Type) {
-		this.redBallNum13Type = redBallNum13Type;
+	public boolean isRedBallNum13Type(Integer... types) {
+		return NumberUtil.isBallNumType(redBallNum13Type, types);
 	}
 
-	public int getRedBallNum14Type() {
+	public void setRedBallNum13Type(int redBallNum13Type) {
+		if (this.redBallNum13Type == null) {
+			this.redBallNum13Type = new SparseIntArray();
+		}
+		this.redBallNum13Type.put(redBallNum13Type, redBallNum13Type);
+	}
+
+	public SparseIntArray getRedBallNum14Type() {
 		return redBallNum14Type;
 	}
 
-	public void setRedBallNum14Type(int redBallNum14Type) {
-		this.redBallNum14Type = redBallNum14Type;
+	public boolean isRedBallNum14Type(Integer... types) {
+		return NumberUtil.isBallNumType(redBallNum14Type, types);
 	}
 
-	public int getRedBallNum15Type() {
+	public void setRedBallNum14Type(int redBallNum14Type) {
+		if (this.redBallNum14Type == null) {
+			this.redBallNum14Type = new SparseIntArray();
+		}
+		this.redBallNum14Type.put(redBallNum14Type, redBallNum14Type);
+	}
+
+	public SparseIntArray getRedBallNum15Type() {
 		return redBallNum15Type;
 	}
 
-	public void setRedBallNum15Type(int redBallNum15Type) {
-		this.redBallNum15Type = redBallNum15Type;
+	public boolean isRedBallNum15Type(Integer... types) {
+		return NumberUtil.isBallNumType(redBallNum15Type, types);
 	}
 
-	public int getRedBallNum16Type() {
+	public void setRedBallNum15Type(int redBallNum15Type) {
+		if (this.redBallNum15Type == null) {
+			this.redBallNum15Type = new SparseIntArray();
+		}
+		this.redBallNum15Type.put(redBallNum15Type, redBallNum15Type);
+	}
+
+	public SparseIntArray getRedBallNum16Type() {
 		return redBallNum16Type;
 	}
 
-	public void setRedBallNum16Type(int redBallNum16Type) {
-		this.redBallNum16Type = redBallNum16Type;
+	public boolean isRedBallNum16Type(Integer... types) {
+		return NumberUtil.isBallNumType(redBallNum16Type, types);
 	}
 
-	public int getRedBallNum17Type() {
+	public void setRedBallNum16Type(int redBallNum16Type) {
+		if (this.redBallNum16Type == null) {
+			this.redBallNum16Type = new SparseIntArray();
+		}
+		this.redBallNum16Type.put(redBallNum16Type, redBallNum16Type);
+	}
+
+	public SparseIntArray getRedBallNum17Type() {
 		return redBallNum17Type;
 	}
 
-	public void setRedBallNum17Type(int redBallNum17Type) {
-		this.redBallNum17Type = redBallNum17Type;
+	public boolean isRedBallNum17Type(Integer... types) {
+		return NumberUtil.isBallNumType(redBallNum17Type, types);
 	}
 
-	public int getRedBallNum18Type() {
+	public void setRedBallNum17Type(int redBallNum17Type) {
+		if (this.redBallNum17Type == null) {
+			this.redBallNum17Type = new SparseIntArray();
+		}
+		this.redBallNum17Type.put(redBallNum17Type, redBallNum17Type);
+	}
+
+	public SparseIntArray getRedBallNum18Type() {
 		return redBallNum18Type;
 	}
 
-	public void setRedBallNum18Type(int redBallNum18Type) {
-		this.redBallNum18Type = redBallNum18Type;
+	public boolean isRedBallNum18Type(Integer... types) {
+		return NumberUtil.isBallNumType(redBallNum18Type, types);
 	}
 
-	public int getRedBallNum19Type() {
+	public void setRedBallNum18Type(int redBallNum18Type) {
+		if (this.redBallNum18Type == null) {
+			this.redBallNum18Type = new SparseIntArray();
+		}
+		this.redBallNum18Type.put(redBallNum18Type, redBallNum18Type);
+	}
+
+	public SparseIntArray getRedBallNum19Type() {
 		return redBallNum19Type;
 	}
 
-	public void setRedBallNum19Type(int redBallNum19Type) {
-		this.redBallNum19Type = redBallNum19Type;
+	public boolean isRedBallNum19Type(Integer... types) {
+		return NumberUtil.isBallNumType(redBallNum19Type, types);
 	}
 
-	public int getRedBallNum20Type() {
+	public void setRedBallNum19Type(int redBallNum19Type) {
+		if (this.redBallNum19Type == null) {
+			this.redBallNum19Type = new SparseIntArray();
+		}
+		this.redBallNum19Type.put(redBallNum19Type, redBallNum19Type);
+	}
+
+	public SparseIntArray getRedBallNum20Type() {
 		return redBallNum20Type;
 	}
 
-	public void setRedBallNum20Type(int redBallNum20Type) {
-		this.redBallNum20Type = redBallNum20Type;
+	public boolean isRedBallNum20Type(Integer... types) {
+		return NumberUtil.isBallNumType(redBallNum20Type, types);
 	}
 
-	public int getRedBallNum21Type() {
+	public void setRedBallNum20Type(int redBallNum20Type) {
+		if (this.redBallNum20Type == null) {
+			this.redBallNum20Type = new SparseIntArray();
+		}
+		this.redBallNum20Type.put(redBallNum20Type, redBallNum20Type);
+	}
+
+	public SparseIntArray getRedBallNum21Type() {
 		return redBallNum21Type;
 	}
 
-	public void setRedBallNum21Type(int redBallNum21Type) {
-		this.redBallNum21Type = redBallNum21Type;
+	public boolean isRedBallNum21Type(Integer... types) {
+		return NumberUtil.isBallNumType(redBallNum21Type, types);
 	}
 
-	public int getRedBallNum22Type() {
+	public void setRedBallNum21Type(int redBallNum21Type) {
+		if (this.redBallNum21Type == null) {
+			this.redBallNum21Type = new SparseIntArray();
+		}
+		this.redBallNum21Type.put(redBallNum21Type, redBallNum21Type);
+	}
+
+	public SparseIntArray getRedBallNum22Type() {
 		return redBallNum22Type;
 	}
 
-	public void setRedBallNum22Type(int redBallNum22Type) {
-		this.redBallNum22Type = redBallNum22Type;
+	public boolean isRedBallNum22Type(Integer... types) {
+		return NumberUtil.isBallNumType(redBallNum22Type, types);
 	}
 
-	public int getRedBallNum23Type() {
+	public void setRedBallNum22Type(int redBallNum22Type) {
+		if (this.redBallNum22Type == null) {
+			this.redBallNum22Type = new SparseIntArray();
+		}
+		this.redBallNum22Type.put(redBallNum22Type, redBallNum22Type);
+	}
+
+	public SparseIntArray getRedBallNum23Type() {
 		return redBallNum23Type;
 	}
 
-	public void setRedBallNum23Type(int redBallNum23Type) {
-		this.redBallNum23Type = redBallNum23Type;
+	public boolean isRedBallNum23Type(Integer... types) {
+		return NumberUtil.isBallNumType(redBallNum23Type, types);
 	}
 
-	public int getRedBallNum24Type() {
+	public void setRedBallNum23Type(int redBallNum23Type) {
+		if (this.redBallNum23Type == null) {
+			this.redBallNum23Type = new SparseIntArray();
+		}
+		this.redBallNum23Type.put(redBallNum23Type, redBallNum23Type);
+	}
+
+	public SparseIntArray getRedBallNum24Type() {
 		return redBallNum24Type;
 	}
 
-	public void setRedBallNum24Type(int redBallNum24Type) {
-		this.redBallNum24Type = redBallNum24Type;
+	public boolean isRedBallNum24Type(Integer... types) {
+		return NumberUtil.isBallNumType(redBallNum24Type, types);
 	}
 
-	public int getRedBallNum25Type() {
+	public void setRedBallNum24Type(int redBallNum24Type) {
+		if (this.redBallNum24Type == null) {
+			this.redBallNum24Type = new SparseIntArray();
+		}
+		this.redBallNum24Type.put(redBallNum24Type, redBallNum24Type);
+	}
+
+	public SparseIntArray getRedBallNum25Type() {
 		return redBallNum25Type;
 	}
 
-	public void setRedBallNum25Type(int redBallNum25Type) {
-		this.redBallNum25Type = redBallNum25Type;
+	public boolean isRedBallNum25Type(Integer... types) {
+		return NumberUtil.isBallNumType(redBallNum25Type, types);
 	}
 
-	public int getRedBallNum26Type() {
+	public void setRedBallNum25Type(int redBallNum25Type) {
+		if (this.redBallNum25Type == null) {
+			this.redBallNum25Type = new SparseIntArray();
+		}
+		this.redBallNum25Type.put(redBallNum25Type, redBallNum25Type);
+	}
+
+	public SparseIntArray getRedBallNum26Type() {
 		return redBallNum26Type;
 	}
 
-	public void setRedBallNum26Type(int redBallNum26Type) {
-		this.redBallNum26Type = redBallNum26Type;
+	public boolean isRedBallNum26Type(Integer... types) {
+		return NumberUtil.isBallNumType(redBallNum26Type, types);
 	}
 
-	public int getRedBallNum27Type() {
+	public void setRedBallNum26Type(int redBallNum26Type) {
+		if (this.redBallNum26Type == null) {
+			this.redBallNum26Type = new SparseIntArray();
+		}
+		this.redBallNum26Type.put(redBallNum26Type, redBallNum26Type);
+	}
+
+	public SparseIntArray getRedBallNum27Type() {
 		return redBallNum27Type;
 	}
 
-	public void setRedBallNum27Type(int redBallNum27Type) {
-		this.redBallNum27Type = redBallNum27Type;
+	public boolean isRedBallNum27Type(Integer... types) {
+		return NumberUtil.isBallNumType(redBallNum27Type, types);
 	}
 
-	public int getRedBallNum28Type() {
+	public void setRedBallNum27Type(int redBallNum27Type) {
+		if (this.redBallNum27Type == null) {
+			this.redBallNum27Type = new SparseIntArray();
+		}
+		this.redBallNum27Type.put(redBallNum27Type, redBallNum27Type);
+	}
+
+	public SparseIntArray getRedBallNum28Type() {
 		return redBallNum28Type;
 	}
 
-	public void setRedBallNum28Type(int redBallNum28Type) {
-		this.redBallNum28Type = redBallNum28Type;
+	public boolean isRedBallNum28Type(Integer... types) {
+		return NumberUtil.isBallNumType(redBallNum28Type, types);
 	}
 
-	public int getRedBallNum29Type() {
+	public void setRedBallNum28Type(int redBallNum28Type) {
+		if (this.redBallNum28Type == null) {
+			this.redBallNum28Type = new SparseIntArray();
+		}
+		this.redBallNum28Type.put(redBallNum28Type, redBallNum28Type);
+	}
+
+	public SparseIntArray getRedBallNum29Type() {
 		return redBallNum29Type;
 	}
 
-	public void setRedBallNum29Type(int redBallNum29Type) {
-		this.redBallNum29Type = redBallNum29Type;
+	public boolean isRedBallNum29Type(Integer... types) {
+		return NumberUtil.isBallNumType(redBallNum29Type, types);
 	}
 
-	public int getRedBallNum30Type() {
+	public void setRedBallNum29Type(int redBallNum29Type) {
+		if (this.redBallNum29Type == null) {
+			this.redBallNum29Type = new SparseIntArray();
+		}
+		this.redBallNum29Type.put(redBallNum29Type, redBallNum29Type);
+	}
+
+	public SparseIntArray getRedBallNum30Type() {
 		return redBallNum30Type;
 	}
 
-	public void setRedBallNum30Type(int redBallNum30Type) {
-		this.redBallNum30Type = redBallNum30Type;
+	public boolean isRedBallNum30Type(Integer... types) {
+		return NumberUtil.isBallNumType(redBallNum30Type, types);
 	}
 
-	public int getRedBallNum31Type() {
+	public void setRedBallNum30Type(int redBallNum30Type) {
+		if (this.redBallNum30Type == null) {
+			this.redBallNum30Type = new SparseIntArray();
+		}
+		this.redBallNum30Type.put(redBallNum30Type, redBallNum30Type);
+	}
+
+	public SparseIntArray getRedBallNum31Type() {
 		return redBallNum31Type;
 	}
 
-	public void setRedBallNum31Type(int redBallNum31Type) {
-		this.redBallNum31Type = redBallNum31Type;
+	public boolean isRedBallNum31Type(Integer... types) {
+		return NumberUtil.isBallNumType(redBallNum31Type, types);
 	}
 
-	public int getRedBallNum32Type() {
+	public void setRedBallNum31Type(int redBallNum31Type) {
+		if (this.redBallNum31Type == null) {
+			this.redBallNum31Type = new SparseIntArray();
+		}
+		this.redBallNum31Type.put(redBallNum31Type, redBallNum31Type);
+	}
+
+	public SparseIntArray getRedBallNum32Type() {
 		return redBallNum32Type;
 	}
 
-	public void setRedBallNum32Type(int redBallNum32Type) {
-		this.redBallNum32Type = redBallNum32Type;
+	public boolean isRedBallNum32Type(Integer... types) {
+		return NumberUtil.isBallNumType(redBallNum32Type, types);
 	}
 
-	public int getRedBallNum33Type() {
+	public void setRedBallNum32Type(int redBallNum32Type) {
+		if (this.redBallNum32Type == null) {
+			this.redBallNum32Type = new SparseIntArray();
+		}
+		this.redBallNum32Type.put(redBallNum32Type, redBallNum32Type);
+	}
+
+	public SparseIntArray getRedBallNum33Type() {
 		return redBallNum33Type;
 	}
 
+	public boolean isRedBallNum33Type(Integer... types) {
+		return NumberUtil.isBallNumType(redBallNum33Type, types);
+	}
+
 	public void setRedBallNum33Type(int redBallNum33Type) {
-		this.redBallNum33Type = redBallNum33Type;
+		if (this.redBallNum33Type == null) {
+			this.redBallNum33Type = new SparseIntArray();
+		}
+		this.redBallNum33Type.put(redBallNum33Type, redBallNum33Type);
 	}
 
 	@Override

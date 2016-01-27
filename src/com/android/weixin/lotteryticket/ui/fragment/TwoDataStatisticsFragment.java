@@ -31,10 +31,9 @@ public class TwoDataStatisticsFragment extends Fragment {
 
 	@ViewInject(value = R.id.two_red_num_pc)
 	private PieChart two_red_num_pc;
-	
+
 	@ViewInject(value = R.id.two_blue_num_pc)
 	private PieChart two_blue_num_pc;
-	
 
 	protected String[] mParties = new String[] { "Party 0", "Party 1", "Party 2", "Party 3", "Party 4", "Party 5", "Party 6", "Party 7", "Party 8" };
 	private List<UnionLotteryInfo> mDataSource;
@@ -78,8 +77,8 @@ public class TwoDataStatisticsFragment extends Fragment {
 		l.setXEntrySpace(7f);
 		l.setYEntrySpace(5f);
 	}
-	
-	private void initBluePieView(){
+
+	private void initBluePieView() {
 		two_blue_num_pc.setUsePercentValues(true);
 		two_blue_num_pc.setDescription("");
 		two_blue_num_pc.setDragDecelerationFrictionCoef(0.95f);
@@ -118,7 +117,8 @@ public class TwoDataStatisticsFragment extends Fragment {
 			int count5 = 0;
 			int count6 = 0;
 			for (int i = 2; i < mDataSource.size() - 1; i++) {
-				int count = StatisticsUtil.getStatisticsRedNum(mDataSource.get(i).getRedBallNumInfo(), CalculateTypeConfig.CALCULATE_TYPE_MATRIX_WINNING);
+				int count = StatisticsUtil.getStatisticsRedNum(mDataSource.get(i).getRedBallNumInfo(), CalculateTypeConfig.CALCULATE_TYPE_WINNING,
+						CalculateTypeConfig.CALCULATE_TYPE_MATRIX);
 				switch (count) {
 				case 1:
 					count1++;
@@ -202,13 +202,14 @@ public class TwoDataStatisticsFragment extends Fragment {
 	private void setBlueDataPie() {
 		if (mDataSource != null && mDataSource.size() > 3) {
 			int count0 = 0;
-			int count1 = 0;			
+			int count1 = 0;
 			for (int i = 2; i < mDataSource.size() - 1; i++) {
-				int count = StatisticsUtil.getStatisticsBlueNum(mDataSource.get(i).getBlueBallNumInfo(), CalculateTypeConfig.CALCULATE_TYPE_MATRIX_WINNING);
+				int count = StatisticsUtil.getStatisticsBlueNum(mDataSource.get(i).getBlueBallNumInfo(), CalculateTypeConfig.CALCULATE_TYPE_WINNING,
+						CalculateTypeConfig.CALCULATE_TYPE_MATRIX);
 				switch (count) {
 				case 1:
 					count1++;
-					break;				
+					break;
 				default:
 					count0++;
 					break;
@@ -217,11 +218,11 @@ public class TwoDataStatisticsFragment extends Fragment {
 			int dataCount = mDataSource.size() - 3;
 			ArrayList<Entry> yVals1 = new ArrayList<Entry>();
 			yVals1.add(new Entry((float) count0 / dataCount, 0));
-			yVals1.add(new Entry((float) count1 / dataCount, 1));			
+			yVals1.add(new Entry((float) count1 / dataCount, 1));
 
 			ArrayList<String> xVals = new ArrayList<String>();
 			xVals.add(mParties[0]);
-			xVals.add(mParties[1]);			
+			xVals.add(mParties[1]);
 
 			PieDataSet dataSet = new PieDataSet(yVals1, "Blue Num Results");
 			dataSet.setSliceSpace(3f);

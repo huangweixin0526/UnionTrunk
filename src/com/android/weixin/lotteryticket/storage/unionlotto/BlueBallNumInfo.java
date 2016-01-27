@@ -3,8 +3,11 @@ package com.android.weixin.lotteryticket.storage.unionlotto;
 import java.util.Date;
 
 import com.android.weixin.lotteryticket.storage.DBaseDao;
+import com.android.weixin.lotteryticket.utils.NumberUtil;
 import com.lidroid.xutils.db.annotation.Column;
 import com.lidroid.xutils.db.annotation.Table;
+
+import android.util.SparseIntArray;
 
 @Table(name = "union_blue_ball_num")
 public class BlueBallNumInfo extends DBaseDao {
@@ -68,22 +71,22 @@ public class BlueBallNumInfo extends DBaseDao {
 	@Column(column = "blue_ball_num_16")
 	private int blueBallNum16;
 
-	private int blueBallNum1Type;
-	private int blueBallNum2Type;
-	private int blueBallNum3Type;
-	private int blueBallNum4Type;
-	private int blueBallNum5Type;
-	private int blueBallNum6Type;
-	private int blueBallNum7Type;
-	private int blueBallNum8Type;
-	private int blueBallNum9Type;
-	private int blueBallNum10Type;
-	private int blueBallNum11Type;
-	private int blueBallNum12Type;
-	private int blueBallNum13Type;
-	private int blueBallNum14Type;
-	private int blueBallNum15Type;
-	private int blueBallNum16Type;
+	private SparseIntArray blueBallNum1Type;
+	private SparseIntArray blueBallNum2Type;
+	private SparseIntArray blueBallNum3Type;
+	private SparseIntArray blueBallNum4Type;
+	private SparseIntArray blueBallNum5Type;
+	private SparseIntArray blueBallNum6Type;
+	private SparseIntArray blueBallNum7Type;
+	private SparseIntArray blueBallNum8Type;
+	private SparseIntArray blueBallNum9Type;
+	private SparseIntArray blueBallNum10Type;
+	private SparseIntArray blueBallNum11Type;
+	private SparseIntArray blueBallNum12Type;
+	private SparseIntArray blueBallNum13Type;
+	private SparseIntArray blueBallNum14Type;
+	private SparseIntArray blueBallNum15Type;
+	private SparseIntArray blueBallNum16Type;
 
 	public int getPeriodNum() {
 		return periodNum;
@@ -237,132 +240,244 @@ public class BlueBallNumInfo extends DBaseDao {
 		this.blueBallNum16 = blueBallNum16;
 	}
 
-	public int getBlueBallNum1Type() {
+	public SparseIntArray getBlueBallNum1Type() {
 		return blueBallNum1Type;
 	}
 
-	public void setBlueBallNum1Type(int blueBallNum1Type) {
-		this.blueBallNum1Type = blueBallNum1Type;
+	public boolean isBlueBallNum1Type(Integer... types) {
+		return NumberUtil.isBallNumType(blueBallNum1Type, types);
 	}
 
-	public int getBlueBallNum2Type() {
+	public void setBlueBallNum1Type(int blueBallNum1Type) {
+		if (this.blueBallNum1Type == null) {
+			this.blueBallNum1Type = new SparseIntArray();
+		}
+		this.blueBallNum1Type.put(blueBallNum1Type, blueBallNum1Type);
+	}
+
+	public SparseIntArray getBlueBallNum2Type() {
 		return blueBallNum2Type;
 	}
 
-	public void setBlueBallNum2Type(int blueBallNum2Type) {
-		this.blueBallNum2Type = blueBallNum2Type;
+	public boolean isBlueBallNum2Type(Integer... types) {
+		return NumberUtil.isBallNumType(blueBallNum2Type, types);
 	}
 
-	public int getBlueBallNum3Type() {
+	public void setBlueBallNum2Type(int blueBallNum2Type) {
+		if (this.blueBallNum2Type == null) {
+			this.blueBallNum2Type = new SparseIntArray();
+		}
+		this.blueBallNum2Type.put(blueBallNum2Type, blueBallNum2Type);
+	}
+
+	public SparseIntArray getBlueBallNum3Type() {
 		return blueBallNum3Type;
 	}
 
-	public void setBlueBallNum3Type(int blueBallNum3Type) {
-		this.blueBallNum3Type = blueBallNum3Type;
+	public boolean isBlueBallNum3Type(Integer... types) {
+		return NumberUtil.isBallNumType(blueBallNum3Type, types);
 	}
 
-	public int getBlueBallNum4Type() {
+	public void setBlueBallNum3Type(int blueBallNum3Type) {
+		if (this.blueBallNum3Type == null) {
+			this.blueBallNum3Type = new SparseIntArray();
+		}
+		this.blueBallNum3Type.put(blueBallNum3Type, blueBallNum3Type);
+	}
+
+	public SparseIntArray getBlueBallNum4Type() {
 		return blueBallNum4Type;
 	}
 
-	public void setBlueBallNum4Type(int blueBallNum4Type) {
-		this.blueBallNum4Type = blueBallNum4Type;
+	public boolean isBlueBallNum4Type(Integer... types) {
+		return NumberUtil.isBallNumType(blueBallNum4Type, types);
 	}
 
-	public int getBlueBallNum5Type() {
+	public void setBlueBallNum4Type(int blueBallNum4Type) {
+		if (this.blueBallNum4Type == null) {
+			this.blueBallNum4Type = new SparseIntArray();
+		}
+		this.blueBallNum4Type.put(blueBallNum4Type, blueBallNum4Type);
+	}
+
+	public SparseIntArray getBlueBallNum5Type() {
 		return blueBallNum5Type;
 	}
 
-	public void setBlueBallNum5Type(int blueBallNum5Type) {
-		this.blueBallNum5Type = blueBallNum5Type;
+	public boolean isBlueBallNum5Type(Integer... types) {
+		return NumberUtil.isBallNumType(blueBallNum5Type, types);
 	}
 
-	public int getBlueBallNum6Type() {
+	public void setBlueBallNum5Type(int blueBallNum5Type) {
+		if (this.blueBallNum5Type == null) {
+			this.blueBallNum5Type = new SparseIntArray();
+		}
+		this.blueBallNum5Type.put(blueBallNum5Type, blueBallNum5Type);
+	}
+
+	public SparseIntArray getBlueBallNum6Type() {
 		return blueBallNum6Type;
 	}
 
-	public void setBlueBallNum6Type(int blueBallNum6Type) {
-		this.blueBallNum6Type = blueBallNum6Type;
+	public boolean isBlueBallNum6Type(Integer... types) {
+		return NumberUtil.isBallNumType(blueBallNum6Type, types);
 	}
 
-	public int getBlueBallNum7Type() {
+	public void setBlueBallNum6Type(int blueBallNum6Type) {
+		if (this.blueBallNum6Type == null) {
+			this.blueBallNum6Type = new SparseIntArray();
+		}
+		this.blueBallNum6Type.put(blueBallNum6Type, blueBallNum6Type);
+	}
+
+	public SparseIntArray getBlueBallNum7Type() {
 		return blueBallNum7Type;
 	}
 
-	public void setBlueBallNum7Type(int blueBallNum7Type) {
-		this.blueBallNum7Type = blueBallNum7Type;
+	public boolean isBlueBallNum7Type(Integer... types) {
+		return NumberUtil.isBallNumType(blueBallNum7Type, types);
 	}
 
-	public int getBlueBallNum8Type() {
+	public void setBlueBallNum7Type(int blueBallNum7Type) {
+		if (this.blueBallNum7Type == null) {
+			this.blueBallNum7Type = new SparseIntArray();
+		}
+		this.blueBallNum7Type.put(blueBallNum7Type, blueBallNum7Type);
+	}
+
+	public SparseIntArray getBlueBallNum8Type() {
 		return blueBallNum8Type;
 	}
 
-	public void setBlueBallNum8Type(int blueBallNum8Type) {
-		this.blueBallNum8Type = blueBallNum8Type;
+	public boolean isBlueBallNum8Type(Integer... types) {
+		return NumberUtil.isBallNumType(blueBallNum8Type, types);
 	}
 
-	public int getBlueBallNum9Type() {
+	public void setBlueBallNum8Type(int blueBallNum8Type) {
+		if (this.blueBallNum8Type == null) {
+			this.blueBallNum8Type = new SparseIntArray();
+		}
+		this.blueBallNum8Type.put(blueBallNum8Type, blueBallNum8Type);
+	}
+
+	public SparseIntArray getBlueBallNum9Type() {
 		return blueBallNum9Type;
 	}
 
-	public void setBlueBallNum9Type(int blueBallNum9Type) {
-		this.blueBallNum9Type = blueBallNum9Type;
+	public boolean isBlueBallNum9Type(Integer... types) {
+		return NumberUtil.isBallNumType(blueBallNum9Type, types);
 	}
 
-	public int getBlueBallNum10Type() {
+	public void setBlueBallNum9Type(int blueBallNum9Type) {
+		if (this.blueBallNum9Type == null) {
+			this.blueBallNum9Type = new SparseIntArray();
+		}
+		this.blueBallNum9Type.put(blueBallNum9Type, blueBallNum9Type);
+	}
+
+	public SparseIntArray getBlueBallNum10Type() {
 		return blueBallNum10Type;
 	}
 
-	public void setBlueBallNum10Type(int blueBallNum10Type) {
-		this.blueBallNum10Type = blueBallNum10Type;
+	public boolean isBlueBallNum10Type(Integer... types) {
+		return NumberUtil.isBallNumType(blueBallNum10Type, types);
 	}
 
-	public int getBlueBallNum11Type() {
+	public void setBlueBallNum10Type(int blueBallNum10Type) {
+		if (this.blueBallNum10Type == null) {
+			this.blueBallNum10Type = new SparseIntArray();
+		}
+		this.blueBallNum10Type.put(blueBallNum10Type, blueBallNum10Type);
+	}
+
+	public SparseIntArray getBlueBallNum11Type() {
 		return blueBallNum11Type;
 	}
 
-	public void setBlueBallNum11Type(int blueBallNum11Type) {
-		this.blueBallNum11Type = blueBallNum11Type;
+	public boolean isBlueBallNum11Type(Integer... types) {
+		return NumberUtil.isBallNumType(blueBallNum11Type, types);
 	}
 
-	public int getBlueBallNum12Type() {
+	public void setBlueBallNum11Type(int blueBallNum11Type) {
+		if (this.blueBallNum11Type == null) {
+			this.blueBallNum11Type = new SparseIntArray();
+		}
+		this.blueBallNum11Type.put(blueBallNum11Type, blueBallNum11Type);
+	}
+
+	public SparseIntArray getBlueBallNum12Type() {
 		return blueBallNum12Type;
 	}
 
-	public void setBlueBallNum12Type(int blueBallNum12Type) {
-		this.blueBallNum12Type = blueBallNum12Type;
+	public boolean isBlueBallNum12Type(Integer... types) {
+		return NumberUtil.isBallNumType(blueBallNum12Type, types);
 	}
 
-	public int getBlueBallNum13Type() {
+	public void setBlueBallNum12Type(int blueBallNum12Type) {
+		if (this.blueBallNum12Type == null) {
+			this.blueBallNum12Type = new SparseIntArray();
+		}
+		this.blueBallNum12Type.put(blueBallNum12Type, blueBallNum12Type);
+	}
+
+	public SparseIntArray getBlueBallNum13Type() {
 		return blueBallNum13Type;
 	}
 
-	public void setBlueBallNum13Type(int blueBallNum13Type) {
-		this.blueBallNum13Type = blueBallNum13Type;
+	public boolean isBlueBallNum13Type(Integer... types) {
+		return NumberUtil.isBallNumType(blueBallNum13Type, types);
 	}
 
-	public int getBlueBallNum14Type() {
+	public void setBlueBallNum13Type(int blueBallNum13Type) {
+		if (this.blueBallNum13Type == null) {
+			this.blueBallNum13Type = new SparseIntArray();
+		}
+		this.blueBallNum13Type.put(blueBallNum13Type, blueBallNum13Type);
+	}
+
+	public SparseIntArray getBlueBallNum14Type() {
 		return blueBallNum14Type;
 	}
 
-	public void setBlueBallNum14Type(int blueBallNum14Type) {
-		this.blueBallNum14Type = blueBallNum14Type;
+	public boolean isBlueBallNum14Type(Integer... types) {
+		return NumberUtil.isBallNumType(blueBallNum14Type, types);
 	}
 
-	public int getBlueBallNum15Type() {
+	public void setBlueBallNum14Type(int blueBallNum14Type) {
+		if (this.blueBallNum14Type == null) {
+			this.blueBallNum14Type = new SparseIntArray();
+		}
+		this.blueBallNum14Type.put(blueBallNum14Type, blueBallNum14Type);
+	}
+
+	public SparseIntArray getBlueBallNum15Type() {
 		return blueBallNum15Type;
 	}
 
-	public void setBlueBallNum15Type(int blueBallNum15Type) {
-		this.blueBallNum15Type = blueBallNum15Type;
+	public boolean isBlueBallNum15Type(Integer... types) {
+		return NumberUtil.isBallNumType(blueBallNum15Type, types);
 	}
 
-	public int getBlueBallNum16Type() {
+	public void setBlueBallNum15Type(int blueBallNum15Type) {
+		if (this.blueBallNum15Type == null) {
+			this.blueBallNum15Type = new SparseIntArray();
+		}
+		this.blueBallNum15Type.put(blueBallNum15Type, blueBallNum15Type);
+	}
+
+	public SparseIntArray getBlueBallNum16Type() {
 		return blueBallNum16Type;
 	}
 
+	public boolean isBlueBallNum16Type(Integer... types) {
+		return NumberUtil.isBallNumType(blueBallNum16Type, types);
+	}
+
 	public void setBlueBallNum16Type(int blueBallNum16Type) {
-		this.blueBallNum16Type = blueBallNum16Type;
+		if (this.blueBallNum16Type == null) {
+			this.blueBallNum16Type = new SparseIntArray();
+		}
+		this.blueBallNum16Type.put(blueBallNum16Type, blueBallNum16Type);
 	}
 
 	@Override
