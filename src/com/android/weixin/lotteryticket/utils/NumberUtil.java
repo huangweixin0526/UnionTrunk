@@ -229,13 +229,26 @@ public class NumberUtil {
 		return calculateType;
 	}
 
-	public static boolean isBallNumType(SparseIntArray ballNumType, Integer... types) {
+	public static boolean isAndBallNumType(SparseIntArray ballNumType, Integer... types) {
 		if (ballNumType != null && types != null && types.length > 0) {
 			boolean isMatch = true;
 			for (Integer integer : types) {
 				if (ballNumType.get(integer, 0) == 0) {
 					isMatch = false;
 					break;
+				}
+			}
+			return isMatch;
+		}
+		return false;
+	}
+
+	public static boolean isOrBallNumType(SparseIntArray ballNumType, Integer... types) {
+		if (ballNumType != null && types != null && types.length > 0) {
+			boolean isMatch = false;
+			for (Integer integer : types) {
+				if (ballNumType.get(integer, 0) > 0) {
+					isMatch = true;
 				}
 			}
 			return isMatch;

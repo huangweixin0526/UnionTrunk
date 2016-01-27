@@ -106,6 +106,14 @@ public class TwoDataPreviewAdapter extends BaseAdapter {
 			viewHoloder.previewViewHoloder.two_red_num_five_tv.setText(String.valueOf(unionLotteryNumbers.getRedNumFive()));
 			viewHoloder.previewViewHoloder.two_red_num_six_tv.setText(String.valueOf(unionLotteryNumbers.getRedNumSix()));
 			viewHoloder.previewViewHoloder.two_blue_num_tv.setText(String.valueOf(unionLotteryNumbers.getBlueNum()));
+		} else {
+			viewHoloder.previewViewHoloder.two_red_num_one_tv.setText("");
+			viewHoloder.previewViewHoloder.two_red_num_two_tv.setText("");
+			viewHoloder.previewViewHoloder.two_red_num_three_tv.setText("");
+			viewHoloder.previewViewHoloder.two_red_num_four_tv.setText("");
+			viewHoloder.previewViewHoloder.two_red_num_five_tv.setText("");
+			viewHoloder.previewViewHoloder.two_red_num_six_tv.setText("");
+			viewHoloder.previewViewHoloder.two_blue_num_tv.setText("");
 		}
 	}
 
@@ -513,29 +521,23 @@ public class TwoDataPreviewAdapter extends BaseAdapter {
 	}
 
 	private boolean isDataShow(SparseIntArray numType) {
-		if (NumberUtil.isBallNumType(numType, CalculateTypeConfig.CALCULATE_TYPE_MATRIX)) {
+		if (NumberUtil.isAndBallNumType(numType, CalculateTypeConfig.CALCULATE_TYPE_MATRIX)) {
 			return true;
 		}
 		return false;
 	}
 
 	private Drawable getNumberBg(SparseIntArray calculateType) {
-		if (NumberUtil.isBallNumType(calculateType, CalculateTypeConfig.CALCULATE_TYPE_WINNING, CalculateTypeConfig.CALCULATE_TYPE_MATRIX)) {
+		if (NumberUtil.isAndBallNumType(calculateType, CalculateTypeConfig.CALCULATE_TYPE_WINNING, CalculateTypeConfig.CALCULATE_TYPE_MATRIX)) {
 			return this.mMatrixWinningRedRedBg;
 		}
-		// if (calculateType == CalculateTypeConfig.CALCULATE_TYPE_WINNING) {
-		// return this.mWinningBg;
-		// }
 		return null;
 	}
 
 	private Drawable getBlueNumberBg(SparseIntArray calculateType) {
-		if (NumberUtil.isBallNumType(calculateType, CalculateTypeConfig.CALCULATE_TYPE_WINNING, CalculateTypeConfig.CALCULATE_TYPE_MATRIX)) {
+		if (NumberUtil.isAndBallNumType(calculateType, CalculateTypeConfig.CALCULATE_TYPE_WINNING, CalculateTypeConfig.CALCULATE_TYPE_MATRIX)) {
 			return this.mMatrixWinningRedBlueBg;
 		}
-		// if (calculateType == CalculateTypeConfig.CALCULATE_TYPE_WINNING) {
-		// return this.mWinningBg;
-		// }
 		return null;
 	}
 

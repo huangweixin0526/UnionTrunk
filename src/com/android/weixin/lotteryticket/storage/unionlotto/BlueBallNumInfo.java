@@ -245,7 +245,7 @@ public class BlueBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isBlueBallNum1Type(Integer... types) {
-		return NumberUtil.isBallNumType(blueBallNum1Type, types);
+		return NumberUtil.isAndBallNumType(blueBallNum1Type, types);
 	}
 
 	public void setBlueBallNum1Type(int blueBallNum1Type) {
@@ -260,7 +260,7 @@ public class BlueBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isBlueBallNum2Type(Integer... types) {
-		return NumberUtil.isBallNumType(blueBallNum2Type, types);
+		return NumberUtil.isAndBallNumType(blueBallNum2Type, types);
 	}
 
 	public void setBlueBallNum2Type(int blueBallNum2Type) {
@@ -275,7 +275,7 @@ public class BlueBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isBlueBallNum3Type(Integer... types) {
-		return NumberUtil.isBallNumType(blueBallNum3Type, types);
+		return NumberUtil.isAndBallNumType(blueBallNum3Type, types);
 	}
 
 	public void setBlueBallNum3Type(int blueBallNum3Type) {
@@ -290,7 +290,7 @@ public class BlueBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isBlueBallNum4Type(Integer... types) {
-		return NumberUtil.isBallNumType(blueBallNum4Type, types);
+		return NumberUtil.isAndBallNumType(blueBallNum4Type, types);
 	}
 
 	public void setBlueBallNum4Type(int blueBallNum4Type) {
@@ -305,7 +305,7 @@ public class BlueBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isBlueBallNum5Type(Integer... types) {
-		return NumberUtil.isBallNumType(blueBallNum5Type, types);
+		return NumberUtil.isAndBallNumType(blueBallNum5Type, types);
 	}
 
 	public void setBlueBallNum5Type(int blueBallNum5Type) {
@@ -320,7 +320,7 @@ public class BlueBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isBlueBallNum6Type(Integer... types) {
-		return NumberUtil.isBallNumType(blueBallNum6Type, types);
+		return NumberUtil.isAndBallNumType(blueBallNum6Type, types);
 	}
 
 	public void setBlueBallNum6Type(int blueBallNum6Type) {
@@ -335,7 +335,7 @@ public class BlueBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isBlueBallNum7Type(Integer... types) {
-		return NumberUtil.isBallNumType(blueBallNum7Type, types);
+		return NumberUtil.isAndBallNumType(blueBallNum7Type, types);
 	}
 
 	public void setBlueBallNum7Type(int blueBallNum7Type) {
@@ -350,7 +350,7 @@ public class BlueBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isBlueBallNum8Type(Integer... types) {
-		return NumberUtil.isBallNumType(blueBallNum8Type, types);
+		return NumberUtil.isAndBallNumType(blueBallNum8Type, types);
 	}
 
 	public void setBlueBallNum8Type(int blueBallNum8Type) {
@@ -365,7 +365,7 @@ public class BlueBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isBlueBallNum9Type(Integer... types) {
-		return NumberUtil.isBallNumType(blueBallNum9Type, types);
+		return NumberUtil.isAndBallNumType(blueBallNum9Type, types);
 	}
 
 	public void setBlueBallNum9Type(int blueBallNum9Type) {
@@ -380,7 +380,7 @@ public class BlueBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isBlueBallNum10Type(Integer... types) {
-		return NumberUtil.isBallNumType(blueBallNum10Type, types);
+		return NumberUtil.isAndBallNumType(blueBallNum10Type, types);
 	}
 
 	public void setBlueBallNum10Type(int blueBallNum10Type) {
@@ -395,7 +395,7 @@ public class BlueBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isBlueBallNum11Type(Integer... types) {
-		return NumberUtil.isBallNumType(blueBallNum11Type, types);
+		return NumberUtil.isAndBallNumType(blueBallNum11Type, types);
 	}
 
 	public void setBlueBallNum11Type(int blueBallNum11Type) {
@@ -410,7 +410,7 @@ public class BlueBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isBlueBallNum12Type(Integer... types) {
-		return NumberUtil.isBallNumType(blueBallNum12Type, types);
+		return NumberUtil.isAndBallNumType(blueBallNum12Type, types);
 	}
 
 	public void setBlueBallNum12Type(int blueBallNum12Type) {
@@ -425,7 +425,7 @@ public class BlueBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isBlueBallNum13Type(Integer... types) {
-		return NumberUtil.isBallNumType(blueBallNum13Type, types);
+		return NumberUtil.isAndBallNumType(blueBallNum13Type, types);
 	}
 
 	public void setBlueBallNum13Type(int blueBallNum13Type) {
@@ -440,7 +440,7 @@ public class BlueBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isBlueBallNum14Type(Integer... types) {
-		return NumberUtil.isBallNumType(blueBallNum14Type, types);
+		return NumberUtil.isAndBallNumType(blueBallNum14Type, types);
 	}
 
 	public void setBlueBallNum14Type(int blueBallNum14Type) {
@@ -455,7 +455,7 @@ public class BlueBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isBlueBallNum15Type(Integer... types) {
-		return NumberUtil.isBallNumType(blueBallNum15Type, types);
+		return NumberUtil.isAndBallNumType(blueBallNum15Type, types);
 	}
 
 	public void setBlueBallNum15Type(int blueBallNum15Type) {
@@ -470,7 +470,7 @@ public class BlueBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isBlueBallNum16Type(Integer... types) {
-		return NumberUtil.isBallNumType(blueBallNum16Type, types);
+		return NumberUtil.isAndBallNumType(blueBallNum16Type, types);
 	}
 
 	public void setBlueBallNum16Type(int blueBallNum16Type) {

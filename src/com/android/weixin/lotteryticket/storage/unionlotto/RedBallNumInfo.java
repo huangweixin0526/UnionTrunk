@@ -481,7 +481,7 @@ public class RedBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isRedBallNum1Type(Integer... types) {
-		return NumberUtil.isBallNumType(redBallNum1Type, types);
+		return NumberUtil.isAndBallNumType(redBallNum1Type, types);
 	}
 
 	public void setRedBallNum1Type(int redBallNum1Type) {
@@ -496,7 +496,7 @@ public class RedBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isRedBallNum2Type(Integer... types) {
-		return NumberUtil.isBallNumType(redBallNum2Type, types);
+		return NumberUtil.isAndBallNumType(redBallNum2Type, types);
 	}
 
 	public void setRedBallNum2Type(int redBallNum2Type) {
@@ -511,7 +511,7 @@ public class RedBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isRedBallNum3Type(Integer... types) {
-		return NumberUtil.isBallNumType(redBallNum3Type, types);
+		return NumberUtil.isAndBallNumType(redBallNum3Type, types);
 	}
 
 	public void setRedBallNum3Type(int redBallNum3Type) {
@@ -526,7 +526,7 @@ public class RedBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isRedBallNum4Type(Integer... types) {
-		return NumberUtil.isBallNumType(redBallNum4Type, types);
+		return NumberUtil.isAndBallNumType(redBallNum4Type, types);
 	}
 
 	public void setRedBallNum4Type(int redBallNum4Type) {
@@ -541,7 +541,7 @@ public class RedBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isRedBallNum5Type(Integer... types) {
-		return NumberUtil.isBallNumType(redBallNum5Type, types);
+		return NumberUtil.isAndBallNumType(redBallNum5Type, types);
 	}
 
 	public void setRedBallNum5Type(int redBallNum5Type) {
@@ -556,7 +556,7 @@ public class RedBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isRedBallNum6Type(Integer... types) {
-		return NumberUtil.isBallNumType(redBallNum6Type, types);
+		return NumberUtil.isAndBallNumType(redBallNum6Type, types);
 	}
 
 	public void setRedBallNum6Type(int redBallNum6Type) {
@@ -571,7 +571,7 @@ public class RedBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isRedBallNum7Type(Integer... types) {
-		return NumberUtil.isBallNumType(redBallNum7Type, types);
+		return NumberUtil.isAndBallNumType(redBallNum7Type, types);
 	}
 
 	public void setRedBallNum7Type(int redBallNum7Type) {
@@ -586,7 +586,7 @@ public class RedBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isRedBallNum8Type(Integer... types) {
-		return NumberUtil.isBallNumType(redBallNum8Type, types);
+		return NumberUtil.isAndBallNumType(redBallNum8Type, types);
 	}
 
 	public void setRedBallNum8Type(int redBallNum8Type) {
@@ -601,7 +601,7 @@ public class RedBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isRedBallNum9Type(Integer... types) {
-		return NumberUtil.isBallNumType(redBallNum9Type, types);
+		return NumberUtil.isAndBallNumType(redBallNum9Type, types);
 	}
 
 	public void setRedBallNum9Type(int redBallNum9Type) {
@@ -616,7 +616,7 @@ public class RedBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isRedBallNum10Type(Integer... types) {
-		return NumberUtil.isBallNumType(redBallNum10Type, types);
+		return NumberUtil.isAndBallNumType(redBallNum10Type, types);
 	}
 
 	public void setRedBallNum10Type(int redBallNum10Type) {
@@ -631,7 +631,7 @@ public class RedBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isRedBallNum11Type(Integer... types) {
-		return NumberUtil.isBallNumType(redBallNum11Type, types);
+		return NumberUtil.isAndBallNumType(redBallNum11Type, types);
 	}
 
 	public void setRedBallNum11Type(int redBallNum11Type) {
@@ -646,7 +646,7 @@ public class RedBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isRedBallNum12Type(Integer... types) {
-		return NumberUtil.isBallNumType(redBallNum12Type, types);
+		return NumberUtil.isAndBallNumType(redBallNum12Type, types);
 	}
 
 	public void setRedBallNum12Type(int redBallNum12Type) {
@@ -661,7 +661,7 @@ public class RedBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isRedBallNum13Type(Integer... types) {
-		return NumberUtil.isBallNumType(redBallNum13Type, types);
+		return NumberUtil.isAndBallNumType(redBallNum13Type, types);
 	}
 
 	public void setRedBallNum13Type(int redBallNum13Type) {
@@ -676,7 +676,7 @@ public class RedBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isRedBallNum14Type(Integer... types) {
-		return NumberUtil.isBallNumType(redBallNum14Type, types);
+		return NumberUtil.isAndBallNumType(redBallNum14Type, types);
 	}
 
 	public void setRedBallNum14Type(int redBallNum14Type) {
@@ -691,7 +691,7 @@ public class RedBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isRedBallNum15Type(Integer... types) {
-		return NumberUtil.isBallNumType(redBallNum15Type, types);
+		return NumberUtil.isAndBallNumType(redBallNum15Type, types);
 	}
 
 	public void setRedBallNum15Type(int redBallNum15Type) {
@@ -706,7 +706,7 @@ public class RedBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isRedBallNum16Type(Integer... types) {
-		return NumberUtil.isBallNumType(redBallNum16Type, types);
+		return NumberUtil.isAndBallNumType(redBallNum16Type, types);
 	}
 
 	public void setRedBallNum16Type(int redBallNum16Type) {
@@ -721,7 +721,7 @@ public class RedBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isRedBallNum17Type(Integer... types) {
-		return NumberUtil.isBallNumType(redBallNum17Type, types);
+		return NumberUtil.isAndBallNumType(redBallNum17Type, types);
 	}
 
 	public void setRedBallNum17Type(int redBallNum17Type) {
@@ -736,7 +736,7 @@ public class RedBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isRedBallNum18Type(Integer... types) {
-		return NumberUtil.isBallNumType(redBallNum18Type, types);
+		return NumberUtil.isAndBallNumType(redBallNum18Type, types);
 	}
 
 	public void setRedBallNum18Type(int redBallNum18Type) {
@@ -751,7 +751,7 @@ public class RedBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isRedBallNum19Type(Integer... types) {
-		return NumberUtil.isBallNumType(redBallNum19Type, types);
+		return NumberUtil.isAndBallNumType(redBallNum19Type, types);
 	}
 
 	public void setRedBallNum19Type(int redBallNum19Type) {
@@ -766,7 +766,7 @@ public class RedBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isRedBallNum20Type(Integer... types) {
-		return NumberUtil.isBallNumType(redBallNum20Type, types);
+		return NumberUtil.isAndBallNumType(redBallNum20Type, types);
 	}
 
 	public void setRedBallNum20Type(int redBallNum20Type) {
@@ -781,7 +781,7 @@ public class RedBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isRedBallNum21Type(Integer... types) {
-		return NumberUtil.isBallNumType(redBallNum21Type, types);
+		return NumberUtil.isAndBallNumType(redBallNum21Type, types);
 	}
 
 	public void setRedBallNum21Type(int redBallNum21Type) {
@@ -796,7 +796,7 @@ public class RedBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isRedBallNum22Type(Integer... types) {
-		return NumberUtil.isBallNumType(redBallNum22Type, types);
+		return NumberUtil.isAndBallNumType(redBallNum22Type, types);
 	}
 
 	public void setRedBallNum22Type(int redBallNum22Type) {
@@ -811,7 +811,7 @@ public class RedBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isRedBallNum23Type(Integer... types) {
-		return NumberUtil.isBallNumType(redBallNum23Type, types);
+		return NumberUtil.isAndBallNumType(redBallNum23Type, types);
 	}
 
 	public void setRedBallNum23Type(int redBallNum23Type) {
@@ -826,7 +826,7 @@ public class RedBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isRedBallNum24Type(Integer... types) {
-		return NumberUtil.isBallNumType(redBallNum24Type, types);
+		return NumberUtil.isAndBallNumType(redBallNum24Type, types);
 	}
 
 	public void setRedBallNum24Type(int redBallNum24Type) {
@@ -841,7 +841,7 @@ public class RedBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isRedBallNum25Type(Integer... types) {
-		return NumberUtil.isBallNumType(redBallNum25Type, types);
+		return NumberUtil.isAndBallNumType(redBallNum25Type, types);
 	}
 
 	public void setRedBallNum25Type(int redBallNum25Type) {
@@ -856,7 +856,7 @@ public class RedBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isRedBallNum26Type(Integer... types) {
-		return NumberUtil.isBallNumType(redBallNum26Type, types);
+		return NumberUtil.isAndBallNumType(redBallNum26Type, types);
 	}
 
 	public void setRedBallNum26Type(int redBallNum26Type) {
@@ -871,7 +871,7 @@ public class RedBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isRedBallNum27Type(Integer... types) {
-		return NumberUtil.isBallNumType(redBallNum27Type, types);
+		return NumberUtil.isAndBallNumType(redBallNum27Type, types);
 	}
 
 	public void setRedBallNum27Type(int redBallNum27Type) {
@@ -886,7 +886,7 @@ public class RedBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isRedBallNum28Type(Integer... types) {
-		return NumberUtil.isBallNumType(redBallNum28Type, types);
+		return NumberUtil.isAndBallNumType(redBallNum28Type, types);
 	}
 
 	public void setRedBallNum28Type(int redBallNum28Type) {
@@ -901,7 +901,7 @@ public class RedBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isRedBallNum29Type(Integer... types) {
-		return NumberUtil.isBallNumType(redBallNum29Type, types);
+		return NumberUtil.isAndBallNumType(redBallNum29Type, types);
 	}
 
 	public void setRedBallNum29Type(int redBallNum29Type) {
@@ -916,7 +916,7 @@ public class RedBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isRedBallNum30Type(Integer... types) {
-		return NumberUtil.isBallNumType(redBallNum30Type, types);
+		return NumberUtil.isAndBallNumType(redBallNum30Type, types);
 	}
 
 	public void setRedBallNum30Type(int redBallNum30Type) {
@@ -931,7 +931,7 @@ public class RedBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isRedBallNum31Type(Integer... types) {
-		return NumberUtil.isBallNumType(redBallNum31Type, types);
+		return NumberUtil.isAndBallNumType(redBallNum31Type, types);
 	}
 
 	public void setRedBallNum31Type(int redBallNum31Type) {
@@ -946,7 +946,7 @@ public class RedBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isRedBallNum32Type(Integer... types) {
-		return NumberUtil.isBallNumType(redBallNum32Type, types);
+		return NumberUtil.isAndBallNumType(redBallNum32Type, types);
 	}
 
 	public void setRedBallNum32Type(int redBallNum32Type) {
@@ -961,7 +961,7 @@ public class RedBallNumInfo extends DBaseDao {
 	}
 
 	public boolean isRedBallNum33Type(Integer... types) {
-		return NumberUtil.isBallNumType(redBallNum33Type, types);
+		return NumberUtil.isAndBallNumType(redBallNum33Type, types);
 	}
 
 	public void setRedBallNum33Type(int redBallNum33Type) {

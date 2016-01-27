@@ -234,5 +234,6 @@
         android:id="@+id/union_red_num_33_tv"
         style="@style/red_num_forecast"
         android:text="@string/num_str_33" />
+    <View style="@style/ver_line_divider" />
 
 </LinearLayout>
